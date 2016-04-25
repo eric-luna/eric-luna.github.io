@@ -5,7 +5,7 @@ body, html {
 	font-family: 'Montserrat', sans-serif;
 }
 
-/***********Menu*/
+/*****************Navigation************************/
 .mobile-nav-bar {
 	background:  #a6b5bf;
 	min-height: 55px;
@@ -14,8 +14,11 @@ body, html {
 	cursor: pointer;
 	z-index: 20;
 }
-.mobile-nav-bar span{
+.mobile-nav-bar p{
 	color: white;
+	margin: 0;
+	font-size: 0.95em;
+	padding-top: 8px;
 }
 .mobile-nav-bar .mobile-nav-button {
 	position: absolute;
@@ -60,8 +63,8 @@ body, html {
 	text-decoration: none;
 	background: #f0f0f5;
 }
-.mobile-nav ul li a:active {
-	background: maroon;
+.mobile-nav ul li a:hover {
+	background: white;
 }
 .mobile-nav.show-mobile-nav {
 	height: auto;
@@ -80,7 +83,7 @@ body, html {
 	display: none;
 }
 
-/*********** Top of Page ***********/
+/******************* Main Content **********************/
 
 #about-div {
 	height: 500px;
@@ -90,17 +93,17 @@ body, html {
 	text-align: center;
 	width: 95%;
 	margin: auto;
-	padding-top: 30%;
-	color:   #566876;
+	padding-top: 25%;
+	color: #566876;
 	display: none; 
-	font-size: 1.2em;
+	font-size: 1.5em;
 }
 
 /********** Skills Section **********/
 
 #skills {
 	padding-top: 5%;
-	background-color: #566876;
+	background-color: #a6b5bf;
 	color: white;
 }
 
@@ -175,7 +178,7 @@ body, html {
 	padding-left: 0;
 }
 .tags li {
-	font-size: 0.60em;
+	font-size: 0.55em;
 	-webkit-background-clip: padding-box;
 	-moz-background-clip: padding;
 	background-clip: padding-box;
@@ -190,7 +193,7 @@ body, html {
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	padding: 5px 5px;
-	margin: 3px 0;
+	margin: 2px 0;
 }
 .button {
 	display: inline-block;
@@ -224,6 +227,7 @@ footer {
 	margin: 0 auto;
 	color: white;
 	border-top: 1px solid #B1B1B1;
+
 }
 .credit{
 	margin: auto;
@@ -318,13 +322,16 @@ footer {
 		display: block;
 		text-align: center;
 		margin: auto;
-		background-color: #a6b5bf;
+		background-color: #566876;
 		color: white;
-		border-right: 1px solid black;
+		border-right: 3px solid black;
 	}
-	#nav-bar h1, h3 {
+	#nav-bar h1, h4 {
 		margin: 0;
 		padding: 0;
+	}
+	#nav-bar h4{
+		color: black;
 	}
 
 	#nav-bar ul{
@@ -338,12 +345,21 @@ footer {
 	#nav-bar li {
 		display: block;
 	}
-
+	#nav-bar li a{
+		text-decoration: none;
+		color: white;
+	}
+	#nav-bar li a:visited{
+		color: white;
+	}
+	#nav-bar li a:hover{
+		color: black;
+	}
 	.top-pic{
 		margin-top: 15%;
-		border-radius: 50%;
+		border-radius: 100%;
 		display: inline-block;
-		width: 70%;
+		width: 55%;
 	}
 
 	#about {
@@ -354,7 +370,7 @@ footer {
 		width: 100%;
 		clear: both;
 		height: 350px;
-		padding-top: 5%;
+		padding-top: 2.5%;
 	}
 	.project-preview{
 		width: 50%;
@@ -379,7 +395,7 @@ footer {
 	}
 	.project-description p{
 		padding: 0;
-		width: 95%;
+		width: 98%;
 		margin: 0;
 		font-size: 0.90em;
 	}
@@ -396,7 +412,7 @@ footer {
 
 	.bio {
 		text-align: center;
-		padding-top: 10%;
+		padding-top: 2.5%;
 		margin: auto;
 	}
 
@@ -415,7 +431,7 @@ footer {
 	}
 
 	.contact-info {
-		padding-top: 10%;
+		padding-top: 2.5%;
 
 	}
 
