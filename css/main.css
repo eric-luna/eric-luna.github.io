@@ -425,9 +425,10 @@ footer {
 	}
 
 	#bio-info {
-		width: 90%;
+		width: 70%;
 		text-align: center;
-		font-size: 1em;
+		font-size: 1.1em;
+		margin: auto;
 	}
 
 	.contact-info {
