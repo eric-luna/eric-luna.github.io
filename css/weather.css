@@ -1,0 +1,111 @@
+html,body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans',Optima;
+}
+body{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 1000px;
+}
+.heading{
+	background-color: rgba(255, 255, 255,0.5);
+	width: 90%;
+	text-align: center;
+	margin: auto;
+	font-size: 1.5em;
+	font-weight: 800;
+	border-radius: 10px;
+}
+.location{
+	text-align: center;
+	margin: 5% auto;
+	font-size: 1.8em;
+	font-weight: 600;
+	background-color: rgba(255, 255, 255,0.5);
+	width: 80%;
+	border-radius: 10px;
+}
+.location p{
+	margin: 0 auto;
+}
+.name{
+	font-weight: 400;
+}
+.forecast, .temp-section, .humidity-section{
+	margin: 5% auto;
+	text-align: center;
+	font-weight: 400;
+	background-color: rgba(255, 255, 255,0.5);
+	height: 200px;
+	width: 70%;
+	border-radius: 10px;
+}
+.icon img{
+	height: 100px;
+	width: 100px;
+	margin: auto;
+}
+.tag{
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+.temp,.humidity{
+	margin: 0 auto;
+	margin-top: 8%;
+	font-size: 3em;
+}
+footer {
+	clear: both;
+	margin: auto;
+	margin-top: 5%;
+	text-align: center;
+	color: white;
+}
+footer a:link{
+	text-decoration: none;
+	color: blue;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+footer a:visited{
+	color: blue;
+	text-decoration: none;
+	font-weight: bolder;
+}
+/********************** Responsive Design ****************************/
+@media only screen and (min-width: 400px){
+	.forecast, .temp-section, .humidity-section{
+		width: 50%;
+	}
+}
+@media only screen and (min-width: 780px){
+	body{
+		height: 700px;
+	}
+	.heading h1{
+		margin-top: 2%;
+		font-size: 2.5em
+	}
+	.location{
+		margin:2.5% auto;
+	}
+   .weather{ 
+   	  width:100%; 
+   	  white-space:nowrap; 
+   	  height: 250px;
+   }
+   .forecast, .temp-section, .humidity-section{
+   	  float:left;
+   	  display:inline-block; 
+   	  width:33.3%;
+   	  height: 100%;
+   	  margin:4% auto;
+   	  border-radius: 0;
+   }
+   .temp,.humidity{
+	margin: 0 auto;
+	margin-top: 10%;
+}
+}

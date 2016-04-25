@@ -1,0 +1,485 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+/***********Menu*/
+.mobile-nav-bar {
+	background:  #a6b5bf;
+	min-height: 55px;
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+	z-index: 20;
+}
+.mobile-nav-bar span{
+	color: white;
+}
+.mobile-nav-bar .mobile-nav-button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	display: inline-block;
+	width: 31px;
+	height: 30px;
+	border: 0;
+	padding: 0;
+	background: transparent;
+	cursor: pointer;
+}
+.mobile-nav-bar .mobile-nav-button .bar {
+	width: 100%;
+	float: left;
+	height: 4px;
+	margin-bottom: 5px;
+	background-color: white;
+}
+.mobile-nav-bar .mobile-nav-button .bar:last-of-type {
+	margin-bottom: 0;
+}
+
+.mobile-nav {
+	height: 0;
+	z-index: 10;
+}
+.mobile-nav ul {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	transform: translate(0, -300px);
+	-ms-transform: translate(0, -300px);
+	-webkit-transform: translate(0, -300px);
+	transition: all .2s ease-in-out;
+}
+.mobile-nav ul li a {
+	display: block;
+	padding: 10px;
+	color: black;
+	text-decoration: none;
+	background: #f0f0f5;
+}
+.mobile-nav ul li a:active {
+	background: maroon;
+}
+.mobile-nav.show-mobile-nav {
+	height: auto;
+}
+.mobile-nav.show-mobile-nav ul {
+	transform: translate(0px);
+	-ms-transform: translate(0px);
+	-webkit-transform: translate(0px);
+}
+
+.main-container {
+	margin: 20px;
+}
+
+#nav-bar{
+	display: none;
+}
+
+/*********** Top of Page ***********/
+
+#about-div {
+	height: 500px;
+}
+
+#about {
+	text-align: center;
+	width: 95%;
+	margin: auto;
+	padding-top: 30%;
+	color:   #566876;
+	display: none; 
+	font-size: 1.2em;
+}
+
+/********** Skills Section **********/
+
+#skills {
+	padding-top: 5%;
+	background-color: #566876;
+	color: white;
+}
+
+#skills-header {
+	text-align: center;
+	margin: auto;
+	padding-bottom: 5%;
+	color: #f0f0f5;
+}
+
+.html5, .responsive, .javascript {
+	width: 100%;
+	text-align: center;
+	padding-bottom: 12%;
+}
+
+.skill-top {
+	font-size: 1.5em;
+	border-bottom: 1px solid white;
+	width: 70%;
+	padding-bottom: 2%;
+	margin: auto;
+	margin-bottom: 5%;
+}
+
+.skill-description {
+	width: 95%;
+	text-align: center;
+	margin: auto;
+	padding: 0;
+	font-size: 1.3em;
+}
+
+.skill-pic {
+	width: 150px;
+	height: 150px;
+}
+
+.html-pic {
+	width: 220px;
+	height: 150px;
+}
+
+/************ Projects **************/
+.project{
+	width: 100%;
+	padding-top: 25px;
+	padding-bottom: 50px;
+	clear: both;
+	color: #566876;
+}
+.colored{
+	background-color: #f0f0f5;
+}
+.project-preview{
+	margin: .5%;
+	text-align: center;
+}
+.project-pic{
+	width: 80%;
+	border-radius: 10px;
+}
+.project-info{
+	text-align: center;
+}
+.project-description p{
+	text-align: left;
+	padding: 0 3%;
+}
+.tags{
+	margin: 2% 0;
+	padding-left: 0;
+}
+.tags li {
+	font-size: 0.60em;
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	display: inline-block;
+	border: 1px solid  #566876;
+	color: #999;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	padding: 5px 5px;
+	margin: 3px 0;
+}
+.button {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	text-decoration: none;
+	border: 3px solid;
+	padding: 10px 30px;
+	margin: 10px 0; 
+	background-color: rgba(255,255,255,0);
+	border-color: rgb(149,165,166);
+	border-color: #566876;
+	color: rgb(149,165,166); 
+}
+.button:hover {
+	text-decoration: none; 
+	-webkit-transition: 200ms ease-in;
+	-moz-transition: 200ms ease-in;
+	-o-transition: 200ms ease-in;
+	transition: 200ms ease-in; 
+	background-color: #566876;
+	border-color: #566876;
+	color: rgb(255,255,255); 
+} 
+/********** Footer Section **********/
+
+footer {
+	background-color:  #a6b5bf;
+	font:400 1em/1 'Montserrat', Optima; 
+	margin: 0 auto;
+	color: white;
+	border-top: 1px solid #B1B1B1;
+}
+.credit{
+	margin: auto;
+	text-align: center;
+	clear: both;
+}
+.credit a:link{
+	text-decoration: none;
+	color: blue;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+.credit a:visited{
+	color: blue;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+.bio {
+	width: 90%;
+	padding-top: 10%;
+	margin: auto;
+}
+
+.pic {
+	max-width: 100%;
+	height: auto;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	float: left;
+	width: 20%;
+	border:2px solid black;
+	border-radius: 15%;
+}
+
+#bio-info {
+	width: 95%;
+	text-align: left;
+	line-height: 1.2;
+}
+
+.social-icons {
+	clear: both;
+	list-style: none;
+	text-align: center;
+	margin: auto;
+	padding-top: 10%;
+	padding-left: 0;
+}
+
+.social-icons li {
+	display: inline-block;
+	padding-right: 4%;
+}
+
+.icons {
+	margin:0;
+	margin-left: 0;
+	height: 32px;
+	width: 32px;
+	float: left;
+}
+
+
+
+/******************************* Responsive Design *******************************/
+
+@media only screen and (max-width: 800px)  {
+
+	.contact-info {
+		display: none;
+	}
+
+	#credit {
+		font-size: .5em;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	.mobile-nav-bar {
+		display: none;
+	}
+	.main-content{
+		float: right;
+		width: 75%;
+	}
+	#nav-bar {
+		float: left;
+		width: 25%;
+		height: 100%;
+		position: fixed;
+		display: block;
+		text-align: center;
+		margin: auto;
+		background-color: #a6b5bf;
+		color: white;
+		border-right: 1px solid black;
+	}
+	#nav-bar h1, h3 {
+		margin: 0;
+		padding: 0;
+	}
+
+	#nav-bar ul{
+		list-style: none;
+		font-size: 1.5em;
+		text-align: center;
+		padding: 0;
+		padding-bottom: 2%;
+	}
+
+	#nav-bar li {
+		display: block;
+	}
+
+	.top-pic{
+		margin-top: 15%;
+		border-radius: 50%;
+		display: inline-block;
+		width: 70%;
+	}
+
+	#about {
+		font-size: 2em;
+		padding-top: 15%;
+	}
+	.project{
+		width: 100%;
+		clear: both;
+		height: 350px;
+		padding-top: 5%;
+	}
+	.project-preview{
+		width: 50%;
+		float: left;
+		margin: auto;
+		padding: 0;
+		padding-top: 1%;
+	}
+	.project-info{
+		width: 50%;
+		float: right;
+		text-align: left;
+		padding-top: 1%;
+	}
+	.project-info h1{
+		margin: 0;
+		font-size: 1.5em;
+	}
+	.project-description{
+		float: left;
+		padding-left: 3%;
+	}
+	.project-description p{
+		padding: 0;
+		width: 95%;
+		margin: 0;
+		font-size: 0.90em;
+	}
+	.social-icons {
+		display: none;
+	}
+
+	.bio, .contact-info {
+		display: inline-block;
+		width: 50%;
+		float: left;
+		text-align: center;
+	}
+
+	.bio {
+		text-align: center;
+		padding-top: 10%;
+		margin: auto;
+	}
+
+	.about-me {
+		padding-left: 2%;
+	}
+
+	.pic {
+		display: none;
+	}
+
+	#bio-info {
+		width: 90%;
+		text-align: center;
+		font-size: 1em;
+	}
+
+	.contact-info {
+		padding-top: 10%;
+
+	}
+
+	.contact-links {
+		list-style: none;
+		padding-left: 0;
+		text-decoration: none;
+	}
+
+	.contact-links li {
+		text-align: left;
+		padding-bottom: 5%;
+		margin: auto;
+		text-decoration: none;
+		width: 90%;
+	}
+
+	.contact-links li a:visited {
+		color: blue;
+	}
+
+	.social {
+		text-align: center;
+		padding-left: 10%;
+	}
+}
+
+@media only screen and (min-width: 980px) {
+	#skills {
+		padding-bottom: 10%;
+		height: 600px;
+	}
+
+	.html5, .responsive, .javascript {
+		width: 33%;
+		float: left;
+		font: 400 1em/1.0 'Montserrat', Optima;
+		height: auto;
+		padding: 0;
+	}
+
+	.javascript {
+		width: 34%;
+	}
+
+	.skill-top {
+		font-size: 1.6em;
+		padding-bottom: 35px;
+	}
+	.project-description p{
+		width: 85%;
+	}
+	footer {
+		clear: both;
+	}
+
+	.bio, .contact-info{
+		display: inline-block;
+		width: 50%;
+		float: left;
+		text-align: center;
+		margin-top: 0;
+		padding-top: 5%;
+		font: 300 1em/1.0 'Montserrat', Optima;
+	}
+}
+
