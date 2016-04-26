@@ -117,7 +117,7 @@ body, html {
 .html5, .responsive, .javascript {
 	width: 100%;
 	text-align: center;
-	padding-bottom: 12%;
+	padding-bottom: 10%;
 }
 
 .skill-top {
@@ -148,10 +148,17 @@ body, html {
 }
 
 /************ Projects **************/
+#projects-header {
+		text-align: center;
+		margin: auto;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		color: #566876;
+	}
 .project{
+	padding-top: 5%;
+	padding-bottom: 5%;
 	width: 100%;
-	padding-top: 25px;
-	padding-bottom: 50px;
 	clear: both;
 	color: #566876;
 }
@@ -159,7 +166,6 @@ body, html {
 	background-color: #f0f0f5;
 }
 .project-preview{
-	margin: .5%;
 	text-align: center;
 }
 .project-pic{
@@ -207,7 +213,7 @@ body, html {
 	background-color: rgba(255,255,255,0);
 	border-color: rgb(149,165,166);
 	border-color: #566876;
-	color: rgb(149,165,166); 
+	color: #566876;
 }
 .button:hover {
 	text-decoration: none; 
@@ -273,7 +279,7 @@ footer {
 	clear: both;
 	list-style: none;
 	text-align: center;
-	margin: auto;
+	margin: 0 auto;
 	padding-top: 10%;
 	padding-left: 0;
 }
@@ -295,7 +301,7 @@ footer {
 
 /******************************* Responsive Design *******************************/
 
-@media only screen and (max-width: 800px)  {
+@media only screen and (max-width: 680px)  {
 
 	.contact-info {
 		display: none;
@@ -306,7 +312,7 @@ footer {
 	}
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 680px) {
 	.mobile-nav-bar {
 		display: none;
 	}
@@ -366,8 +372,31 @@ footer {
 		font-size: 2em;
 		padding-top: 15%;
 	}
+	.html5, .responsive, .javascript {
+		padding-bottom: 5%;
+	}
+	#skills-header {
+		text-align: center;
+		margin: auto;
+		padding-bottom: 5%;
+		color: #f0f0f5;
+	}
+
+	.skill-top {
+		font-size: 1.5em;
+		border-bottom: 2px solid white;
+		width: 70%;
+		padding-bottom: 1.5%;
+		margin: auto;
+		margin-bottom: 3.5%;
+	}
+
+	.skill-description {
+		width: 80%;
+		font-size: 1.3em;
+	}
+
 	.project{
-		width: 100%;
 		clear: both;
 		height: 350px;
 		padding-top: 2.5%;
@@ -387,7 +416,7 @@ footer {
 	}
 	.project-info h1{
 		margin: 0;
-		font-size: 1.5em;
+		font-size: 1.2em;
 	}
 	.project-description{
 		float: left;
@@ -397,7 +426,7 @@ footer {
 		padding: 0;
 		width: 98%;
 		margin: 0;
-		font-size: 0.90em;
+		font-size: 0.85em;
 	}
 	.social-icons {
 		display: none;
@@ -408,14 +437,9 @@ footer {
 		width: 50%;
 		float: left;
 		text-align: center;
-	}
-
-	.bio {
-		text-align: center;
 		padding-top: 2.5%;
 		margin: auto;
 	}
-
 	.about-me {
 		padding-left: 2%;
 	}
@@ -425,27 +449,22 @@ footer {
 	}
 
 	#bio-info {
-		width: 70%;
+		width: 90%;
 		text-align: center;
-		font-size: 1.1em;
+		font-size: .90em;
 		margin: auto;
 	}
-
-	.contact-info {
-		padding-top: 2.5%;
-
-	}
-
 	.contact-links {
 		list-style: none;
 		padding-left: 0;
 		text-decoration: none;
+		margin: 0;
 	}
 
 	.contact-links li {
 		text-align: left;
-		padding-bottom: 5%;
-		margin: auto;
+		padding-bottom: 10%;
+		margin: 0 auto;
 		text-decoration: none;
 		width: 90%;
 	}
@@ -457,11 +476,13 @@ footer {
 	.social {
 		text-align: center;
 		padding-left: 10%;
+		margin: 0;
+		font-size: 0.95em;
 	}
 }
 
 @media only screen and (min-width: 980px) {
-	#skills {
+	/*#skills {
 		padding-bottom: 10%;
 		height: 600px;
 	}
@@ -477,7 +498,7 @@ footer {
 	.javascript {
 		width: 34%;
 	}
-
+*/
 	.skill-top {
 		font-size: 1.6em;
 		padding-bottom: 35px;
@@ -496,7 +517,7 @@ footer {
 		text-align: center;
 		margin-top: 0;
 		padding-top: 5%;
-		font: 300 1em/1.0 'Montserrat', Optima;
+		font: 400 1em/1.0 'Montserrat', Optima;
 	}
 }
 
