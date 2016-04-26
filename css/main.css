@@ -3,22 +3,23 @@ body, html {
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
+	color: #f2f2f4;
 }
 
 /*****************Navigation************************/
 .mobile-nav-bar {
-	background:  #a6b5bf;
+	background-color: #558188;
 	min-height: 55px;
+	min-height: 10%;
 	width: 100%;
 	position: relative;
 	cursor: pointer;
 	z-index: 20;
 }
 .mobile-nav-bar p{
-	color: white;
 	margin: 0;
-	font-size: 0.95em;
-	padding-top: 8px;
+	font-size: 0.80em;
+	padding-top: 1.2%;
 }
 .mobile-nav-bar .mobile-nav-button {
 	position: absolute;
@@ -59,12 +60,12 @@ body, html {
 .mobile-nav ul li a {
 	display: block;
 	padding: 10px;
-	color: black;
 	text-decoration: none;
-	background: #f0f0f5;
+	color: #f4f4f2;
+	background-color: #54a292;
 }
 .mobile-nav ul li a:hover {
-	background: white;
+	background: #1253a4;
 }
 .mobile-nav.show-mobile-nav {
 	height: auto;
@@ -78,6 +79,11 @@ body, html {
 .main-container {
 	margin: 20px;
 }
+.nav-pic{
+	width: 12.5%;
+	float: left;
+	margin-top: 1.2%;
+}
 
 #nav-bar{
 	display: none;
@@ -87,6 +93,7 @@ body, html {
 
 #about-div {
 	height: 500px;
+	background-color: #1253a4;
 }
 
 #about {
@@ -94,7 +101,6 @@ body, html {
 	width: 95%;
 	margin: auto;
 	padding-top: 25%;
-	color: #566876;
 	display: none; 
 	font-size: 1.5em;
 }
@@ -103,15 +109,14 @@ body, html {
 
 #skills {
 	padding-top: 5%;
-	background-color: #a6b5bf;
-	color: white;
+	background-color: #f04c40;
 }
 
 #skills-header {
 	text-align: center;
 	margin: auto;
 	padding-bottom: 5%;
-	color: #f0f0f5;
+	
 }
 
 .html5, .responsive, .javascript {
@@ -149,21 +154,22 @@ body, html {
 
 /************ Projects **************/
 #projects-header {
-		text-align: center;
-		margin: auto;
-		padding-top: 5%;
-		padding-bottom: 5%;
-		color: #566876;
-	}
+	text-align: center;
+	margin: auto;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #ff9c5f;
+}
+
 .project{
 	padding-top: 5%;
 	padding-bottom: 5%;
 	width: 100%;
 	clear: both;
-	color: #566876;
+	background-color: #ff9c5f;
 }
 .colored{
-	background-color: #f0f0f5;
+	background-color: #ff8b6c;
 }
 .project-preview{
 	text-align: center;
@@ -194,8 +200,7 @@ body, html {
 	-o-border-radius: 5px;
 	border-radius: 5px;
 	display: inline-block;
-	border: 1px solid  #566876;
-	color: #999;
+	border: 1px solid  #f4f4f2;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	padding: 5px 5px;
@@ -205,15 +210,16 @@ body, html {
 	display: inline-block;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 600;
-	font-size: 14px;
+	font-size: 1em;
 	text-decoration: none;
 	border: 3px solid;
-	padding: 10px 30px;
-	margin: 10px 0; 
+	padding: 4px 30px;
+	margin: 7px 0; 
 	background-color: rgba(255,255,255,0);
+	/*background-color: #1253a4;*/
 	border-color: rgb(149,165,166);
-	border-color: #566876;
-	color: #566876;
+	border-color: #1253a4;
+	color: #f4f4f2;
 }
 .button:hover {
 	text-decoration: none; 
@@ -221,8 +227,8 @@ body, html {
 	-moz-transition: 200ms ease-in;
 	-o-transition: 200ms ease-in;
 	transition: 200ms ease-in; 
-	background-color: #566876;
-	border-color: #566876;
+	background-color:#1253a4;
+	border-color: #1253a4;
 	color: rgb(255,255,255); 
 } 
 /********** Footer Section **********/
@@ -231,8 +237,8 @@ footer {
 	background-color:  #a6b5bf;
 	font:400 1em/1 'Montserrat', Optima; 
 	margin: 0 auto;
-	color: white;
 	border-top: 1px solid #B1B1B1;
+	background-color: #558188;
 
 }
 .credit{
@@ -328,16 +334,15 @@ footer {
 		display: block;
 		text-align: center;
 		margin: auto;
-		background-color: #566876;
-		color: white;
 		border-right: 3px solid black;
+		background-color: #54a292;
 	}
 	#nav-bar h1, h4 {
 		margin: 0;
 		padding: 0;
 	}
 	#nav-bar h4{
-		color: black;
+		color: #1253a4;
 	}
 
 	#nav-bar ul{
@@ -359,13 +364,13 @@ footer {
 		color: white;
 	}
 	#nav-bar li a:hover{
-		color: black;
+		color: #1253a4;
 	}
 	.top-pic{
 		margin-top: 15%;
 		border-radius: 100%;
 		display: inline-block;
-		width: 55%;
+		width: 100%;
 	}
 
 	#about {
@@ -379,7 +384,7 @@ footer {
 		text-align: center;
 		margin: auto;
 		padding-bottom: 5%;
-		color: #f0f0f5;
+		
 	}
 
 	.skill-top {
@@ -398,7 +403,7 @@ footer {
 
 	.project{
 		clear: both;
-		height: 350px;
+		height: 300px;
 		padding-top: 2.5%;
 	}
 	.project-preview{
@@ -424,9 +429,9 @@ footer {
 	}
 	.project-description p{
 		padding: 0;
-		width: 98%;
+		width: 100%;
 		margin: 0;
-		font-size: 0.85em;
+		font-size: 0.79em;
 	}
 	.social-icons {
 		display: none;
@@ -444,9 +449,9 @@ footer {
 		padding-left: 2%;
 	}
 
-	.pic {
+	/*.pic {
 		display: none;
-	}
+	}*/
 
 	#bio-info {
 		width: 90%;
@@ -498,7 +503,7 @@ footer {
 	.javascript {
 		width: 34%;
 	}
-*/
+	*/
 	.skill-top {
 		font-size: 1.6em;
 		padding-bottom: 35px;
