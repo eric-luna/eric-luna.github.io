@@ -15,6 +15,7 @@ body, html {
 	position: relative;
 	cursor: pointer;
 	z-index: 20;
+	border-bottom: 3px solid #f4f4f2;
 }
 .mobile-nav-bar p{
 	margin: 0;
@@ -94,6 +95,7 @@ body, html {
 #about-div {
 	height: 500px;
 	background-color: #1253a4;
+	border-bottom: 3px solid #f4f4f2;
 }
 
 #about {
@@ -110,6 +112,7 @@ body, html {
 #skills {
 	padding-top: 5%;
 	background-color: #f04c40;
+	border-bottom: 3px solid #f4f4f2;
 }
 
 #skills-header {
@@ -153,6 +156,9 @@ body, html {
 }
 
 /************ Projects **************/
+#projects{
+	border-bottom: 3px solid #f4f4f2;
+}
 #projects-header {
 	text-align: center;
 	margin: auto;
@@ -234,23 +240,30 @@ body, html {
 /********** Footer Section **********/
 
 footer {
-	background-color:  #a6b5bf;
-	font:400 1em/1 'Montserrat', Optima; 
+	font:400 1em/1 'Montserrat', 'Optima'; 
 	margin: 0 auto;
-	border-top: 1px solid #B1B1B1;
 	background-color: #558188;
-
+	border-bottom: 3px solid #f4f4f2;
 }
 .credit{
-	margin: auto;
+	margin: 2% auto;
 	text-align: center;
 	clear: both;
+}
+.credit p {
+	margin: 0;
+	padding: 0;
+}
+.credit a{
+	margin: 0;
+	padding: 0;
 }
 .credit a:link{
 	text-decoration: none;
 	color: blue;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	font-weight: bolder;
+	margin: 0;
 }
 .credit a:visited{
 	color: blue;
@@ -267,11 +280,12 @@ footer {
 .pic {
 	max-width: 100%;
 	height: auto;
-	margin-right: 10px;
+	margin-right: 4px;
+	margin-left: 10px;
 	margin-bottom: 5px;
 	float: left;
 	width: 20%;
-	border:2px solid black;
+	border:3px solid #f4f4f2;
 	border-radius: 15%;
 }
 
@@ -334,7 +348,7 @@ footer {
 		display: block;
 		text-align: center;
 		margin: auto;
-		border-right: 3px solid black;
+		border-right: 3px solid #f4f4f2;
 		background-color: #54a292;
 	}
 	#nav-bar h1, h4 {
@@ -448,10 +462,6 @@ footer {
 	.about-me {
 		padding-left: 2%;
 	}
-
-	/*.pic {
-		display: none;
-	}*/
 
 	#bio-info {
 		width: 90%;
