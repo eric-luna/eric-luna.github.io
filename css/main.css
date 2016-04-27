@@ -8,9 +8,9 @@ body, html {
 
 /*****************Navigation************************/
 .mobile-nav-bar {
-	background-color: #558188;
+	background-color: #253939;
 	min-height: 55px;
-	min-height: 10%;
+	min-height: 12%;
 	width: 100%;
 	position: relative;
 	cursor: pointer;
@@ -19,8 +19,10 @@ body, html {
 }
 .mobile-nav-bar p{
 	margin: 0;
+	padding-left: 5px;
 	font-size: 0.80em;
-	padding-top: 1.2%;
+	padding-top: 10px;
+	display: inline-block;
 }
 .mobile-nav-bar .mobile-nav-button {
 	position: absolute;
@@ -81,9 +83,10 @@ body, html {
 	margin: 20px;
 }
 .nav-pic{
-	width: 12.5%;
+	width: 65px;
 	float: left;
-	margin-top: 1.2%;
+	padding-top: 5px;
+	display: inline-block;
 }
 
 #nav-bar{
@@ -96,6 +99,7 @@ body, html {
 	height: 500px;
 	background-color: #1253a4;
 	border-bottom: 3px solid #f4f4f2;
+	/*background-color: #D90429;*/
 }
 
 #about {
@@ -111,8 +115,10 @@ body, html {
 
 #skills {
 	padding-top: 5%;
-	background-color: #f04c40;
 	border-bottom: 3px solid #f4f4f2;
+	background-color: #70C1B3;
+	background-color: #EF0924;
+
 }
 
 #skills-header {
@@ -164,7 +170,8 @@ body, html {
 	margin: auto;
 	padding-top: 5%;
 	padding-bottom: 5%;
-	background-color: #ff9c5f;
+	background-color: #97282c;
+	background-color: #ed6639;
 }
 
 .project{
@@ -172,10 +179,12 @@ body, html {
 	padding-bottom: 5%;
 	width: 100%;
 	clear: both;
-	background-color: #ff9c5f;
+	background-color: #97282c;
+	background-color: #ed6639;
 }
 .colored{
-	background-color: #ff8b6c;
+	background-color: #E9C46A;
+	background-color: #247BA0;
 }
 .project-preview{
 	text-align: center;
@@ -242,8 +251,9 @@ body, html {
 footer {
 	font:400 1em/1 'Montserrat', 'Optima'; 
 	margin: 0 auto;
-	background-color: #558188;
+	background-color: #253939;
 	border-bottom: 3px solid #f4f4f2;
+	background-color: #558188;
 }
 .credit{
 	margin: 2% auto;
@@ -350,6 +360,8 @@ footer {
 		margin: auto;
 		border-right: 3px solid #f4f4f2;
 		background-color: #54a292;
+		background-color: #253939;
+		
 	}
 	#nav-bar h1, h4 {
 		margin: 0;
@@ -380,11 +392,12 @@ footer {
 	#nav-bar li a:hover{
 		color: #1253a4;
 	}
-	.top-pic{
+	.nav-pic{
+		margin: auto;
 		margin-top: 15%;
-		border-radius: 100%;
 		display: inline-block;
-		width: 100%;
+		width: 75%;
+		float: none;
 	}
 
 	#about {
