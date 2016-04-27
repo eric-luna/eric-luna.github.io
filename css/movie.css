@@ -6,7 +6,8 @@ html,body{
 }
 body{
   background:url('../img/movie.jpg');
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   height: 1350px;
 }
@@ -42,7 +43,6 @@ input, button:focus{
   clear: both;
   background-color: rgba(255, 255, 255,0.50); 
   border-radius: 10px;
-  width: 45%;
 }
 .top{
   margin-top: 10px;
@@ -51,14 +51,16 @@ input, button:focus{
   float: right;
   text-decoration: none;
   font-size: 1.1em;
-  margin: 0;
-  padding: 0;
-  padding-right: 2%;
+  margin: 5px 0;
+  padding: 5px 5px;
+  margin-right: 2%;
   clear: both;
-  color:black;
+  color:#852330;
+  background-color: rgba(255, 255, 255,0.75); 
+  border-radius: 10px;
 }
 .link:visited{
-  color: black;
+  color:#852330;
 }
 .poster{
   height: 500px;
@@ -197,6 +199,9 @@ footer a:visited{
 }
 
 @media only screen and (min-width: 650px){
+  .header{
+    width: 45%;
+  }
   .trailer{
     width: 30%;
   }
@@ -205,6 +210,10 @@ footer a:visited{
   }
 }
 @media only screen and (min-width: 900px){
+  body{
+ 
+  background-size: 100% 100%;
+}
   .navigation{
     width: 35%;
   }
