@@ -37,7 +37,7 @@ $(document).ready(function() {
           success: function(result) {
             var key = result.results[0]["key"];
             var trailer = "https://www.youtube.com/watch?v=" + key;
-            $(".trailer").append("<a href='" + trailer + "' target='_blank'><p>Click For Trailer</p></a>");
+            $(".trailer").append("<a href='" + trailer + "' target='_blank'><p class='styled-button-5'>Click For Trailer</p></a>");
             console.log(key);
           }
         })
