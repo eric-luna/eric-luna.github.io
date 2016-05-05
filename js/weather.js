@@ -1,63 +1,68 @@
-$(document).ready(function(){
+$(document).ready(function() {
   var options = {
-  enableHighAccuracy: true,
-  timeout: 5000,
-  maximumAge: 0
-};
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0
+  };
 
-function success(pos) {
-  var crd = pos.coords;
-  var url = 'http://api.openweathermap.org/data/2.5/weather?lat='+crd.latitude+'&lon='+crd.longitude+'&APPID=92375a06c245db2d01d68d8a93fc4cd3';
-  $.ajax({url: url, dataType: 'jsonp',success: function(result){
-           // Background
-          var icon = result.weather[0].icon;
-          if(icon === "01d" || icon==="02d"){
+  function success(pos) {
+    var crd = pos.coords;
+    var lat=pos.coords.latitude;
+    var lon=pos.coords.longitude;
+    var site = "https://api.wunderground.com/api/";
+    var api = "d09806e16c9d36eb"
+    var con = "/conditions/q/"
+    var format = ".json"
+    var url = site + api + con + lat + "," + lon + format;
+    $.ajax({
+      url: url,
+      dataType: 'jsonp',
+      success: function(result) {
+        console.log(result);
+        $(".location").append("<p class='name'>"+result.current_observation.display_location.full+"</p>");
+        var icon_url=result.current_observation.icon_url;
+        console.log(icon_url);
+        $(".icon").append("<img src='"+icon_url+"'>");
+        $(".description").append(result.current_observation.weather);
+        $(".temp").append("<p>"+result.current_observation.temperature_string+ "</p>");
+        var humidity = result.current_observation.relative_humidity;
+        $(".humidity").append("<p>"+humidity+"</p>");
+        
+        // Background
+        if(icon_url === "http://icons.wxug.com/i/c/k/clear.gif" || icon_url==="http://icons.wxug.com/i/c/k/sunny.gif"|| icon_url==="http://icons.wxug.com/i/c/k/mostlysunny.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/sunnyDay.jpg" + '")');
-          }else if(icon === "03d" || icon === "04d" ){
+          }else if(icon_url === "http://icons.wxug.com/i/c/k/cloudy.gif" || icon_url === "http://icons.wxug.com/i/c/k/mostlycloudy.gif" || icon_url === "http://icons.wxug.com/i/c/k/partlycloudy.gif" || icon_url === "http://icons.wxug.com/i/c/k/partlysunny.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/cloudyDay.jpg" + '")');
-          }else if(icon === "09d" || icon === "10d"){
+          }else if(icon_url === "http://icons.wxug.com/i/c/k/rain.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/rainyDay.jpg" + '")');
-          }else if(icon === "11d"){
+          }else if(icon_url === "http://icons.wxug.com/i/c/k/thunderstorm.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/thunderstorm.jpg" + '")');
-          }else if(icon === "13d"){
+          }else if(icon_url === "http://icons.wxug.com/i/c/k/snow.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/snowDay.jpg" + '")');
-          }else if(icon === "50d"){
-            $('body').css('background-image', 'url("' + "../img/weather/foggyDay.jpg" + '")');
-          }if(icon === "01n" || icon==="02n"){
+          }else if(icon_url === "http://icons.wxug.com/i/c/k/hazy.gif"){
+            $('body').css('background-image', 'url("' + "../img/weather/foggyDay.jpg" + '")');         
+          }
+        
+        if(icon_url === "http://icons.wxug.com/i/c/k/nt_clear.gif" || icon_url==="http://icons.wxug.com/i/c/k/nt_sunny.gif"|| icon_url==="http://icons.wxug.com/i/c/k/nt_mostlysunny.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/clearNight.jpg" + '")');
-          }else if(icon === "03n" || icon === "04n" ){
+          }else if(icon_url === "http://icons.wxug.com/i/c/k/nt_cloudy.gif" || icon_url === "http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif" || icon_url === "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif" || icon_url === "http://icons.wxug.com/i/c/k/nt_partlysunny.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/cloudyNight.jpg" + '")');
-          }else if(icon === "09n" || icon === "10n"){
+          }else if(icon_url === "http://icons.wxug.com/i/c/k/nt_rain.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/rainyNight.jpg" + '")');
-          }else if(icon === "11n"){
+          }else if(icon_url === "http://icons.wxug.com/i/c/k/nt_thunderstorm.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/thunderstorm.jpg" + '")');
-          }else if(icon === "13n"){
+          }else if(icon_url === "http://icons.wxug.com/i/c/k/nt_snow.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/snowNight.jpg" + '")');
-          }else if(icon === "50n"){
+          }else if(icon_url === "http://icons.wxug.com/i/c/k/nt_hazy.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/foggyNight.jpg" + '")');
           }
-          // Location Name
-          $(".location").append("<p class='name'>"+result.name+"</p>");
-          // Icon & Description
-          $(".icon").append("<img src='http://openweathermap.org/img/w/"+icon+".png'>");
-          $(".description").append(result.weather[0].description.toUpperCase());
-          // Temp
-          var kelvinTemp = result.main.temp;
-          var fahrenheit = Math.floor(kelvinTemp * (9/5) - 459.67);
-          var celsius = Math.floor(kelvinTemp - 273.15);
-          $(".temp").append("<p>"+fahrenheit+ " &#8457" + "</p>");
-          // Humidity
-          var humidity = result.main.humidity + "%";
-          $(".humidity").append("<p>"+humidity+"</p>");
-    }});
-};
-function error(err) {
-  console.warn('ERROR(' + err.code + '): ' + err.message);
-};
-navigator.geolocation.getCurrentPosition(success, error, options);  
-});
+         
+      }
+    });
+  };
 
-      
-    
-  
- 
+  function error(err) {
+    console.warn('ERROR(' + err.code + '): ' + err.message);
+  };
+  navigator.geolocation.getCurrentPosition(success, error, options);
+});
