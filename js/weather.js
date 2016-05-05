@@ -44,6 +44,7 @@ $(document).ready(function() {
           }
         
         if(icon_url === "http://icons.wxug.com/i/c/k/nt_clear.gif" || icon_url==="http://icons.wxug.com/i/c/k/nt_sunny.gif"|| icon_url==="http://icons.wxug.com/i/c/k/nt_mostlysunny.gif"){
+          
             $('body').css('background-image', 'url("' + "../img/weather/clearNight.jpg" + '")');
           }else if(icon_url === "http://icons.wxug.com/i/c/k/nt_cloudy.gif" || icon_url === "http://icons.wxug.com/i/c/k/nt_mostlycloudy.gif" || icon_url === "http://icons.wxug.com/i/c/k/nt_partlycloudy.gif" || icon_url === "http://icons.wxug.com/i/c/k/nt_partlysunny.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/cloudyNight.jpg" + '")');
