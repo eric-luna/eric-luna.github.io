@@ -4,7 +4,7 @@ body,html{
   padding: 0;
 }
 html{
-  background:url('../img/wikipedia.jpg');
+  background:url('../img/wikipedia.png');
   min-height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -101,7 +101,8 @@ a:visited {
   padding: 1.5% 1.5%;
   margin: auto;
   margin-bottom: 2%;
-  background-color: rgba(255, 153, 102, .60);
+  background-color: rgba(255, 153, 102, .75);
+  background-color: rgba(0, 204, 102,0.70);
   border-radius: 10px;
   overflow: hidden;
 }
