@@ -22,7 +22,7 @@ $(document).ready(function() {
         $(".location").append("<p class='name'>"+result.current_observation.display_location.full+"</p>");
         var icon_url=result.current_observation.icon_url;
         console.log(icon_url);
-        $(".icon").append("<img src='"+icon_url+"'>");
+        // $(".icon").append("<img src='"+icon_url+"'>");
         $(".description").append(result.current_observation.weather);
         $(".temp").append("<p>"+result.current_observation.temperature_string+ "</p>");
         var humidity = result.current_observation.relative_humidity;
@@ -31,6 +31,7 @@ $(document).ready(function() {
         // Background
         if(icon_url === "http://icons.wxug.com/i/c/k/clear.gif" || icon_url==="http://icons.wxug.com/i/c/k/sunny.gif"|| icon_url==="http://icons.wxug.com/i/c/k/mostlysunny.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/sunnyDay.jpg" + '")');
+            $(".icon").append("<img src='img/icons/Sun.svg'>");
           }else if(icon_url === "http://icons.wxug.com/i/c/k/cloudy.gif" || icon_url === "http://icons.wxug.com/i/c/k/mostlycloudy.gif" || icon_url === "http://icons.wxug.com/i/c/k/partlycloudy.gif" || icon_url === "http://icons.wxug.com/i/c/k/partlysunny.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/cloudyDay.jpg" + '")');
           }else if(icon_url === "http://icons.wxug.com/i/c/k/rain.gif"){
