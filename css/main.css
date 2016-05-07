@@ -17,6 +17,8 @@ body, html {
 	cursor: pointer;
 	z-index: 20;
 	border-bottom: 5px solid #f4f4f2;
+	position: fixed;
+	/*z-index: 1;*/
 }
 .mobile-nav-bar p{
 	margin: 0;
@@ -51,7 +53,10 @@ body, html {
 
 .mobile-nav {
 	height: 0;
-	z-index: 10;
+	position: fixed;
+	z-index: 9;
+	width: 100%;
+	padding-top: 75px;
 }
 .mobile-nav ul {
 	width: 100%;
