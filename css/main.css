@@ -50,11 +50,11 @@ body, html {
 }
 
 .mobile-nav {
-	height: 0;
+	/*height: 0;*/
 	position: fixed;
 	z-index: 9;
 	width: 100%;
-	padding-top: 60px;
+	margin-top: 70px;
 }
 .mobile-nav ul {
 	width: 100%;
