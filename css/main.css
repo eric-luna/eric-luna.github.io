@@ -16,9 +16,7 @@ body, html {
 	position: relative;
 	cursor: pointer;
 	z-index: 20;
-	border-bottom: 5px solid #f4f4f2;
 	position: fixed;
-	/*z-index: 1;*/
 }
 .mobile-nav-bar p{
 	margin: 0;
