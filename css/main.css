@@ -15,7 +15,7 @@ body, html {
 	width: 100%;
 	position: relative;
 	cursor: pointer;
-	z-index: 20;
+	z-index: 2;
 	position: fixed;
 }
 .mobile-nav-bar p{
@@ -52,7 +52,7 @@ body, html {
 .mobile-nav {
 	/*height: 0;*/
 	position: fixed;
-	z-index: 9;
+	z-index: 1;
 	width: 100%;
 	margin-top: 65px;
 }
@@ -100,7 +100,6 @@ body, html {
 }
 
 /******************* Main Content **********************/
-
 #about-div {
 	height: 500px;
 	border-bottom: 5px solid #f4f4f2;
@@ -353,6 +352,9 @@ footer {
 
 @media only screen and (min-width: 680px) {
 	.mobile-nav-bar {
+		display: none;
+	}
+	.mobile-nav{
 		display: none;
 	}
 	.main-content{
