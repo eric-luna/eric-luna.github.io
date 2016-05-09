@@ -50,7 +50,7 @@ body, html {
 }
 
 .mobile-nav {
-	/*height: 0;*/
+	height: 0;
 	position: fixed;
 	z-index: 1;
 	width: 100%;
@@ -63,7 +63,7 @@ body, html {
 	transform: translate(0, -300px);
 	-ms-transform: translate(0, -300px);
 	-webkit-transform: translate(0, -300px);
-	transition: all .2s ease-in-out;
+	transition: all .8s ease-in-out;
 }
 .mobile-nav ul li a {
 	display: block;
@@ -77,7 +77,7 @@ body, html {
 	color: white;
 }
 .mobile-nav.show-mobile-nav {
-	height: auto;
+	/*height: auto;*/
 }
 .mobile-nav.show-mobile-nav ul {
 	transform: translate(0px);
@@ -103,40 +103,55 @@ body, html {
 #about-div {
 	height: 500px;
 	border-bottom: 5px solid #f4f4f2;
-	background-color: #252839;
 	background-color: #16174f;
 }
-
+#about-div,#about{
+	transition-property: background-color,font-size;
+	transition-duration: 1.5s;
+	transition-timing-function: linear;
+}
+#about-div:hover{
+	background-color: #0b0c28;
+}
 #about {
 	text-align: center;
 	width: 95%;
 	margin: auto;
-	padding-top: 25%;
+	padding-top: 30%;
 	display: none; 
 	font-size: 1.5em;
 	color: white;
 }
-
-/********** Skills Section **********/
-
-#skills {
-	padding-top: 5%;
-	border-bottom: 5px solid #f4f4f2;
-	background-color: #e6af4b;
-
+#about-div:hover #about{
+	font-size: 1.75em;
 }
 
+/********** Skills Section **********/
+#skills {
+	border-bottom: 5px solid #f4f4f2;
+	background-color: #e6af4b;
+	z-index: 20;
+}
 #skills-header {
 	text-align: center;
 	margin: auto;
 	padding-bottom: 5%;
 	color: white;
 }
-
 .html5, .responsive, .javascript {
 	width: 100%;
 	text-align: center;
 	padding-bottom: 10%;
+	
+}
+.html5, .responsive, .javascript,.html-pic,.skill-pic{
+	transition-property: background-color,font-size,width,height;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+
+.html5:hover, .responsive:hover, .javascript:hover{
+	background-color: #e09d1f;
 }
 
 .skill-top {
@@ -160,10 +175,17 @@ body, html {
 	width: 150px;
 	height: 150px;
 }
-
+#skills div:hover .skill-pic{
+	width:200px;
+	height:200px;	
+}
 .html-pic {
 	width: 220px;
 	height: 150px;
+}
+.html5:hover .html-pic{
+	width:250px;
+	height:175px;	
 }
 
 /************ Projects **************/
@@ -370,7 +392,6 @@ footer {
 		text-align: center;
 		margin: auto;
 		border-right: 5px solid black;
-		background-color: black;
 		background-color: white;
 		
 	}
@@ -396,13 +417,16 @@ footer {
 	}
 	#nav-bar li a{
 		text-decoration: none;
-		color: white;
 		color: black;
+		transition-property: color;
+		transition-duration: .2s;
+		transition-timing-function: linear;
 	}
 	#nav-bar li a:visited{
 		color: black;
 	}
 	#nav-bar li a:hover{
+		font-size: 2em;
 		color: #1253a4;
 	}
 	.nav-pic{
@@ -412,10 +436,12 @@ footer {
 		width: 75%;
 		float: none;
 	}
-
 	#about {
 		font-size: 2em;
 		padding-top: 15%;
+	}
+	#about-div:hover #about{
+		font-size: 2.25em;
 	}
 	.html5, .responsive, .javascript {
 		padding-bottom: 5%;
