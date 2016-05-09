@@ -1,3 +1,4 @@
+/*General Styles*/
 body, html {
 	height: 100%;
 	margin: 0;
@@ -6,9 +7,12 @@ body, html {
 	color: #f2f2f4;
 }
 
+.clearfix {
+	overflow: auto;
+}
+
 /*****************Navigation************************/
 .mobile-nav-bar {
-	background:  #a6b5bf;
 	background-color: white;
 	min-height: 55px;
 	min-height: 65px;
@@ -95,25 +99,23 @@ body, html {
 	display: inline-block;
 }
 
-#nav-bar{
+.nav-bar{
 	display: none;
 }
 
 /******************* Main Content **********************/
-#about-div {
+.about-div {
 	height: 500px;
 	border-bottom: 5px solid #f4f4f2;
 	background-color: #16174f;
 }
-#about-div,#about{
+.stuff{
 	transition-property: background-color,font-size;
 	transition-duration: 1.5s;
 	transition-timing-function: linear;
-}
-#about-div:hover{
 	background-color: #0b0c28;
 }
-#about {
+.about {
 	text-align: center;
 	width: 95%;
 	margin: auto;
@@ -122,7 +124,10 @@ body, html {
 	font-size: 1.5em;
 	color: white;
 }
-#about-div:hover #about{
+.things{
+	transition-property: font-size;
+	transition-duration: 1.5s;
+	transition-timing-function: linear;
 	font-size: 1.75em;
 }
 
@@ -131,29 +136,24 @@ body, html {
 	border-bottom: 5px solid #f4f4f2;
 	background-color: #e6af4b;
 	z-index: 20;
+	display: none;
 }
-#skills-header {
+.skills-header {
 	text-align: center;
 	margin: auto;
-	padding-bottom: 5%;
+	padding: 2% 0;
 	color: white;
 }
 .html5, .responsive, .javascript {
 	width: 100%;
 	text-align: center;
 	padding-bottom: 10%;
-	
 }
 .html5, .responsive, .javascript,.html-pic,.skill-pic{
 	transition-property: background-color,font-size,width,height;
 	transition-duration: 1s;
 	transition-timing-function: linear;
 }
-
-.html5:hover, .responsive:hover, .javascript:hover{
-	background-color: #e09d1f;
-}
-
 .skill-top {
 	font-size: 1.5em;
 	border-bottom: 1px solid white;
@@ -170,12 +170,14 @@ body, html {
 	padding: 0;
 	font-size: 1.3em;
 }
-
+.skill-scroll{
+	background-color: #e09d1f;
+}
 .skill-pic {
 	width: 150px;
 	height: 150px;
 }
-#skills div:hover .skill-pic{
+.pic-scroll{
 	width:200px;
 	height:200px;	
 }
@@ -183,7 +185,7 @@ body, html {
 	width: 220px;
 	height: 150px;
 }
-.html5:hover .html-pic{
+.html-pic-scroll{
 	width:250px;
 	height:175px;	
 }
@@ -192,12 +194,12 @@ body, html {
 #projects{
 	border-bottom: 5px solid #f4f4f2;
 	color: white;
+	display: none;
 }
-#projects-header {
+.projects-header {
 	text-align: center;
 	margin: auto;
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding: 2% 0;
 	background-color: #64706c;
 }
 
@@ -206,11 +208,10 @@ body, html {
 	padding-bottom: 5%;
 	width: 100%;
 	clear: both;
-	/*color: #566876;*/
 	background-color: #64706c;
+	overflow: auto;
 }
 .colored{
-	background-color: #f0f0f5;
 	background-color: #935347;
 }
 .project-preview{
@@ -219,13 +220,33 @@ body, html {
 .project-pic{
 	width: 80%;
 	border-radius: 10px;
+	transition-property: width;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+.project-pic-scroll{
+	width: 85%;
 }
 .project-info{
 	text-align: center;
 }
-.project-description p{
-	text-align: left;
-	padding: 0 3%;
+.project-info h1{
+	transition-property: font-size;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+.project-h1-scroll{
+	font-size: 2.3em;
+}
+.project-info p{
+	text-align: center;
+	padding: 0 2%;
+	transition-property: font-size;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+.project-description-scroll{
+	font-size: 1.10em;
 }
 .tags{
 	margin: 2% 0;
@@ -261,7 +282,6 @@ body, html {
 	margin: 7px 0; 
 	background-color: rgba(255,255,255,0);
 	border-color: rgb(149,165,166);
-	/*border-color: #1253a4;*/
 	color: #f4f4f2;
 }
 .button:hover {
@@ -279,9 +299,7 @@ body, html {
 footer {
 	font:400 1em/1 'Montserrat', 'Optima'; 
 	margin: 0 auto;
-	background-color: #253939;
-	border-bottom: 3px solid #f4f4f2;
-	background-color: #808080;
+	border-bottom: 3px solid .f4f4f2;
 	background-color: #9fa8a3;
 	color: white;
 }
@@ -289,8 +307,6 @@ footer {
 	margin: 2% auto;
 	text-align: center;
 	clear: both;
-}
-.credit p {
 	margin: 0;
 	padding: 0;
 }
@@ -329,7 +345,7 @@ footer {
 	border-radius: 10%;
 }
 
-#bio-info {
+.bio-info {
 	width: 95%;
 	text-align: left;
 	line-height: 1.2;
@@ -367,7 +383,7 @@ footer {
 		display: none;
 	}
 
-	#credit {
+	.credit {
 		font-size: .5em;
 	}
 }
@@ -383,7 +399,7 @@ footer {
 		float: right;
 		width: 75%;
 	}
-	#nav-bar {
+	.nav-bar {
 		float: left;
 		width: 25%;
 		height: 100%;
@@ -395,16 +411,16 @@ footer {
 		background-color: white;
 		
 	}
-	#nav-bar h1, h4 {
+	.nav-bar h1, h4 {
 		margin: 0;
 		padding: 0;
 		color: black;
 	}
-	#nav-bar h4{
+	.nav-bar h4{
 		color: #1253a4;
 	}
 
-	#nav-bar ul{
+	.nav-bar ul{
 		list-style: none;
 		font-size: 1.5em;
 		text-align: center;
@@ -412,20 +428,20 @@ footer {
 		padding-bottom: 2%;
 	}
 
-	#nav-bar li {
+	.nav-bar li {
 		display: block;
 	}
-	#nav-bar li a{
+	.nav-bar li a{
 		text-decoration: none;
 		color: black;
 		transition-property: color;
 		transition-duration: .2s;
 		transition-timing-function: linear;
 	}
-	#nav-bar li a:visited{
+	.nav-bar li a:visited{
 		color: black;
 	}
-	#nav-bar li a:hover{
+	.nav-bar li a:hover{
 		font-size: 2em;
 		color: #1253a4;
 	}
@@ -436,21 +452,22 @@ footer {
 		width: 75%;
 		float: none;
 	}
-	#about {
+	.about {
 		font-size: 2em;
 		padding-top: 15%;
 	}
-	#about-div:hover #about{
+	.things{
+		transition-property: font-size;
+		transition-duration: 1.5s;
+		transition-timing-function: linear;
 		font-size: 2.25em;
 	}
 	.html5, .responsive, .javascript {
 		padding-bottom: 5%;
 	}
-	#skills-header {
+	.skills-header {
 		text-align: center;
 		margin: auto;
-		padding-bottom: 5%;
-		
 	}
 
 	.skill-top {
@@ -469,7 +486,7 @@ footer {
 
 	.project{
 		clear: both;
-		height: 300px;
+		/*height: 300px;*/
 		padding-top: 2.5%;
 	}
 	.project-preview{
@@ -485,19 +502,15 @@ footer {
 		text-align: left;
 		padding-top: 1%;
 	}
-	.project-info h1{
-		margin: 0;
-		font-size: 1.2em;
-	}
 	.project-description{
 		float: left;
 		padding-left: 3%;
 	}
-	.project-description p{
+	.project-info p{
+		text-align: left;
 		padding: 0;
 		width: 100%;
 		margin: 0;
-		font-size: 0.79em;
 	}
 	.social-icons {
 		display: none;
@@ -515,7 +528,7 @@ footer {
 		padding-left: 2%;
 	}
 
-	#bio-info {
+	.bio-info {
 		width: 90%;
 		text-align: center;
 		font-size: .90em;
@@ -548,8 +561,8 @@ footer {
 	}
 }
 
-@media only screen and (min-width: 980px) {
-	/*#skills {
+	@media only screen and (min-width: 980px) {
+	/*.skills {
 		padding-bottom: 10%;
 		height: 600px;
 	}
