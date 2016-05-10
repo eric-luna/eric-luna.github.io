@@ -36,10 +36,8 @@ $(document).ready(function(){
 		// Scroll effects for the about section at the top of page
 		if ($(document).scrollTop() > 0 && $(document).scrollTop() < ($(".html5").offset().top)) {
 			$(".about-div").addClass("about-div-scroll");
-			$(".about").addClass("about-scroll");
 		}else{
 			$(".about-div").removeClass("about-div-scroll");
-			$(".about").removeClass("about-scroll");
 		} 
 
 		// Scroll Effects for each skill section
@@ -69,62 +67,44 @@ $(document).ready(function(){
 		
 		if ($(document).scrollTop() > ($(".p1").offset().top-165) && $(document).scrollTop() < ($(".p2").offset().top)-165) {
 			$(".p1 .project-pic").addClass("project-pic-scroll");
-			$(".p1 .project-info h1").addClass("project-h1-scroll");
-			$(".p1 .project-info p").addClass("project-description-scroll");
+			
 		}else{
 			$(".p1 .project-pic").removeClass("project-pic-scroll");
-			$(".p1 .project-info h1").removeClass("project-h1-scroll");
-			$(".p1 .project-info p").removeClass("project-description-scroll");
 		}
 
 		if ($(document).scrollTop() > ($(".p2").offset().top-165) && $(document).scrollTop() < ($(".p3").offset().top)-165) {
 			$(".p2 .project-pic").addClass("project-pic-scroll");
-			$(".p2 .project-info h1").addClass("project-h1-scroll");
-			$(".p2 .project-info p").addClass("project-description-scroll");
 		}else{
 			$(".p2 .project-pic").removeClass("project-pic-scroll");
-			$(".p2 .project-info h1").removeClass("project-h1-scroll");
-			$(".p2 .project-info p").removeClass("project-description-scroll");
 		}
 
 		if ($(document).scrollTop() > ($(".p3").offset().top-165) && $(document).scrollTop() < ($(".p4").offset().top)-165) {
 			$(".p3 .project-pic").addClass("project-pic-scroll");
-			$(".p3 .project-info h1").addClass("project-h1-scroll");
-			$(".p3 .project-info p").addClass("project-description-scroll");
+			
 		}else{
 			$(".p3 .project-pic").removeClass("project-pic-scroll");
-			$(".p3 .project-info h1").removeClass("project-h1-scroll");
-			$(".p3 .project-info p").removeClass("project-description-scroll");
+			
 		}
 
 		if ($(document).scrollTop() > ($(".p4").offset().top-165) && $(document).scrollTop() < ($(".p5").offset().top)-165) {
 			$(".p4 .project-pic").addClass("project-pic-scroll");
-			$(".p4 .project-info h1").addClass("project-h1-scroll");
-			$(".p4 .project-info p").addClass("project-description-scroll");
+			
 		}else{
 			$(".p4 .project-pic").removeClass("project-pic-scroll");
-			$(".p4 .project-info h1").removeClass("project-h1-scroll");
-			$(".p4 .project-info p").removeClass("project-description-scroll");
+			
 		}
 
 		if ($(document).scrollTop() > ($(".p5").offset().top-165) && $(document).scrollTop() < ($(".p6").offset().top)-165) {
 			$(".p5 .project-pic").addClass("project-pic-scroll");
-			$(".p5 .project-info h1").addClass("project-h1-scroll");
-			$(".p5 .project-info p").addClass("project-description-scroll");
+			
 		}else{
 			$(".p5 .project-pic").removeClass("project-pic-scroll");
-			$(".p5 .project-info h1").removeClass("project-h1-scroll");
-			$(".p5 .project-info p").removeClass("project-description-scroll");
 		}
 
 		if ($(document).scrollTop() > ($(".p6").offset().top-165) && $(document).scrollTop() < ($("footer").offset().top)-165) {
 			$(".p6 .project-pic").addClass("project-pic-scroll");
-			$(".p6 .project-info h1").addClass("project-h1-scroll");
-			$(".p6 .project-info p").addClass("project-description-scroll");
 		}else{
 			$(".p6 .project-pic").removeClass("project-pic-scroll");
-			$(".p6 .project-info h1").removeClass("project-h1-scroll");
-			$(".p6 .project-info p").removeClass("project-description-scroll");
 		}
 	});
 

@@ -4,7 +4,7 @@ body, html {
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
-	color: #f2f2f4;
+	/*color: #f2f2f4;*/
 }
 .clearfix {
 	overflow: auto;
@@ -19,7 +19,6 @@ body, html {
 .mobile-nav-bar {
 	background-color: white;
 	min-height: 55px;
-	min-height: 65px;
 	width: 100%;
 	position: relative;
 	cursor: pointer;
@@ -31,9 +30,12 @@ body, html {
 	margin: 0;
 	padding-left: 5px;
 	font-size: 0.80em;
-	padding-top: 10px;
+	padding-top: 8px;
 	display: inline-block;
 	color: black;
+}
+.subtitle{
+	color: blue;
 }
 /*mobile nav bar button style*/
 .mobile-nav-bar .mobile-nav-button {
@@ -91,18 +93,10 @@ body, html {
 	-ms-transform: translate(0px);
 	-webkit-transform: translate(0px);
 }
-
-.nav-pic{
-	width: 65px;
-	float: left;
-	padding-top: 5px;
-	display: inline-block;
-}
 /*this hides the larger nav bar section for larger width screens*/
 .nav-bar{
 	display: none;
 }
-
 /******************* Main Content **********************/
 /*main about div styles */
 .about-div {
@@ -134,7 +128,6 @@ body, html {
 .about-scroll{
 	font-size: 1.55em;
 }
-
 /********** Skills Section **********/
 #skills {
 	border-bottom: 5px solid #f4f4f2;
@@ -153,7 +146,7 @@ body, html {
 .html5, .responsive, .javascript {
 	width: 100%;
 	text-align: center;
-	padding-bottom: 10%;
+	padding: 7% 0;
 }
 /*sets up elements for transition styles*/
 .html5, .responsive, .javascript,.html-pic,.skill-pic{
@@ -163,7 +156,6 @@ body, html {
 }
 /*header for individual skills*/
 .skill-top {
-	font-size: 1.5em;
 	border-bottom: 1px solid white;
 	width: 70%;
 	padding-bottom: 2%;
@@ -176,7 +168,6 @@ body, html {
 	text-align: center;
 	margin: auto;
 	padding: 0;
-	font-size: 1.3em;
 }
 /*style for skill section when scolled over*/
 .skill-scroll{
@@ -240,7 +231,7 @@ body, html {
 }
 /*style for pic when scrolled over*/
 .project-pic-scroll{
-	width: 85%;
+	width: 87%;
 }
 /*information about the project*/
 .project-info{
@@ -262,16 +253,13 @@ body, html {
 	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
-.project-description-scroll{
-	font-size: 1.05em;
-}
 /*tag styles*/
 .tags{
 	margin: 2% 0;
 	padding-left: 0;
 }
 .tags li {
-	font-size: 0.55em;
+	font-size: 0.50em;
 	-webkit-background-clip: padding-box;
 	-moz-background-clip: padding;
 	background-clip: padding-box;
@@ -282,23 +270,20 @@ body, html {
 	border-radius: 5px;
 	display: inline-block;
 	border: 1px solid  white;
-	color: #999;
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
-	padding: 5px 5px;
+	padding: 4px 4px;
 	margin: 2px 0;
 }
 /*style of "view website" button*/
 .links{
 	width: 225px;
 	margin: auto;
-
 }
 .button {
 	display: inline-block;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 600;
 	font-size: 1em;
 	text-decoration: none;
 	border: 3px solid;
@@ -330,11 +315,10 @@ body, html {
 /********** Footer Section **********/
 
 footer {
-	font:400 1em/1 'Montserrat', 'Optima'; 
+	font-size: 0.9em;
 	margin: 0 auto;
-	border-bottom: 3px solid .f4f4f2;
+	border-bottom: 3px solid #f4f4f2;
 	background-color: #9fa8a3;
-	color: white;
 }
 .credit{
 	margin: 2% auto;
@@ -350,14 +334,11 @@ footer {
 .credit a:link{
 	text-decoration: none;
 	color: blue;
-	font-size: 1.3em;
 	font-weight: bolder;
-	margin: 0;
+	font-size: 1.5em;
 }
 .credit a:visited{
 	color: blue;
-	text-decoration: none;
-	font-weight: bolder;
 }
 /*style for bio div*/
 .bio {
@@ -381,7 +362,6 @@ footer {
 .bio-info {
 	width: 95%;
 	text-align: left;
-	line-height: 1.2;
 }
 /*style for mobile icon list*/
 .social-icons {
@@ -413,10 +393,6 @@ footer {
 	/*hides the larger footer section for bigger screen width*/
 	.contact-info {
 		display: none;
-	}
-
-	.credit {
-		font-size: .5em;
 	}
 }
 
@@ -502,7 +478,6 @@ footer {
 	}
 
 	.skill-top {
-		font-size: 1.5em;
 		border-bottom: 2px solid white;
 		width: 70%;
 		padding-bottom: 1.5%;
@@ -512,12 +487,10 @@ footer {
 
 	.skill-description {
 		width: 80%;
-		font-size: 1.3em;
 	}
 
 	.project{
 		clear: both;
-		/*height: 300px;*/
 		padding-top: 2.5%;
 	}
 	.project-preview{
@@ -531,16 +504,15 @@ footer {
 		width: 50%;
 		float: right;
 		text-align: left;
-		padding-top: 1%;
 	}
-	.project-description{
-		float: left;
-		padding-left: 3%;
+	.project-info h2{
+		margin: 0;
 	}
 	.project-info p{
+		font-size: .8em;
 		text-align: left;
 		padding: 0;
-		width: 100%;
+		width: 95%;
 		margin: 0;
 	}
 	.links{
