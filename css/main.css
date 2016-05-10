@@ -6,11 +6,14 @@ body, html {
 	font-family: 'Montserrat', sans-serif;
 	color: #f2f2f4;
 }
-
 .clearfix {
 	overflow: auto;
 }
-
+.skill-button,.project-button,.contact-button{
+	transition-property: color;
+	transition-duration: 0.25s;
+	transition-timing-function: linear;
+}
 /*****************Navigation************************/
 .mobile-nav-bar {
 	background-color: white;
@@ -80,9 +83,6 @@ body, html {
 	background: #16174f;
 	color: white;
 }
-.mobile-nav.show-mobile-nav {
-	/*height: auto;*/
-}
 .mobile-nav.show-mobile-nav ul {
 	transform: translate(0px);
 	-ms-transform: translate(0px);
@@ -109,7 +109,7 @@ body, html {
 	border-bottom: 5px solid #f4f4f2;
 	background-color: #16174f;
 	transition-property: background-color,font-size;
-	transition-duration: 0.5s;
+	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
 .about-div-scroll{
@@ -124,11 +124,10 @@ body, html {
 	font-size: 1.3em;
 	color: white;
 	transition-property: font-size;
-	transition-duration: 0.5s;
+	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
 .about-scroll{
-	
 	font-size: 1.55em;
 }
 
@@ -152,7 +151,7 @@ body, html {
 }
 .html5, .responsive, .javascript,.html-pic,.skill-pic{
 	transition-property: background-color,font-size,width,height;
-	transition-duration: 0.5s;
+	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
 .skill-top {
@@ -222,7 +221,7 @@ body, html {
 	width: 80%;
 	border-radius: 10px;
 	transition-property: width;
-	transition-duration: 0.5s;
+	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
 .project-pic-scroll{
@@ -233,7 +232,7 @@ body, html {
 }
 .project-info h1{
 	transition-property: font-size;
-	transition-duration: 0.5s;
+	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
 .project-h1-scroll{
@@ -457,10 +456,7 @@ footer {
 		font-size: 2em;
 		padding-top: 15%;
 	}
-	.things{
-		transition-property: font-size;
-		transition-duration: 1.5s;
-		transition-timing-function: linear;
+	.about-scroll{
 		font-size: 2.25em;
 	}
 	.html5, .responsive, .javascript {

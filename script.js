@@ -33,13 +33,14 @@ $(document).ready(function(){
 	// This is the code to add classes when a specific scroll position is reached
 	$(window).scroll(function() {
 		// Scroll effects for the about section at the top of page
-		if ($(document).scrollTop() > 0 && $(document).scrollTop() < ($(".html5").offset().top-165)) {
+		if ($(document).scrollTop() > 0 && $(document).scrollTop() < ($(".html5").offset().top)) {
 			$(".about-div").addClass("about-div-scroll");
 			$(".about").addClass("about-scroll");
 		}else{
-			$(".about-div").removeClass("stuff");
-			$(".about").removeClass("things");
+			$(".about-div").removeClass("about-div-scroll");
+			$(".about").removeClass("about-scroll");
 		} 
+
 		// Scroll Effects for each skill section
 		if ($(document).scrollTop() > ($(".html5").offset().top-165) && $(document).scrollTop() < $(".responsive").offset().top-165) {
 			$(".html5").addClass("skill-scroll");
