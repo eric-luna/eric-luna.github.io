@@ -108,11 +108,11 @@ body, html {
 	height: 500px;
 	border-bottom: 5px solid #f4f4f2;
 	background-color: #16174f;
-}
-.stuff{
 	transition-property: background-color,font-size;
-	transition-duration: 1.5s;
+	transition-duration: 0.5s;
 	transition-timing-function: linear;
+}
+.about-div-scroll{
 	background-color: #0b0c28;
 }
 .about {
@@ -123,11 +123,12 @@ body, html {
 	display: none; 
 	font-size: 1.3em;
 	color: white;
-}
-.things{
 	transition-property: font-size;
-	transition-duration: 1.5s;
+	transition-duration: 0.5s;
 	transition-timing-function: linear;
+}
+.about-scroll{
+	
 	font-size: 1.55em;
 }
 
