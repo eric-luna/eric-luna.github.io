@@ -6,17 +6,20 @@ body,html{
 	background-color: #252839;
 	font-family: 'Montserrat', sans-serif;
 }
+/*header style*/
 h1{
 	color: white;
 	text-align: center;
 	margin:auto;
 }
+/*sets the style of the main body of calculator*/
 .body{
 	margin: auto;
 	height: 400px;
 	background-color: white;
 	margin-top: 5%;
 }
+/*top section styles for clear button and display section*/
 .top{
 	text-align: right;
 	width: 100%;
@@ -29,6 +32,25 @@ h1{
 	height: 100%;
 	font-size: 2em;
 }
+/*clear button styles*/
+.clear{
+	width: 25%;
+	float: left;
+	height: 90px;
+	padding: 0;
+	border:none;
+	margin: 0;
+	background-color: #667467;
+	color: white;
+	font-size: 1.5em;
+}
+.clear:hover{
+	background-color: #c7ad88;
+}
+.clear:focus{
+	outline: none;
+}
+/*Calculator row styles and buttons*/
 .row,.row-container{
 	width: 100%;
 	text-align: center;
@@ -53,26 +75,12 @@ h1{
 .row button:focus{
 	outline: none;
 }
-.clear{
-	width: 25%;
-	float: left;
-	height: 90px;
-	padding: 0;
-	border:none;
-	margin: 0;
-	background-color: #667467;
-	color: white;
-	font-size: 1.5em;
-}
-.clear:hover{
-	background-color: #c7ad88;
-}
-.clear:focus{
-	outline: none;
-}
+
+/*sets the color of number buttons*/
 .numbers{
 	background-color: #963019;
 }
+/*sets the color of operation buttons*/
 .operators{
 	background-color: #16174f;
 }

@@ -15,6 +15,7 @@ body, html {
 	transition-timing-function: linear;
 }
 /*****************Navigation************************/
+/*Styles for mobile navigation and smaller screens*/
 .mobile-nav-bar {
 	background-color: white;
 	min-height: 55px;
@@ -25,6 +26,7 @@ body, html {
 	z-index: 2;
 	position: fixed;
 }
+/*Name tage for nav bar*/
 .mobile-nav-bar p{
 	margin: 0;
 	padding-left: 5px;
@@ -33,6 +35,7 @@ body, html {
 	display: inline-block;
 	color: black;
 }
+/*mobile nav bar button style*/
 .mobile-nav-bar .mobile-nav-button {
 	position: absolute;
 	right: 10px;
@@ -55,7 +58,7 @@ body, html {
 .mobile-nav-bar .mobile-nav-button .bar:last-of-type {
 	margin-bottom: 0;
 }
-
+/*style for the mobile nav links and list */
 .mobile-nav {
 	height: 0;
 	position: fixed;
@@ -89,21 +92,19 @@ body, html {
 	-webkit-transform: translate(0px);
 }
 
-.main-container {
-	margin: 20px;
-}
 .nav-pic{
 	width: 65px;
 	float: left;
 	padding-top: 5px;
 	display: inline-block;
 }
-
+/*this hides the larger nav bar section for larger width screens*/
 .nav-bar{
 	display: none;
 }
 
 /******************* Main Content **********************/
+/*main about div styles */
 .about-div {
 	height: 500px;
 	border-bottom: 5px solid #f4f4f2;
@@ -112,9 +113,11 @@ body, html {
 	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
+/*styles for div when being scrolled on page*/
 .about-div-scroll{
 	background-color: #0b0c28;
 }
+/*about div paragraph style*/
 .about {
 	text-align: center;
 	width: 95%;
@@ -127,6 +130,7 @@ body, html {
 	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
+/*about div paragraph scroll style*/
 .about-scroll{
 	font-size: 1.55em;
 }
@@ -138,22 +142,26 @@ body, html {
 	z-index: 20;
 	display: none;
 }
+/*main skills header*/
 .skills-header {
 	text-align: center;
 	margin: auto;
 	padding: 2% 0;
 	color: white;
 }
+/*div style for each skills section div*/
 .html5, .responsive, .javascript {
 	width: 100%;
 	text-align: center;
 	padding-bottom: 10%;
 }
+/*sets up elements for transition styles*/
 .html5, .responsive, .javascript,.html-pic,.skill-pic{
 	transition-property: background-color,font-size,width,height;
 	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
+/*header for individual skills*/
 .skill-top {
 	font-size: 1.5em;
 	border-bottom: 1px solid white;
@@ -162,7 +170,7 @@ body, html {
 	margin: auto;
 	margin-bottom: 5%;
 }
-
+/*style for description text in the skill sections*/
 .skill-description {
 	width: 95%;
 	text-align: center;
@@ -170,6 +178,7 @@ body, html {
 	padding: 0;
 	font-size: 1.3em;
 }
+/*style for skill section when scolled over*/
 .skill-scroll{
 	background-color: #e09d1f;
 }
@@ -177,6 +186,7 @@ body, html {
 	width: 150px;
 	height: 150px;
 }
+/*style for pic when scrolled over*/
 .pic-scroll{
 	width:200px;
 	height:200px;	
@@ -196,13 +206,14 @@ body, html {
 	color: white;
 	display: none;
 }
+/*main projects header*/
 .projects-header {
 	text-align: center;
 	margin: auto;
 	padding: 2% 0;
 	background-color: #64706c;
 }
-
+/*style for each project section*/
 .project{
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -211,12 +222,15 @@ body, html {
 	background-color: #64706c;
 	overflow: auto;
 }
+/*style for alternate color of project section*/
 .colored{
 	background-color: #935347;
 }
+/*project preview section*/
 .project-preview{
 	text-align: center;
 }
+/*pic preview of the project*/
 .project-pic{
 	width: 80%;
 	border-radius: 10px;
@@ -224,9 +238,11 @@ body, html {
 	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
+/*style for pic when scrolled over*/
 .project-pic-scroll{
 	width: 85%;
 }
+/*information about the project*/
 .project-info{
 	text-align: center;
 }
@@ -235,6 +251,7 @@ body, html {
 	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
+/*style fr h1 when scrolled*/
 .project-h1-scroll{
 	font-size: 2.3em;
 }
@@ -248,6 +265,7 @@ body, html {
 .project-description-scroll{
 	font-size: 1.05em;
 }
+/*tag styles*/
 .tags{
 	margin: 2% 0;
 	padding-left: 0;
@@ -271,6 +289,7 @@ body, html {
 	padding: 5px 5px;
 	margin: 2px 0;
 }
+/*style of "view website" button*/
 .button {
 	display: inline-block;
 	font-family: 'Montserrat', sans-serif;
@@ -283,6 +302,7 @@ body, html {
 	background-color: rgba(255,255,255,0);
 	border-color: rgb(149,165,166);
 	color: #f4f4f2;
+	float: left;
 }
 .button:hover {
 	text-decoration: none; 
@@ -294,6 +314,14 @@ body, html {
 	border-color: rgb(149,165,166);
 	color: rgb(255,255,255); 
 } 
+/*github link for each project*/
+.gh-link{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	float: left;
+	padding-left: 10px;
+}
 /********** Footer Section **********/
 
 footer {
@@ -326,13 +354,13 @@ footer {
 	text-decoration: none;
 	font-weight: bolder;
 }
-
+/*style for bio div*/
 .bio {
 	width: 90%;
 	padding-top: 10%;
 	margin: auto;
 }
-
+/*style for bio pic*/
 .pic {
 	max-width: 100%;
 	height: auto;
@@ -344,13 +372,13 @@ footer {
 	border:3px solid #f4f4f2;
 	border-radius: 10%;
 }
-
+/*style for bio text */
 .bio-info {
 	width: 95%;
 	text-align: left;
 	line-height: 1.2;
 }
-
+/*style for mobile icon list*/
 .social-icons {
 	clear: both;
 	list-style: none;
@@ -359,7 +387,6 @@ footer {
 	padding-top: 10%;
 	padding-left: 0;
 }
-
 .social-icons li {
 	display: inline-block;
 	padding-right: 4%;
@@ -378,7 +405,7 @@ footer {
 /******************************* Responsive Design *******************************/
 
 @media only screen and (max-width: 680px)  {
-
+	/*hides the larger footer section for bigger screen width*/
 	.contact-info {
 		display: none;
 	}
@@ -389,6 +416,7 @@ footer {
 }
 
 @media only screen and (min-width: 680px) {
+	/*hides the mobile nav bar and links*/
 	.mobile-nav-bar {
 		display: none;
 	}
@@ -399,6 +427,7 @@ footer {
 		float: right;
 		width: 75%;
 	}
+	/*adds the larger screen nav bar*/
 	.nav-bar {
 		float: left;
 		width: 25%;

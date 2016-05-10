@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	// fades in when the page is loaded
 	$('.about').fadeIn(5000);
 	$('#skills').fadeIn(5000);
 	$('#projects').fadeIn(5000);

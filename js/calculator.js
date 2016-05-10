@@ -1,24 +1,23 @@
 $(document).ready(function(){
+	// Select the display screen area of calculator
 	var display=$('#display');
+	// keeps track of how many digits are on the display screen
 	var count="";
-
+	// Test for the display scrren limit
 	var testNumLength = function(number) {
+		// when number is larger than 17 digits the display will only display the last 17
         if (number.length > 17) {
             display.text(display.text().substr(display.text().length-17,17));
-            // if (number.length > 15) {
-            //     number = "";
-            //     display.text("Err");
-            // }
         } 
     };
     
-	// Clear Display
+	// Clears the Display
 	$('.clear').click(function(){
 		$('#display').empty();
 		count="";
 	});
 
-	// Numbers
+	// Prints the numbers on screen
 	$("#zero").click(function(){
 		$('#display').text($('#display').text() + 0);
 		count+="x";
@@ -70,7 +69,7 @@ $(document).ready(function(){
 		testNumLength(count);
     });
 
-	// Operations
+	// Prints the operation to the display screen
 	$('#add').click(function() {
   		$('#display').text($('#display').text() + '+');
   		count+="x";
