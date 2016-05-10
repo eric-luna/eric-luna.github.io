@@ -65,7 +65,7 @@ $(document).ready(function(){
 
 		// Scroll effects for the project section.
 		
-		if ($(document).scrollTop() > ($(".p1").offset().top-65) && $(document).scrollTop() < ($(".p2").offset().top)-65) {
+		if ($(document).scrollTop() > ($(".p1").offset().top-170) && $(document).scrollTop() < ($(".p2").offset().top)-85) {
 			$(".p1 .project-pic").addClass("project-pic-scroll");
 			$(".p1 .project-info h1").addClass("project-h1-scroll");
 			$(".p1 .project-info p").addClass("project-description-scroll");
@@ -75,7 +75,7 @@ $(document).ready(function(){
 			$(".p1 .project-info p").removeClass("project-description-scroll");
 		}
 
-		if ($(document).scrollTop() > ($(".p2").offset().top-65) && $(document).scrollTop() < ($(".p3").offset().top)-65) {
+		if ($(document).scrollTop() > ($(".p2").offset().top-170) && $(document).scrollTop() < ($(".p3").offset().top)-65) {
 			$(".p2 .project-pic").addClass("project-pic-scroll");
 			$(".p2 .project-info h1").addClass("project-h1-scroll");
 			$(".p2 .project-info p").addClass("project-description-scroll");
@@ -85,7 +85,7 @@ $(document).ready(function(){
 			$(".p2 .project-info p").removeClass("project-description-scroll");
 		}
 
-		if ($(document).scrollTop() > ($(".p3").offset().top-65) && $(document).scrollTop() < ($(".p4").offset().top)-65) {
+		if ($(document).scrollTop() > ($(".p3").offset().top-170) && $(document).scrollTop() < ($(".p4").offset().top)-65) {
 			$(".p3 .project-pic").addClass("project-pic-scroll");
 			$(".p3 .project-info h1").addClass("project-h1-scroll");
 			$(".p3 .project-info p").addClass("project-description-scroll");
@@ -95,7 +95,7 @@ $(document).ready(function(){
 			$(".p3 .project-info p").removeClass("project-description-scroll");
 		}
 
-		if ($(document).scrollTop() > ($(".p4").offset().top-65) && $(document).scrollTop() < ($(".p5").offset().top)-65) {
+		if ($(document).scrollTop() > ($(".p4").offset().top-170) && $(document).scrollTop() < ($(".p5").offset().top)-65) {
 			$(".p4 .project-pic").addClass("project-pic-scroll");
 			$(".p4 .project-info h1").addClass("project-h1-scroll");
 			$(".p4 .project-info p").addClass("project-description-scroll");
@@ -105,7 +105,7 @@ $(document).ready(function(){
 			$(".p4 .project-info p").removeClass("project-description-scroll");
 		}
 
-		if ($(document).scrollTop() > ($(".p5").offset().top-65) && $(document).scrollTop() < ($(".p6").offset().top)-65) {
+		if ($(document).scrollTop() > ($(".p5").offset().top-170) && $(document).scrollTop() < ($(".p6").offset().top)-65) {
 			$(".p5 .project-pic").addClass("project-pic-scroll");
 			$(".p5 .project-info h1").addClass("project-h1-scroll");
 			$(".p5 .project-info p").addClass("project-description-scroll");
@@ -115,7 +115,7 @@ $(document).ready(function(){
 			$(".p5 .project-info p").removeClass("project-description-scroll");
 		}
 
-		if ($(document).scrollTop() > ($(".p6").offset().top-65) && $(document).scrollTop() < ($("footer").offset().top)-65) {
+		if ($(document).scrollTop() > ($(".p6").offset().top-170) && $(document).scrollTop() < ($("footer").offset().top)-65) {
 			$(".p6 .project-pic").addClass("project-pic-scroll");
 			$(".p6 .project-info h1").addClass("project-h1-scroll");
 			$(".p6 .project-info p").addClass("project-description-scroll");
