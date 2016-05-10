@@ -11,13 +11,14 @@ body, html {
 }
 .skill-button,.project-button,.contact-button{
 	transition-property: color;
-	transition-duration: 0.25s;
+	transition-duration: 0.50s;
 	transition-timing-function: linear;
 }
 /*****************Navigation************************/
 /*Styles for mobile navigation and smaller screens*/
 .mobile-nav-bar {
 	background-color: white;
+	border-bottom: 3px solid black;
 	min-height: 55px;
 	width: 100%;
 	position: relative;
@@ -28,14 +29,15 @@ body, html {
 /*Name tage for nav bar*/
 .mobile-nav-bar p{
 	margin: 0;
+	font-weight: bolder;
 	padding-left: 5px;
-	font-size: 0.80em;
 	padding-top: 8px;
 	display: inline-block;
 	color: black;
 }
 .subtitle{
-	color: blue;
+	font-weight: lighter;
+	color: #000099;
 }
 /*mobile nav bar button style*/
 .mobile-nav-bar .mobile-nav-button {
@@ -66,7 +68,7 @@ body, html {
 	position: fixed;
 	z-index: 1;
 	width: 100%;
-	margin-top: 65px;
+	margin-top: 48px;
 }
 .mobile-nav ul {
 	width: 100%;
@@ -104,7 +106,7 @@ body, html {
 	border-bottom: 5px solid #f4f4f2;
 	background-color: #16174f;
 	transition-property: background-color,font-size;
-	transition-duration: 0.25s;
+	transition-duration: 0.50s;
 	transition-timing-function: linear;
 }
 /*styles for div when being scrolled on page*/
@@ -116,12 +118,12 @@ body, html {
 	text-align: center;
 	width: 95%;
 	margin: auto;
-	padding-top: 40%;
+	padding-top: 32%;
 	display: none; 
 	font-size: 1.3em;
 	color: white;
 	transition-property: font-size;
-	transition-duration: 0.25s;
+	transition-duration: 0.50s;
 	transition-timing-function: linear;
 }
 /*about div paragraph scroll style*/
@@ -139,19 +141,22 @@ body, html {
 .skills-header {
 	text-align: center;
 	margin: auto;
-	padding: 2% 0;
-	color: white;
+	padding-bottom:3%;
+	text-decoration: underline;
 }
 /*div style for each skills section div*/
 .html5, .responsive, .javascript {
 	width: 100%;
 	text-align: center;
-	padding: 7% 0;
+	padding: 5% 0;
+}
+.html5{
+	padding-top: 2%;
 }
 /*sets up elements for transition styles*/
 .html5, .responsive, .javascript,.html-pic,.skill-pic{
 	transition-property: background-color,font-size,width,height;
-	transition-duration: 0.25s;
+	transition-duration: 0.50s;
 	transition-timing-function: linear;
 }
 /*header for individual skills*/
@@ -164,7 +169,7 @@ body, html {
 }
 /*style for description text in the skill sections*/
 .skill-description {
-	width: 95%;
+	width: 93%;
 	text-align: center;
 	margin: auto;
 	padding: 0;
@@ -199,10 +204,11 @@ body, html {
 }
 /*main projects header*/
 .projects-header {
+	background-color: #64706c;
 	text-align: center;
 	margin: auto;
-	padding: 2% 0;
-	background-color: #64706c;
+	padding-bottom:3%;
+	text-decoration: underline;
 }
 /*style for each project section*/
 .project{
@@ -223,15 +229,15 @@ body, html {
 }
 /*pic preview of the project*/
 .project-pic{
-	width: 80%;
+	width: 70%;
 	border-radius: 10px;
 	transition-property: width;
-	transition-duration: 0.25s;
+	transition-duration: 0.50s;
 	transition-timing-function: linear;
 }
 /*style for pic when scrolled over*/
 .project-pic-scroll{
-	width: 87%;
+	width: 85%;
 }
 /*information about the project*/
 .project-info{
@@ -239,7 +245,7 @@ body, html {
 }
 .project-info h1{
 	transition-property: font-size;
-	transition-duration: 0.25s;
+	transition-duration: 0.50s;
 	transition-timing-function: linear;
 }
 /*style fr h1 when scrolled*/
@@ -250,8 +256,9 @@ body, html {
 	text-align: center;
 	padding: 0 2%;
 	transition-property: font-size;
-	transition-duration: 0.25s;
+	transition-duration: 0.50s;
 	transition-timing-function: linear;
+	font-size: 0.9em;
 }
 /*tag styles*/
 .tags{
@@ -509,7 +516,7 @@ footer {
 		margin: 0;
 	}
 	.project-info p{
-		font-size: .8em;
+		font-size: .9em;
 		text-align: left;
 		padding: 0;
 		width: 95%;

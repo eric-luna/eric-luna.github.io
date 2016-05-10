@@ -5,7 +5,7 @@ html,body{
   font-family: 'Montserrat', sans-serif;
 }
 body{
-  background:url('../img/tv.jpg');
+  background:url('../img/movie/tv.jpg');
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,7 +144,7 @@ footer a:visited{
   body{
     background-size: cover;
   }
-  .back{
+  .background{
     width: 25%;
   }
   .tv-show{
