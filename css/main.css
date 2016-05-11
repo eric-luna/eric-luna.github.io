@@ -142,7 +142,7 @@ body, html {
 	text-align: center;
 	margin: auto;
 	padding-bottom:3%;
-	text-decoration: underline;
+	font-size: 5em;
 }
 /*div style for each skills section div*/
 .html5, .responsive, .javascript {
@@ -162,7 +162,7 @@ body, html {
 /*header for individual skills*/
 .skill-top {
 	border-bottom: 1px solid white;
-	width: 70%;
+	width: 30%;
 	padding-bottom: 2%;
 	margin: auto;
 	margin-bottom: 5%;
@@ -208,7 +208,7 @@ body, html {
 	text-align: center;
 	margin: auto;
 	padding-bottom:3%;
-	text-decoration: underline;
+	font-size: 5em;
 }
 /*style for each project section*/
 .project{
@@ -303,10 +303,10 @@ body, html {
 }
 .button:hover {
 	text-decoration: none; 
-	-webkit-transition: 200ms ease-in;
-	-moz-transition: 200ms ease-in;
-	-o-transition: 200ms ease-in;
-	transition: 200ms ease-in; 
+	-webkit-transition: 800ms ease-in;
+	-moz-transition: 800ms ease-in;
+	-o-transition: 800ms ease-in;
+	transition: 800ms ease-in; 
 	background-color:rgb(149,165,166);
 	border-color: rgb(149,165,166);
 	color: rgb(255,255,255); 
@@ -486,7 +486,6 @@ footer {
 
 	.skill-top {
 		border-bottom: 2px solid white;
-		width: 70%;
 		padding-bottom: 1.5%;
 		margin: auto;
 		margin-bottom: 3.5%;
