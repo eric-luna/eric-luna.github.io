@@ -4,7 +4,6 @@ body, html {
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
-	/*color: #f2f2f4;*/
 }
 .clearfix {
 	overflow: auto;
@@ -204,7 +203,7 @@ body, html {
 }
 /*main projects header*/
 .projects-header {
-	background-color: #64706c;
+	background-color: #935347;
 	text-align: center;
 	margin: auto;
 	padding-bottom:3%;
