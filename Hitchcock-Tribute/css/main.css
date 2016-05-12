@@ -1,0 +1,61 @@
+body,html{
+	margin:0;
+	padding:0;
+}
+.top{
+	background: 
+	linear-gradient(
+		rgba(239, 201, 76, 0.20), 
+		rgba(239, 201, 157, 0.20)
+		), url('https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2015/3/31/1427806892553/Alfred-Hitchcock-poses-fo-009.jpg') no-repeat fixed center;
+	margin: 0 auto;
+	padding: 250px 0;
+	background-size:cover;
+	text-align: center;
+}
+.title-text{
+	font-family:'Oswald', sans-serif;
+	text-transform:uppercase;
+	font-size:55px;
+	letter-spacing:20px;
+	margin-top:-20px;
+	color: black;
+}
+h5{
+  font-family: 'Oswald', sans-serif;
+  font-size:18px;
+  padding-top:25px;
+  color:#8F8164;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  text-align: center;
+}
+.intro{
+	padding: 5%;
+  	font-family: 'Source Sans Pro', sans-serif;
+    font-size:16px;
+    padding:5%;
+    line-height:25px;
+    font-weight:500;
+}
+
+hr{
+	width: 250px;
+	border:1px solid black;
+}
+ul, li{
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height:24px;
+  padding:2px;
+}
+h2{
+	text-align: center;
+	color: #8F8164;
+}
+h4{
+	text-align: center;
+}
+.buttons{
+	text-align: center;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Business Template</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<meta name="viewport" content= "initial-scale=1">
+</head>
+<body>
+	<!-- Main header content  -->
+	<div class="main-header">
+		<!-- Navigation bar containing nav links and buttons -->
+		<div class="nav-bar">
+			<!-- Hamburger Buton for smaller screen sizes -->
+			<img class="button" src="img/button.png">
+			<!-- Business name at the top of header -->
+			<p>Business Info</p>
+			<div class="nav-big">
+				<a href="index.html"><li id="first">Home</li></a>
+				<a href="services.html"><li>Services</li></a>
+				<a href="about.html"><li>About</li></a>
+				<a href="contact.html"><li >Contact</li></a>
+			</div>
+		</div>
+		<!-- Smaller screen size nav links -->
+		<div class="nav-list">
+			<ul>
+				<a href="index.html"><li>Home</li></a>
+				<a href="services.html"><li>Services</li></a>
+				<a href="about.html"><li>About</li></a>
+				<a href="contact.html"><li >Contact</li></a>
+			</ul>
+		</div>
+	</div>
+	<div class="content">
+		<div class="intro-text">
+			<h1>This is where contact info will go</h1>
+			<p>Bacon ipsum dolor amet short loin porchetta tail shoulder cow meatball doner. Landjaeger beef pork capicola leberkas flank tongue shank salami.</p>
+		</div>
+		
+		<div class="content">
+			<!-- Google Map Code -->
+			<div class="map">
+				<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:500px;width:90%;'><div id='gmap_canvas' style='height:500px;width:90%;'></div><div><small><a href="http://embedgooglemaps.com">									embed google maps							</a></small></div><div><small><a href="http://www.proxysitereviews.com/instantproxies">instantproxies</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(29.4241219,-98.49362819999999),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(29.4241219,-98.49362819999999)});infowindow = new google.maps.InfoWindow({content:'<strong>Title</strong><br>San Antonio Texas<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+			</div>
+			<div class="contact-info">
+				<h2>You used to call me on my cell phone</h2>
+				<p>
+					This is the address: 42 Wallaby Way, Sydney
+				</p>
+				<ul class="contact-links">
+					<li>Phone Number:<a href="tel:555-555-5555"> 210-555-555</a></li>
+					<li>E-mail: <a href="mailto:webmaster@example.com">businessname@gmail.com</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<ul>
+			<li><a href=""><img class="icon" src="img/social-icons/twitter.svg"></a></li>
+			<li><a href=""><img class="icon" src="img/social-icons/pinterest.svg"></a></li>
+			<li><a href=""><img class="icon" src="img/social-icons/facebook.svg"></a></li>
+			<li><a href=""><img class="icon" src="img/social-icons/yelp.svg"></a></li>
+		</ul>
+		<p>Coded & Designed by <a href="http://ericandrewluna.com" target="_blank">Eric Luna</a></p>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
