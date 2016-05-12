@@ -100,12 +100,19 @@ $(document).ready(function(){
 		}else{
 			$(".p5 .project-pic").removeClass("project-pic-scroll");
 		}
-
-		if ($(document).scrollTop() > ($(".p6").offset().top-165) && $(document).scrollTop() < ($("footer").offset().top)-165) {
+		if ($(document).scrollTop() > ($(".p6").offset().top-165) && $(document).scrollTop() < ($(".p7").offset().top)-165) {
 			$(".p6 .project-pic").addClass("project-pic-scroll");
+			
 		}else{
 			$(".p6 .project-pic").removeClass("project-pic-scroll");
 		}
+
+		if ($(document).scrollTop() > ($(".p7").offset().top-165) && $(document).scrollTop() < ($("footer").offset().top)-165) {
+			$(".p7 .project-pic").addClass("project-pic-scroll");
+		}else{
+			$(".p7 .project-pic").removeClass("project-pic-scroll");
+		}
+
 	});
 
 
