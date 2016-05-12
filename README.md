@@ -1,2 +1,2 @@
-# ericluna92.github.io
-Portfolio
+#Portfolio
+This is where I showcase all of my projects. 
