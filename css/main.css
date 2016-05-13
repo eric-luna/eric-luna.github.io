@@ -37,6 +37,7 @@ body, html {
 .subtitle{
 	font-weight: lighter;
 	color: #000099;
+	color:#D62828;
 }
 /*mobile nav bar button style*/
 .mobile-nav-bar .mobile-nav-button {
@@ -67,7 +68,7 @@ body, html {
 	position: fixed;
 	z-index: 1;
 	width: 100%;
-	margin-top: 48px;
+	margin-top: 52px;
 }
 .mobile-nav ul {
 	width: 100%;
@@ -105,12 +106,13 @@ body, html {
 	border-bottom: 5px solid #f4f4f2;
 	background-color: #D62828;
 	transition-property: background-color,font-size;
-	transition-duration: 0.50s;
+	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
 /*styles for div when being scrolled on page*/
 .about-div-scroll{
 	background-color: #c22424;
+	/*font-size: 1.4em;*/
 }
 /*about div paragraph style*/
 .about {
@@ -141,7 +143,7 @@ body, html {
 	text-align: center;
 	margin: auto;
 	padding-bottom:3%;
-	font-size: 5em;
+	font-size: 4em;
 }
 /*div style for each skills section div*/
 .html5, .responsive, .javascript {
@@ -176,7 +178,7 @@ body, html {
 }
 /*style for skill section when scolled over*/
 .skill-scroll{
-	background-color: #e6ac00;
+	/*background-color: #e6ac00;*/
 }
 .skill-pic {
 	width: 150px;
@@ -208,7 +210,7 @@ body, html {
 	text-align: center;
 	margin: auto;
 	padding-bottom:3%;
-	font-size: 5em;
+	font-size: 4em;
 }
 /*style for each project section*/
 .project{
@@ -481,6 +483,7 @@ footer {
 	.skills-header {
 		text-align: center;
 		margin: auto;
+		font-size: 5em;
 	}
 
 	.skill-top {
@@ -493,7 +496,9 @@ footer {
 	.skill-description {
 		width: 80%;
 	}
-
+	.projects-header{
+		font-size: 5em;
+	}
 	.project{
 		clear: both;
 	}
