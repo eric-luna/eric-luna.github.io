@@ -103,14 +103,14 @@ body, html {
 .about-div {
 	height: 500px;
 	border-bottom: 5px solid #f4f4f2;
-	background-color: #16174f;
+	background-color: #D62828;
 	transition-property: background-color,font-size;
 	transition-duration: 0.50s;
 	transition-timing-function: linear;
 }
 /*styles for div when being scrolled on page*/
 .about-div-scroll{
-	background-color: #0b0c28;
+	background-color: #c22424;
 }
 /*about div paragraph style*/
 .about {
@@ -132,7 +132,7 @@ body, html {
 /********** Skills Section **********/
 #skills {
 	border-bottom: 5px solid #f4f4f2;
-	background-color: #e6af4b;
+	background-color: #FFBF00;
 	z-index: 20;
 	display: none;
 }
@@ -145,6 +145,7 @@ body, html {
 }
 /*div style for each skills section div*/
 .html5, .responsive, .javascript {
+/*	color: white;*/
 	width: 100%;
 	text-align: center;
 	padding: 5% 0;
@@ -175,7 +176,7 @@ body, html {
 }
 /*style for skill section when scolled over*/
 .skill-scroll{
-	background-color: #e09d1f;
+	background-color: #e6ac00;
 }
 .skill-pic {
 	width: 150px;
@@ -203,7 +204,7 @@ body, html {
 }
 /*main projects header*/
 .projects-header {
-	background-color: #935347;
+	background-color: #32936F;
 	text-align: center;
 	margin: auto;
 	padding-bottom:3%;
@@ -211,16 +212,15 @@ body, html {
 }
 /*style for each project section*/
 .project{
-	padding-top: 5%;
-	padding-bottom: 5%;
+	padding:8% 0;
 	width: 100%;
 	clear: both;
-	background-color: #64706c;
+	background-color: #2274A5;
 	overflow: auto;
 }
 /*style for alternate color of project section*/
 .colored{
-	background-color: #935347;
+	background-color: #32936F;
 }
 /*project preview section*/
 .project-preview{
@@ -324,7 +324,7 @@ footer {
 	font-size: 1em;
 	margin: 0 auto;
 	border-bottom: 3px solid #f4f4f2;
-	background-color: #9fa8a3;
+	background-color: #FA7921;
 }
 .credit{
 	margin: 2% auto;
@@ -496,7 +496,6 @@ footer {
 
 	.project{
 		clear: both;
-		padding-top: 2.5%;
 	}
 	.project-preview{
 		width: 50%;
