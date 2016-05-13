@@ -12,7 +12,32 @@ body,html{
 /*Main header section*/
 .main-header{
 	position: relative;
-	background:url("../img/smallheader.jpg");
+	background:url("../img/home.jpg");
+	background-size: cover;
+	background-position: center;
+	height: 600px;
+	margin: auto;
+	border-bottom: 3px solid black;
+}
+.services-header{
+	position: relative;
+	background:url("../img/services.jpg");
+	background-size: cover;
+	height: 600px;
+	margin: auto;
+	border-bottom: 3px solid black;
+}
+.about-header{
+	position: relative;
+	background:url("../img/about.jpg");
+	background-size: cover;
+	height: 600px;
+	margin: auto;
+	border-bottom: 3px solid black;
+}
+.contact-header{
+	position: relative;
+	background:url("../img/contact.jpg");
 	background-size: cover;
 	height: 600px;
 	margin: auto;
@@ -199,7 +224,27 @@ body,html{
 	background-color:black;
 	color: white;
 }
-
+/*Services Page*/
+.services{
+	width: 100%;
+	margin: auto;
+}
+.services div{
+	border: 2px solid black;
+	width: 95%;
+	margin: auto;
+	margin-bottom: 5%;
+}
+.services h2{
+	background-color: black;
+	color: white;
+	margin: 0;
+	font-size: 2.5em;
+	border-bottom: 5px solid black;
+}
+.services div p {
+	padding: 0 10px;
+}
 /*About page*/
 .section{
 	width: 90%;
@@ -285,6 +330,14 @@ footer li{
 		margin-top: 25%;
 		width: 90%;
 	}
+	.services{
+		width: 95%
+	}
+	.services div{
+		width: 32.5%;
+		float: left;
+		height: 550px;
+	}
 }
 @media only screen and (min-width: 880px) {
 	.nav-list{
@@ -299,6 +352,7 @@ footer li{
 	.nav-big{
 		display: block;
 		z-index: 1;
+		padding-left: 10px;
 	}
 	.nav-big li{
 		list-style: none;
@@ -322,15 +376,19 @@ footer li{
 		font-size: 5em;
 	}
 	.main-header{
-		background:url("../img/header.jpg");
+		/*background:url("../img/header.jpg");*/
 		background-size: cover;
 	}
 	.box{
 		width: 45%;
 	}
-	#first{
-		padding-left: 3px;
+	/*Services*/
+	.services div p{
+		width: 90%;
+		margin: auto;
+		padding-top: 5%;
 	}
+	/*About*/
 	.about-sections{
 		width: 90%;
 		margin: auto;
