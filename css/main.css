@@ -418,6 +418,7 @@ footer {
 	}
 	/*adds the larger screen nav bar*/
 	.nav-bar {
+		padding-top: 15%;
 		float: left;
 		width: 25%;
 		height: 100%;
@@ -429,6 +430,9 @@ footer {
 		background-color: white;
 		
 	}
+	.nav-bar h1{
+		font-size: 3em;
+	}
 	.nav-bar h1, h4 {
 		margin: 0;
 		padding: 0;
@@ -436,6 +440,7 @@ footer {
 	}
 	.nav-bar h4{
 		color: #1253a4;
+		color: #D62828;
 	}
 
 	.nav-bar ul{
@@ -462,6 +467,7 @@ footer {
 	.nav-bar li a:hover{
 		font-size: 2em;
 		color: #1253a4;
+		color: #D62828;
 	}
 	.nav-pic{
 		margin: auto;
