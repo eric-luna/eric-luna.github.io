@@ -78,7 +78,7 @@ body, html {
 	-ms-transform: translate(0, -300px);
 	-webkit-transform: translate(0, -300px);
 	transition: all .8s ease-in-out;
-	background-color: rgba(250,250,250,0.85);
+	background-color: rgba(250,250,250,0.90);
 }
 .mobile-nav ul li{
 	padding-bottom: 10px;
