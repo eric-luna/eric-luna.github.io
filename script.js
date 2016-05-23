@@ -112,11 +112,15 @@ $(document).ready(function(){
 		}else{
 			$(".p6 .project-pic").removeClass("project-pic-scroll");
 		}
-
-		if ($(document).scrollTop() > ($(".p7").offset().top-185) && $(document).scrollTop() < ($("footer").offset().top)-185) {
+		if ($(document).scrollTop() > ($(".p7").offset().top-185) && $(document).scrollTop() < ($(".p8").offset().top)-185) {
 			$(".p7 .project-pic").addClass("project-pic-scroll");
 		}else{
 			$(".p7 .project-pic").removeClass("project-pic-scroll");
+		}
+		if ($(document).scrollTop() > ($(".p8").offset().top-185) && $(document).scrollTop() < ($("footer").offset().top)-185) {
+			$(".p8 .project-pic").addClass("project-pic-scroll");
+		}else{
+			$(".p8 .project-pic").removeClass("project-pic-scroll");
 		}
 
 	});
