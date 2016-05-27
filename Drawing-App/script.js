@@ -98,11 +98,12 @@ $canvas.on('touchstart',function(e){
 });
 
 var canvas = document.getElementById("canvas");
-canvas.width = window.innerWidth-50;
+canvas.width = window.innerWidth-75;
 $(window).resize(function() {
   //update stuff
-  canvas.width = window.innerWidth-50;
+  canvas.width = window.innerWidth-75;
 });
+
 var ctx = canvas.getContext("2d");
 $('.clear').on('click',function(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
