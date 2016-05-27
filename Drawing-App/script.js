@@ -98,6 +98,11 @@ $canvas.on('touchstart',function(e){
 });
 
 var canvas = document.getElementById("canvas");
+canvas.width = window.innerWidth-50;
+$(window).resize(function() {
+  //update stuff
+  canvas.width = window.innerWidth-50;
+});
 var ctx = canvas.getContext("2d");
 $('.clear').on('click',function(){
 	ctx.clearRect(0, 0, canvas.width, canvas.height);
