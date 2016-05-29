@@ -20,7 +20,6 @@ body, html {
 	border-bottom: 3px solid black;
 	min-height: 55px;
 	width: 100%;
-	position: relative;
 	cursor: pointer;
 	z-index: 2;
 	position: fixed;
@@ -72,8 +71,8 @@ body, html {
 }
 .mobile-nav ul {
 	width: 100%;
-	margin: 0px;
-	padding: 0px;
+	margin: 0;
+	padding: 0;
 	transform: translate(0, -300px);
 	-ms-transform: translate(0, -300px);
 	-webkit-transform: translate(0, -300px);
@@ -128,14 +127,6 @@ body, html {
 	line-height: 1.55;
 	font-size: 1.3em;
 	color: white;
-	transition-property: font-size;
-	transition-duration: 0.50s;
-	transition-timing-function: linear;
-}
-/*about div paragraph scroll style*/
-.about-scroll{
-	line-height: 1.75;
-	font-size: 1.55em;
 }
 /********** Skills Section **********/
 #skills {
@@ -169,7 +160,7 @@ body, html {
 }
 /*header for individual skills*/
 .skill-top {
-	border-bottom: 3px solid white;
+	border-bottom: 3px solid black;
 	width: 65%;
 	padding-bottom: 3%;
 	margin: auto;
@@ -185,27 +176,23 @@ body, html {
 
 }
 /*style for skill section when scolled over*/
-.skill-scroll{
-	/*background-color: #e6ac00;*/
+.html-pic {
+	/*width: 220px;
+	height: 150px;*/
+	width: 30%;
+}
+.html-pic-scroll{
+	/*width:250px;
+	height:175px;	*/
+	width: 35%;
 }
 .skill-pic {
-	width: 125px;
-	height: 125px;
+	width: 25%;
 }
 /*style for pic when scrolled over*/
 .pic-scroll{
-	width:200px;
-	height:200px;	
+	width:30%;
 }
-.html-pic {
-	width: 220px;
-	height: 150px;
-}
-.html-pic-scroll{
-	width:250px;
-	height:175px;	
-}
-
 /************ Projects **************/
 #projects{
 	border-bottom: 5px solid #f4f4f2;
@@ -346,7 +333,6 @@ footer {
 	padding: 0;
 }
 .credit a{
-	margin: 0;
 	padding: 0;
 }
 .credit a:link{
@@ -479,6 +465,10 @@ footer {
 		font-size: 1.65em;
 		color: #D62828;
 	}
+	.selected{
+		font-size: 1.65em;
+		color: #D62828;
+	}
 	.nav-pic{
 		margin: auto;
 		margin-top: 15%;
@@ -503,7 +493,6 @@ footer {
 	}
 
 	.skill-top {
-		border-bottom: 2px solid white;
 		padding-bottom: 1.5%;
 		margin: auto;
 		margin-bottom: 3.5%;

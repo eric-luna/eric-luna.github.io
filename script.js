@@ -39,34 +39,47 @@ $(document).ready(function(){
 
 	// This is the code to add classes when a specific scroll position is reached
 	$(window).scroll(function() {
-		// Scroll effects for the about section at the top of page
-		if ($(document).scrollTop() > 0 && $(document).scrollTop() < ($(".html5").offset().top)) {
-			$(".about-div").addClass("about-div-scroll");
+		// Effects for nav links
+		if ($(document).scrollTop() > ($("#skills").offset().top) && $(document).scrollTop() < $("#projects").offset().top) {
+			$(".skill-button").addClass("selected");
 		}else{
-			$(".about-div").removeClass("about-div-scroll");
-		} 
+			$(".skill-button").removeClass("selected");
+		}
+		if ($(document).scrollTop() > ($("#projects").offset().top) && $(document).scrollTop() < $("#contact").offset().top-300) {
+			$(".project-button").addClass("selected");
+		}else{
+			$(".project-button").removeClass("selected");
+		}
+		if ($(document).scrollTop() > ($("#contact").offset().top-300) && $(document).scrollTop() < $("#contact").offset().top+800) {
+			$(".contact-button").addClass("selected");
+		}else{
+			$(".contact-button").removeClass("selected");
+		}
+		
+		
+		
 
-		// Scroll Effects for each skill section
-		if ($(document).scrollTop() > ($(".html5").offset().top-185) && $(document).scrollTop() < $(".responsive").offset().top-185) {
+		// Scroll effects for skills images when scrolled over
+		if ($(document).scrollTop() > ($(".html5").offset().top-185) && $(document).scrollTop() < $(".javascript").offset().top-185) {
 			$(".html5").addClass("skill-scroll");
 			$(".html5 .html-pic").addClass("html-pic-scroll");
 		}else{
 			$(".html5").removeClass("skill-scroll");
 			$(".html5 .html-pic").removeClass("html-pic-scroll");
 		}
-		if ($(document).scrollTop() > ($(".responsive").offset().top-185) && $(document).scrollTop() < ($(".javascript").offset().top)-185) {
-			$(".responsive").addClass("skill-scroll");
-			$(".responsive .skill-pic").addClass("pic-scroll");
-		}else{
-			$(".responsive").removeClass("skill-scroll");
-			$(".responsive .skill-pic").removeClass("pic-scroll");
-		}
-		if ($(document).scrollTop() > ($(".javascript").offset().top-185) && $(document).scrollTop() < ($("#projects").offset().top)-185) {
+		if ($(document).scrollTop() > ($(".javascript").offset().top-185) && $(document).scrollTop() < ($(".responsive").offset().top)-185) {
 			$(".javascript").addClass("skill-scroll");
 			$(".javascript .skill-pic").addClass("pic-scroll");
 		}else{
 			$(".javascript").removeClass("skill-scroll");
 			$(".javascript .skill-pic").removeClass("pic-scroll");
+		}
+		if ($(document).scrollTop() > ($(".responsive").offset().top-185) && $(document).scrollTop() < ($("#projects").offset().top)-185) {
+			$(".responsive").addClass("skill-scroll");
+			$(".responsive .skill-pic").addClass("pic-scroll");
+		}else{
+			$(".responsive").removeClass("skill-scroll");
+			$(".responsive .skill-pic").removeClass("pic-scroll");
 		}
 
 		// Scroll effects for the project section.
