@@ -4,6 +4,7 @@ body, html {
 	margin: 0;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif;
+	font-family: 'Signika', sans-serif;
 }
 .clearfix {
 	overflow: auto;
@@ -14,6 +15,7 @@ body, html {
 	transition-timing-function: linear;
 }
 /*****************Navigation************************/
+
 /*Styles for mobile navigation and smaller screens*/
 .mobile-nav-bar {
 	background-color: white;
@@ -35,8 +37,7 @@ body, html {
 }
 .subtitle{
 	font-weight: lighter;
-	color: #000099;
-	color:#9fa8a3;
+	color:#05668D;
 }
 /*mobile nav bar button style*/
 .mobile-nav-bar .mobile-nav-button {
@@ -77,7 +78,7 @@ body, html {
 	-ms-transform: translate(0, -300px);
 	-webkit-transform: translate(0, -300px);
 	transition: all .8s ease-in-out;
-	background-color: rgba(250,250,250,0.90);
+	background-color: rgba(250,250,250,0.95);
 }
 .mobile-nav ul li{
 	padding-bottom: 10px;
@@ -90,8 +91,7 @@ body, html {
 	/*background: #f0f0f5;*/
 }
 .mobile-nav ul li a:hover {
-	background: #16174f;
-	background: #D62828;
+	background: #05668D;
 	color: white;
 }
 .mobile-nav.show-mobile-nav ul {
@@ -108,9 +108,7 @@ body, html {
 .about-div {
 	height: 500px;
 	border-bottom: 5px solid #f4f4f2;
-	background-color: #D62828;
-	background-color: #253939;
-	background-color: #c5d5cb;
+	background-color:#05668D;
 	transition-property: background-color,font-size;
 	transition-duration: 0.25s;
 	transition-timing-function: linear;
@@ -133,11 +131,10 @@ body, html {
 /********** Skills Section **********/
 #skills {
 	border-bottom: 5px solid #f4f4f2;
-	background-color: #FFBF00;
-	background-color: #558188;
-	background-color: #e3e0cf;
+	background-color: #00A896;
 	z-index: 20;
 	display: none;
+	color: white;
 }
 /*main skills header*/
 .skills-header {
@@ -148,7 +145,6 @@ body, html {
 }
 /*div style for each skills section div*/
 .html5, .responsive, .javascript {
-/*	color: white;*/
 	width: 100%;
 	text-align: center;
 	padding: 5% 0;
@@ -181,13 +177,9 @@ body, html {
 }
 /*style for skill section when scolled over*/
 .html-pic {
-	/*width: 220px;
-	height: 150px;*/
 	width: 30%;
 }
 .html-pic-scroll{
-	/*width:250px;
-	height:175px;	*/
 	width: 35%;
 }
 .skill-pic {
@@ -201,13 +193,11 @@ body, html {
 #projects{
 	border-bottom: 5px solid #f4f4f2;
 	color: white;
-	color: black;
 	display: none;
 }
 /*main projects header*/
 .projects-header {
-	background-color: #32936F;
-	background-color:#9fa8a3;
+	background-color: #028090;
 	text-align: center;
 	margin: auto;
 	padding-bottom:75px;
@@ -218,8 +208,7 @@ body, html {
 	padding:8% 0;
 	width: 100%;
 	clear: both;
-	background-color: #2274A5;
-	background-color: #c0dfd9;
+	background-color: #02C39A;
 	overflow: auto;
 }
 .p1{
@@ -228,8 +217,7 @@ body, html {
 }
 /*style for alternate color of project section*/
 .colored{
-	background-color: #32936F;
-	background-color: #9fa8a3;
+	background-color: #028090;
 }
 /*project preview section*/
 .project-preview{
@@ -239,7 +227,7 @@ body, html {
 .project-pic{
 	width: 70%;
 	border-radius: 10px;
-	border:3px solid black;
+	border:3px solid white;
 	transition-property: width;
 	transition-duration: 0.50s;
 	transition-timing-function: linear;
@@ -287,8 +275,8 @@ body, html {
 	-o-border-radius: 5px;
 	border-radius: 5px;
 	display: inline-block;
-	border: 2px solid  black;
-	color: black;
+	border: 1px solid  white;
+	color: white;
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	padding: 4px 4px;
@@ -308,7 +296,7 @@ body, html {
 	padding: 4px 30px;
 	margin: 7px 0; 
 	background-color: rgba(255,255,255,0);
-	border-color: black;
+	border-color: white;
 	color: #f4f4f2;
 	float: left;
 }
@@ -318,9 +306,9 @@ body, html {
 	-moz-transition: 400ms ease-in;
 	-o-transition: 400ms ease-in;
 	transition: 400ms ease-in; 
-	background-color:black;
+	background-color:white;
 	/*border-color: rgb(149,165,166);*/
-	color: rgb(255,255,255); 
+	color: black; 
 } 
 /*github link for each project*/
 .gh-link{
@@ -336,8 +324,8 @@ footer {
 	font-size: 1em;
 	margin: 0 auto;
 	border-bottom: 3px solid #f4f4f2;
-	background-color: #FA7921;
-	background-color: #edd9c0;
+	background-color: #F0F3BD;
+	background-color: #FFC463;
 }
 .credit{
 	margin: 2% auto;
@@ -351,12 +339,12 @@ footer {
 }
 .credit a:link{
 	text-decoration: none;
-	color: white;
+	color: blue;
 	font-weight: bolder;
 	font-size: 1.5em;
 }
 .credit a:visited{
-	color: white;
+	color: blue;
 }
 /*style for bio div*/
 .bio {
@@ -373,7 +361,7 @@ footer {
 	margin-bottom: 5px;
 	float: left;
 	width: 22%;
-	border:3px solid #f4f4f2;
+	border:3px solid black;
 	border-radius: 10%;
 }
 /*style for bio text */
@@ -404,10 +392,7 @@ footer {
 	float: left;
 }
 
-
-
 /******************************* Responsive Design *******************************/
-
 @media only screen and (max-width: 680px)  {
 	/*hides the larger footer section for bigger screen width*/
 	.contact-info {
@@ -446,11 +431,10 @@ footer {
 	.nav-bar h1, h4 {
 		margin: 0;
 		padding: 0;
-		color: black;
+		color: #05668D;
 	}
 	.nav-bar h4{
-		color: #1253a4;
-		color:#9fa8a3;
+		color:#00A896;
 	}
 
 	.nav-bar ul{
@@ -466,7 +450,7 @@ footer {
 	}
 	.nav-bar li a{
 		text-decoration: none;
-		color: black;
+		color: #05668D;
 		transition-property: color, font-size;
 		transition-duration: .4s;
 		transition-timing-function: linear;
@@ -476,7 +460,7 @@ footer {
 	}
 	.nav-bar li a:hover{
 		font-size: 1.65em;
-		color: #9fa8a3;
+		color: #00A896;
 	}
 	.selected{
 		font-size: 1.65em;
@@ -582,10 +566,11 @@ footer {
 		width: 90%;
 	}
 	.contact-links li a{
-		color: white;
+		color: blue;
+		text-decoration: underline;
 	}
 	.contact-links li a:visited {
-		color: white;
+		color: blue;
 	}
 
 	.social {
