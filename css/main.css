@@ -106,8 +106,7 @@ body, html {
 /*main about div styles */
 .about-div {
 	height: 500px;
-	background-color:#05668D;
-	background-color: #358051;
+	border-bottom: 5px solid black;
 	background-color: black;
 	transition-property: background-color,font-size;
 	transition-duration: 0.25s;
@@ -130,6 +129,7 @@ body, html {
 }
 /********** Skills Section **********/
 #skills {
+	border-bottom: 5px solid black;
 	background-color: white;
 	z-index: 20;
 	display: none;
@@ -224,7 +224,7 @@ body, html {
 }
 /*pic preview of the project*/
 .project-pic{
-	width: 70%;
+	width: 75%;
 	border-radius: 10px;
 	border:3px solid white;
 	transition-property: width;
@@ -233,7 +233,7 @@ body, html {
 }
 /*style for pic when scrolled over*/
 .project-pic-scroll{
-	width: 85%;
+	width: 90%;
 }
 /*information about the project*/
 .project-info{

@@ -55,7 +55,7 @@ $(document).ready(function() {
             $('body').css('background-image', 'url("' + "../img/weather/cloudyNight.jpg" + '")');
           }else if(icon_url === "http://icons.wxug.com/i/c/k/nt_rain.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/rainyNight.jpg" + '")');
-          }else if(icon_url === "http://icons.wxug.com/i/c/k/nt_thunderstorm.gif"){
+          }else if(icon_url === "http://icons.wxug.com/i/c/k/nt_tstorm.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/thunderstorm.jpg" + '")');
           }else if(icon_url === "http://icons.wxug.com/i/c/k/nt_snow.gif"){
             $('body').css('background-image', 'url("' + "../img/weather/snowNight.jpg" + '")');
