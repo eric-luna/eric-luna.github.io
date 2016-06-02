@@ -19,6 +19,8 @@ body, html {
 /*Styles for mobile navigation and smaller screens*/
 .mobile-nav-bar {
 	background-color: white;
+	background:url(../img/black.png); 
+	background-size: cover;
 	border-bottom: 3px solid black;
 	min-height: 55px;
 	width: 100%;
@@ -30,37 +32,35 @@ body, html {
 .mobile-nav-bar p{
 	margin: 0;
 	font-weight: bolder;
-	padding-left: 5px;
-	padding-top: 8px;
 	display: inline-block;
 	color: black;
+	background-color: white;
+	border-radius: 5px;
+	margin: 5px 5px;
+	padding: 5px 30px;
 }
 .subtitle{
+	color: #474343;
 	font-weight: lighter;
-	color:#05668D;
 }
 /*mobile nav bar button style*/
-.mobile-nav-bar .mobile-nav-button {
+.mobile-nav-button {
 	position: absolute;
 	right: 10px;
 	top: 10px;
 	display: inline-block;
-	width: 31px;
-	height: 30px;
+	width: 40px;
+	height: 40px;
 	border: 0;
+	border-radius: 5px;
 	padding: 0;
-	background: transparent;
 	cursor: pointer;
-}
-.mobile-nav-bar .mobile-nav-button .bar {
-	width: 100%;
-	float: left;
-	height: 4px;
-	margin-bottom: 5px;
 	background-color: black;
 }
-.mobile-nav-bar .mobile-nav-button .bar:last-of-type {
-	margin-bottom: 0;
+.mobile-nav-button img{
+	width:100%;
+	margin: 0;
+	padding: 0;
 }
 /*style for the mobile nav links and list */
 .mobile-nav {
@@ -68,7 +68,7 @@ body, html {
 	position: fixed;
 	z-index: 1;
 	width: 100%;
-	margin-top: 52px;
+	margin-top: 60px;
 }
 .mobile-nav ul {
 	width: 100%;
@@ -88,10 +88,9 @@ body, html {
 	padding: 10px;
 	text-decoration: none;
 	color: black;
-	/*background: #f0f0f5;*/
 }
 .mobile-nav ul li a:hover {
-	background: #05668D;
+	background: gray;
 	color: white;
 }
 .mobile-nav.show-mobile-nav ul {
@@ -107,8 +106,9 @@ body, html {
 /*main about div styles */
 .about-div {
 	height: 500px;
-	border-bottom: 5px solid #f4f4f2;
 	background-color:#05668D;
+	background-color: #358051;
+	background-color: black;
 	transition-property: background-color,font-size;
 	transition-duration: 0.25s;
 	transition-timing-function: linear;
@@ -125,16 +125,15 @@ body, html {
 	padding-top: 32%;
 	display: none; 
 	line-height: 1.55;
-	font-size: 1.3em;
+	font-size: 1.4em;
 	color: white;
 }
 /********** Skills Section **********/
 #skills {
-	border-bottom: 5px solid #f4f4f2;
-	background-color: #00A896;
+	background-color: white;
 	z-index: 20;
 	display: none;
-	color: white;
+	color: black;
 }
 /*main skills header*/
 .skills-header {
@@ -160,7 +159,7 @@ body, html {
 }
 /*header for individual skills*/
 .skill-top {
-	border-bottom: 3px solid black;
+	border-bottom: 3px solid white;
 	width: 65%;
 	padding-bottom: 3%;
 	margin: auto;
@@ -191,13 +190,13 @@ body, html {
 }
 /************ Projects **************/
 #projects{
-	border-bottom: 5px solid #f4f4f2;
-	color: white;
+	border-bottom: 5px solid black;
 	display: none;
+	color: white;
 }
 /*main projects header*/
 .projects-header {
-	background-color: #028090;
+	background-color: #474343;
 	text-align: center;
 	margin: auto;
 	padding-bottom:75px;
@@ -208,7 +207,7 @@ body, html {
 	padding:8% 0;
 	width: 100%;
 	clear: both;
-	background-color: #02C39A;
+	background-color: #A2A0A0;
 	overflow: auto;
 }
 .p1{
@@ -217,7 +216,7 @@ body, html {
 }
 /*style for alternate color of project section*/
 .colored{
-	background-color: #028090;
+	background-color: #474343;
 }
 /*project preview section*/
 .project-preview{
@@ -324,8 +323,7 @@ footer {
 	font-size: 1em;
 	margin: 0 auto;
 	border-bottom: 3px solid #f4f4f2;
-	background-color: #F0F3BD;
-	background-color: #FFC463;
+	background-color: white;
 }
 .credit{
 	margin: 2% auto;
@@ -422,8 +420,16 @@ footer {
 		display: block;
 		text-align: center;
 		margin: auto;
+		background:url(../img/black.png);
+		background-size: cover;
+		/*border-right: 3px solid black;*/
+	}
+	.overlay{
 		background-color: white;
-		
+		border-radius: 5px;
+		width: 85%;
+		margin: auto;
+		padding: 2% 0;
 	}
 	.nav-bar h1{
 		font-size: 3em;
@@ -431,10 +437,9 @@ footer {
 	.nav-bar h1, h4 {
 		margin: 0;
 		padding: 0;
-		color: #05668D;
 	}
 	.nav-bar h4{
-		color:#00A896;
+		color: #474343;
 	}
 
 	.nav-bar ul{
@@ -450,21 +455,21 @@ footer {
 	}
 	.nav-bar li a{
 		text-decoration: none;
-		color: #05668D;
 		transition-property: color, font-size;
 		transition-duration: .4s;
 		transition-timing-function: linear;
+		color: black;
 	}
 	.nav-bar li a:visited{
 		color: black;
 	}
 	.nav-bar li a:hover{
 		font-size: 1.65em;
-		color: #00A896;
+		color: #474343;
 	}
 	.selected{
 		font-size: 1.65em;
-		color: #D62828;
+		color: gray;
 	}
 	.nav-pic{
 		margin: auto;
