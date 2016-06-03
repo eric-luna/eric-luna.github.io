@@ -38,7 +38,7 @@ div {
 /*main header title*/
 .header{
   text-align: center;
-  margin: 0 auto;
+  margin: 50px auto;
   border:3px solid white;
   display: inline-block;
   font-size: 3em;
@@ -161,7 +161,7 @@ input, button:focus{
   background-color:black;
   color:white;
 }
-/*footer section*/
+/*Footer section*/
 footer {
   clear: both;
   margin: auto;
@@ -171,12 +171,12 @@ footer {
 footer p{
   margin: 0;
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 footer a:link{
   text-decoration: none;
   color: blue;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bolder;
 }
 footer a:visited{
