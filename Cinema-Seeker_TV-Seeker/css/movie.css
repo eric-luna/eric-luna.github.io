@@ -89,7 +89,6 @@ input, button:focus{
   width: 90%;
   margin: auto;
   text-align: center;
-  border:5px solid white;
 }
 .movie-info{
   width: 95%;
