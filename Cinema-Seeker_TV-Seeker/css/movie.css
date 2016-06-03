@@ -6,7 +6,7 @@ html,body{
   font-family: 'Open Sans', sans-serif;
 }
 body{
-  background:url('../img/movie.png');
+  background:url('../img/movie.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,8 +25,8 @@ div {
   text-decoration: none;
   font-size: 1em;
   text-align: center;
-  border:5px solid #63a1ee;
-  color:rgba(2, 177, 234,1);
+  border:5px solid #e8ae6e;
+  color:rgb(113, 186, 169);
   background-color: rgba(255, 255, 255,1); 
   border-radius: 5px;
   width: 215px;
@@ -44,7 +44,7 @@ div {
   display: inline-block;
   font-size: 3em;
   color: white;
-  background-color: rgba(32, 62, 62,0.85);
+  background-color: rgba(49, 86, 104,0.85);
   border-radius: 10px;
 }
 /*search div style*/
@@ -56,7 +56,7 @@ div {
 .search{
   font-size: 15px;
   border-radius: 10px;
-  border:3px solid black;
+  border:5px solid #e8ae6e;
 }
 /*removes focus when search bar or search button is clicked*/
 input, button:focus{
@@ -69,7 +69,7 @@ input, button:focus{
   border-radius: 10px;
   font-size: 15px;
   text-decoration: none;  
-  background-color:  #63a1ee;
+  background-color: rgb(113, 186, 169);
   color: white;
 }
 
@@ -92,7 +92,7 @@ input, button:focus{
 }
 .movie-info{
   width: 95%;
-  background-color: rgba(39, 64, 96,.80);
+  background-color: rgba(49, 86, 104,0.85);
   margin: auto;
   color: white;
   border:5px solid white;
@@ -113,14 +113,15 @@ input, button:focus{
 /*trailer div section */
 .trailer{
   margin: 5% auto;
-  width: 90%;
+  width: 45%;
 }
 .trailer a {
   text-decoration: none;
 }
 /*trailer button styles*/
 .trailer-button {
-  background-color:#5eaab7;
+  background-color:blue;
+  background-color: rgb(113, 186, 169);
   color:#fff;
   font-size:20px;
   line-height:30px;
@@ -153,11 +154,11 @@ input, button:focus{
 .left{
   float:left;
   background-color:white;
-  color: #63a1ee;
+  color: #e2695e;
 }
 .right{
   float:right;
-  background-color:#63a1ee;
+  background-color:#e2695e;
   color:white;
 }
 /*footer section*/
@@ -170,16 +171,18 @@ footer {
 footer p{
   margin: 0;
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
+  background-color: #e2695e;
+  border-radius: 3px;
 }
 footer a:link{
   text-decoration: none;
-  color: black;
-  font-size: 1.5em;
+  color: #e8ae6e;
+  font-size: 1.6em;
   font-weight: bolder;
 }
 footer a:visited{
-  color: black;
+  color: #e8ae6e;
   text-decoration: none;
   font-weight: bolder;
 }
