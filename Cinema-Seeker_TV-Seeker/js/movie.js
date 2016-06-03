@@ -121,6 +121,7 @@ $(document).ready(function() {
             $('.right').click();
         });
         // Displays movie-info section
+        $('.poster').css('display','block');
         $('.movie-info').css('display','block');
       }
     })

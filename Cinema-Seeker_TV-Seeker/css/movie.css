@@ -82,6 +82,7 @@ input, button:focus{
 }
 .poster{
   margin:auto;
+  display: none;
 }
 .poster img{
   border-radius: 5px;
