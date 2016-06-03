@@ -572,7 +572,6 @@ footer {
 	}
 	.contact-links li a{
 		color: blue;
-		text-decoration: underline;
 	}
 	.contact-links li a:visited {
 		color: blue;
