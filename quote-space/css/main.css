@@ -44,10 +44,10 @@ body{
 	border-top-right-radius: 5px;
 	border-bottom-left-radius: 5px; 
 	border-bottom-right-radius: 5px; 
-	font-size: 1.5em;
+	font-size: 1.2em;
 	color: white;
 	transition-property: width;
-	transition-duration: 2s;
+	transition-duration: 1.5s;
 	transition-timing-function: linear; 
 }
 .container a img{
@@ -94,7 +94,7 @@ body{
 	color: white;
 	text-decoration: none;
 	transition-property: font-size, color;
-	transition-duration: 0.55s;
+	transition-duration: 0.50s;
 	transition-timing-function: linear; 
 }
 .nav-links a:hover{
@@ -214,7 +214,7 @@ footer a:visited{
 		width: 16%;
 	}
 	.container a:hover{
-		width: 18%;
+		width: 20%;
 	}
 	.quote-container{
 		width: 50%;
