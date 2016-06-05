@@ -11,7 +11,7 @@ $(document).ready(function(){
   // main function executed on button click
   $('.button').on('click',function(){ 
   // empties the tv info section for new results
-  $('.name, .poster, .overview,.first_air_date,.navigation,.trailer').empty();
+  $('.title, .poster, .overview,.first_air_date,.navigation,.trailer').empty();
   // saves the search bar value to send with the api request
   var search=$('.search').val();
   check=$('.search').val();
@@ -57,12 +57,12 @@ $(document).ready(function(){
           }
         })
         // tv show results information
-        var name=result.results[count]['name'];
+        var title=result.results[count]['name'];
         var first_air_date=result.results[count]["first_air_date"];
         var poster = result.results[count]['poster_path'];
         var overview=result.results[count]['overview'];
         // adds title to name section
-        $('.name').append("<h1>"+name+"</h1>");
+        $('.title').append("<h1>"+title+"</h1>");
         // checks to see if first air date info is available
         if(first_air_date===""){
           $('.first_air_date').append("<p>First Air Date: N/A</p>");

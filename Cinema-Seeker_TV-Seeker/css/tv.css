@@ -85,7 +85,7 @@ input, button:focus{
 }
 .poster img{
   border-radius: 5px;
-  width: 90%;
+  width: 50%;
   margin: auto;
   text-align: center;
   border:5px solid white;
@@ -98,11 +98,15 @@ input, button:focus{
   border:5px solid white;
   display: none;
 }
+.title h1{
+  margin: 0;
+}
 .overview{
   text-align: center;
   margin: auto;
   border-radius: 5px;
-  width: 100%;
+  width: 98%;
+  font-size: 0.9em;
 }
 .placeholder{
   visibility: hidden;
