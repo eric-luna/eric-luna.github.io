@@ -58,6 +58,9 @@ h4{
 .buttons{
 	text-align: center;
 }
+.row div{
+
+}
 footer {
   clear: both;
   margin: auto;
@@ -78,5 +81,11 @@ footer a:visited{
   color: blue;
   text-decoration: none;
   font-weight: bolder;
+}
+/*Responsive Design*/
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .vanishes{
+    clear: both;
+  }
 }
 
