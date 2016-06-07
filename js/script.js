@@ -119,11 +119,17 @@ $(document).ready(function(){
 		}else{
 			$(".p5 .project-pic").removeClass("project-pic-scroll");
 		}
-		if ($(document).scrollTop() > ($(".p6").offset().top-185) && $(document).scrollTop() < ($("footer").offset().top)-185) {
+		if ($(document).scrollTop() > ($(".p6").offset().top-185) && $(document).scrollTop() < ($(".p7").offset().top)-185) {
 			$(".p6 .project-pic").addClass("project-pic-scroll");
 			
 		}else{
 			$(".p6 .project-pic").removeClass("project-pic-scroll");
+		}
+		if ($(document).scrollTop() > ($(".p7").offset().top-185) && $(document).scrollTop() < ($("footer").offset().top)-185) {
+			$(".p7 .project-pic").addClass("project-pic-scroll");
+			
+		}else{
+			$(".p7 .project-pic").removeClass("project-pic-scroll");
 		}
 	});
 });
