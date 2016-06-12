@@ -1,0 +1,306 @@
+/********** General Design *************/
+html,body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font: 400 1em/1.0 'Work Sans', Optima;
+	color: #16174f;
+	background-color: #f6f1ed;
+	background-color: #eee5dd;
+	background-color: #e5d8cc;
+}
+.divider{
+	width: 80%;
+	margin: 5% auto;
+}
+.divider-top{
+	width: 77%;
+	margin: 3% auto;
+	size:10px;
+}
+.divider-bottom{
+	width: 75%;
+	margin: 3% auto;
+	clear: both;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/************ Header Section ***************/
+.navigation{
+	display: flex;
+	flex-grow: 1;
+	background-color: white;
+	color: #16174f;
+	border-bottom: 2px solid #16174f;
+}
+.navigation ul{
+	display: flex;
+	list-style: none;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.navigation ul a{
+	padding: 7px 7px;
+	flex-grow: 1;
+	text-align: center;
+	flex-wrap: wrap;
+	font-size: 1.5em;
+	font-weight: bolder;
+	text-decoration: none;
+	color: #16174f;
+	/*background-color: #16174f;*/
+}
+.navigation ul a:visited{
+	color: #16174f;
+}
+.navigation ul a:hover{
+	background-color: #16174f;
+	color: white;
+}
+#selected{
+	background-color: #16174f;
+	color: white;
+}
+/****************** Introduction Section **************************/
+.introduction{
+	text-align: center;
+	margin: auto;
+	margin-top: 5%;
+}
+.introduction h1 {
+	font-size: 3.5em;
+	text-decoration: underline;
+}
+.about{
+	width: 80%;
+	margin: 50px auto;
+	font-size: 1.3em;
+	font-weight: 600;
+	line-height: 1.5;
+}
+.top-pic{
+	font-size: 1em;
+	font-weight: 600;
+}
+.main-pic{
+	background-image: url("../img/alamo.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+	width: 90%;
+	height: 100%;
+	margin: auto;
+}
+.art-pic{
+	background-image: url("../img/alamo.jpeg");
+}
+/*********** Attractions Section**********/
+.attractions-header{
+	margin: 50px auto;
+	width: 85%;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+.attractions{
+	margin: auto;
+	text-align: center;
+	clear: both;
+}
+.attractions a{
+	color: #16174f;
+}
+.attractions a:visited{
+	color: #16174f;
+}
+.attraction-heading{
+	text-decoration: underline;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+.description{
+	margin: auto;
+	text-align: justify;
+	width: 75%;
+	padding-top: 4%;
+	line-height: 1.5;
+}
+.pic{
+	width: 85%;
+	margin: auto;
+	text-align: center;
+	border-radius: 10px;
+}
+/**************** List Style *********************/
+.list{
+	padding:10% 0;
+	margin: 0;
+}
+.list li a{
+	color: #963019;
+	margin: auto;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+.list li a:visited{
+	color: #963019;
+}
+@-webkit-keyframes hvr-back-pulse{
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+
+@keyframes hvr-back-pulse{
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+
+.hvr-back-pulse li{
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  /*overflow: hidden;*/
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 3%;
+  /*height: 100%;*/
+}
+.hvr-back-pulse li:hover, .hvr-back-pulse li:focus, .hvr-back-pulse li:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098d1;
+  color: white;
+}
+/*Page Divs*/
+.items{
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+.items .square{
+	width: 90%;
+	margin: 10px;
+	background-color: white;
+	border-radius: 5px;
+	border: 2px solid black;
+}
+.items .square img{
+	width: 100%;
+	border-bottom: 2px solid #16174f;
+}
+.items .square a{
+	text-decoration: none;
+	color: #16174f;
+}
+.items .square a:visited{
+	color: #16174f;
+}
+.items .square h3{
+	text-align: center;
+	margin: 10px;
+}
+.items .square p{
+	margin: 0 auto;
+	padding: 20px 0;
+	width: 95%;
+	border-radius: 5px;
+	background-color: white;
+	text-align: center;
+	line-height: 1.5;
+	color: #16174f;
+}
+/************* Footer Section *******************/
+footer {
+	clear: both;
+	margin: auto;
+	margin-top: 5%;
+	text-align: center;
+}
+footer p a:link{
+	text-decoration: none;
+	color: blue;
+	font-size: 1.5em;
+	font-weight: bolder;
+}
+footer p a:visited{
+	color: blue;
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+
+/********************** Responsive Design ***************************/
+@media only screen and (min-width: 500px) {
+	.items .square{
+		width: 70%;
+	}
+}
+@media only screen and (min-width: 715px) {
+	.banner{
+		margin-top: 25%;
+	}
+	.navigation ul a{
+		padding: 30px 20px;
+	}
+	.items .square{
+		width: 30%;
+	}
+}
+@media only screen and (min-width: 800px) {
+	.introduction{
+		margin-top: 5%;
+	}
+	.border {
+		border-top: 2px solid black;
+	}
+	.banner{
+		margin-top: 16%;
+	}
+	.attraction-left{
+		float: left;
+		width: 50%;
+	} 
+	.attraction-right {
+		float: right;
+		width: 50%;
+	}
+	.attraction-center{
+		width: 50%;
+		margin: 25px auto;
+	}
+}
