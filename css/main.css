@@ -11,7 +11,7 @@ body, html {
 }
 .skill-button,.project-button,.contact-button{
 	transition-property: color;
-	transition-duration: 0.50s;
+	transition-duration: 0.20s;
 	transition-timing-function: linear;
 }
 /*****************Navigation************************/
@@ -154,7 +154,7 @@ body, html {
 /*sets up elements for transition styles*/
 .html5, .responsive, .javascript,.html-pic,.skill-pic{
 	transition-property: background-color,font-size,width,height;
-	transition-duration: 0.50s;
+	transition-duration: 0.20s;
 	transition-timing-function: linear;
 }
 /*header for individual skills*/
@@ -228,7 +228,7 @@ body, html {
 	border-radius: 10px;
 	border:3px solid white;
 	transition-property: width;
-	transition-duration: 0.50s;
+	transition-duration: 0.20s;
 	transition-timing-function: linear;
 }
 /*style for pic when scrolled over*/
@@ -242,7 +242,7 @@ body, html {
 .project-info h2{
 	padding: 0;
 	transition-property: font-size;
-	transition-duration: 0.50s;
+	transition-duration: 0.20s;
 	transition-timing-function: linear;
 }
 /*style fr h1 when scrolled*/
@@ -254,7 +254,7 @@ body, html {
 	line-height: 1.65;
 	padding: 25px 2%;
 	transition-property: font-size;
-	transition-duration: 0.50s;
+	transition-duration: 0.20s;
 	transition-timing-function: linear;
 	font-size: 0.9em;
 }
@@ -443,6 +443,7 @@ footer {
 	}
 
 	.nav-bar ul{
+		height: 175px;
 		list-style: none;
 		font-size: 1.5em;
 		text-align: center;
@@ -456,7 +457,7 @@ footer {
 	.nav-bar li a{
 		text-decoration: none;
 		transition-property: color, font-size;
-		transition-duration: .4s;
+		transition-duration: .3s;
 		transition-timing-function: linear;
 		color: black;
 	}

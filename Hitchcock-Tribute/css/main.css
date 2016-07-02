@@ -7,7 +7,7 @@ body,html{
 	linear-gradient(
 		rgba(239, 201, 76, 0.20), 
 		rgba(239, 201, 157, 0.20)
-		), url('https://static-secure.guim.co.uk/sys-images/Guardian/Pix/pictures/2015/3/31/1427806892553/Alfred-Hitchcock-poses-fo-009.jpg') no-repeat fixed center;
+		), url('../img/alfred.jpg') no-repeat fixed center;
 	margin: 0 auto;
 	padding: 250px 0;
 	background-size:cover;
