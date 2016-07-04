@@ -3,16 +3,10 @@ body, html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: 'Montserrat', sans-serif;
 	font-family: 'Signika', sans-serif;
 }
 .clearfix {
 	overflow: auto;
-}
-.skill-button,.project-button,.contact-button{
-	transition-property: color;
-	transition-duration: 0.20s;
-	transition-timing-function: linear;
 }
 /*****************Navigation************************/
 
@@ -98,6 +92,10 @@ body, html {
 	-ms-transform: translate(0px);
 	-webkit-transform: translate(0px);
 }
+.download{
+	height: 20px;
+	width: 20px;
+}
 /*this hides the larger nav bar section for larger width screens*/
 .nav-bar{
 	display: none;
@@ -105,7 +103,7 @@ body, html {
 /******************* Main Content **********************/
 /*main about div styles */
 .about-div {
-	height: 500px;
+	height: 550px;
 	border-bottom: 5px solid black;
 	background-color: black;
 	transition-property: background-color,font-size;
@@ -465,11 +463,11 @@ footer {
 		color: black;
 	}
 	.nav-bar li a:hover{
-		font-size: 1.65em;
+		font-size: 1.25em;
 		color: #474343;
 	}
 	.selected{
-		font-size: 1.65em;
+		font-size: 1.25em;
 		color: gray;
 	}
 	.nav-pic{
