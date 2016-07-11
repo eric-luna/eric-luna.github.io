@@ -140,7 +140,7 @@ body, html {
 .html, .css, .responsive, .javascript {
 	width: 100%;
 	text-align: center;
-	padding: 7% 0;
+	padding: 12% 0;
 }
 .html{
 	padding-top: 2%;
@@ -169,11 +169,11 @@ body, html {
 }
 /*style for skill section when scolled over*/
 .skill-pic {
-	width: 25%;
+	width: 30%;
 }
 /*style for pic when scrolled over*/
 .pic-scroll{
-	width:30%;
+	width:35%;
 }
 /************ Projects **************/
 #projects{
@@ -473,9 +473,6 @@ footer {
 	.about-scroll{
 		font-size: 2.25em;
 	}
-	.html, .css, .responsive, .javascript {
-		padding-bottom: 5%;
-	}
 	.skills-header {
 		text-align: center;
 		margin: auto;
@@ -484,10 +481,6 @@ footer {
 	.skill-top {
 		padding-bottom: 1.5%;
 		margin: auto;
-	}
-
-	.skill-description {
-		width: 80%;
 	}
 	.projects-header{
 		font-size: 5em;
