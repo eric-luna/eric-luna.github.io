@@ -103,23 +103,19 @@ body, html {
 /******************* Main Content **********************/
 /*main about div styles */
 .about-div {
-	height: 550px;
 	border-bottom: 5px solid black;
 	background-color: black;
 	transition-property: background-color,font-size;
 	transition-duration: 0.25s;
 	transition-timing-function: linear;
 }
-/*styles for div when being scrolled on page*/
-.about-div-scroll{
-	background-color: #c22424;
-}
 /*about div paragraph style*/
 .about {
-	text-align: center;
+	text-align: left;
 	width: 95%;
 	margin: auto;
-	padding-top: 32%;
+	padding-top: 25%;
+	padding-bottom: 15%;
 	display: none; 
 	line-height: 1.55;
 	font-size: 1.4em;
@@ -141,16 +137,16 @@ body, html {
 	font-size: 4em;
 }
 /*div style for each skills section div*/
-.html5, .responsive, .javascript {
+.html, .css, .responsive, .javascript {
 	width: 100%;
 	text-align: center;
-	padding: 5% 0;
+	padding: 7% 0;
 }
-.html5{
+.html{
 	padding-top: 2%;
 }
 /*sets up elements for transition styles*/
-.html5, .responsive, .javascript,.html-pic,.skill-pic{
+.html, .css, .responsive, .javascript,.skill-pic{
 	transition-property: background-color,font-size,width,height;
 	transition-duration: 0.20s;
 	transition-timing-function: linear;
@@ -161,7 +157,6 @@ body, html {
 	width: 65%;
 	padding-bottom: 3%;
 	margin: auto;
-	margin-bottom: 5%;
 }
 /*style for description text in the skill sections*/
 .skill-description {
@@ -173,12 +168,6 @@ body, html {
 
 }
 /*style for skill section when scolled over*/
-.html-pic {
-	width: 30%;
-}
-.html-pic-scroll{
-	width: 35%;
-}
 .skill-pic {
 	width: 25%;
 }
@@ -484,7 +473,7 @@ footer {
 	.about-scroll{
 		font-size: 2.25em;
 	}
-	.html5, .responsive, .javascript {
+	.html, .css, .responsive, .javascript {
 		padding-bottom: 5%;
 	}
 	.skills-header {
@@ -492,11 +481,9 @@ footer {
 		margin: auto;
 		font-size: 5em;
 	}
-
 	.skill-top {
 		padding-bottom: 1.5%;
 		margin: auto;
-		margin-bottom: 3.5%;
 	}
 
 	.skill-description {

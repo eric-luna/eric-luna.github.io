@@ -60,12 +60,19 @@ $(document).ready(function(){
 		
 
 		// Scroll effects for skills images when scrolled over
-		if ($(document).scrollTop() > ($(".html5").offset().top-185) && $(document).scrollTop() < $(".javascript").offset().top-185) {
-			$(".html5").addClass("skill-scroll");
-			$(".html5 .html-pic").addClass("html-pic-scroll");
+		if ($(document).scrollTop() > ($(".html").offset().top-185) && $(document).scrollTop() < $(".css").offset().top-185) {
+			$(".html").addClass("skill-scroll");
+			$(".html .skill-pic").addClass("pic-scroll");
 		}else{
-			$(".html5").removeClass("skill-scroll");
-			$(".html5 .html-pic").removeClass("html-pic-scroll");
+			$(".html").removeClass("skill-scroll");
+			$(".html .skill-pic").removeClass("pic-scroll");
+		}
+		if ($(document).scrollTop() > ($(".css").offset().top-185) && $(document).scrollTop() < $(".javascript").offset().top-185) {
+			$(".css").addClass("skill-scroll");
+			$(".css .skill-pic").addClass("pic-scroll");
+		}else{
+			$(".css").removeClass("skill-scroll");
+			$(".css .skill-pic").removeClass("pic-scroll");
 		}
 		if ($(document).scrollTop() > ($(".javascript").offset().top-185) && $(document).scrollTop() < ($(".responsive").offset().top)-185) {
 			$(".javascript").addClass("skill-scroll");
