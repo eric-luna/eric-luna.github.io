@@ -6,8 +6,6 @@ html,body{
 	width: 100%;
 	font: 400 1em/1.0 'Work Sans', Optima;
 	color: #16174f;
-	background-color: #f6f1ed;
-	background-color: #eee5dd;
 	background-color: #e5d8cc;
 }
 .divider{
@@ -60,7 +58,6 @@ html,body{
 	font-weight: bolder;
 	text-decoration: none;
 	color: #16174f;
-	/*background-color: #16174f;*/
 }
 .navigation ul a:visited{
 	color: #16174f;
@@ -202,7 +199,7 @@ html,body{
   background-color: #2098d1;
   color: white;
 }
-/*Page Divs*/
+/**********Page Divs***************/
 .items{
 	width: 100%;
 	margin: auto;
@@ -218,7 +215,14 @@ html,body{
 	background-color: white;
 	border-radius: 5px;
 	border: 2px solid black;
+	transition-property: width,border;
+	transition-duration: 0.15s;
+	transition-timing-function: linear;
 }
+.items .square:hover{
+		width: 93%;
+		border: 5px solid #16174f;
+	}
 .items .square img{
 	width: 100%;
 	border-bottom: 2px solid #16174f;
@@ -269,6 +273,10 @@ footer p a:visited{
 	.items .square{
 		width: 70%;
 	}
+	.items .square:hover{
+		width: 73%;
+		border: 5px solid #16174f;
+	}
 }
 @media only screen and (min-width: 715px) {
 	.banner{
@@ -279,6 +287,10 @@ footer p a:visited{
 	}
 	.items .square{
 		width: 30%;
+	}
+	.items .square:hover{
+		width: 33%;
+		border: 5px solid #16174f;
 	}
 }
 @media only screen and (min-width: 800px) {
