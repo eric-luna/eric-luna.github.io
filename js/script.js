@@ -1,9 +1,7 @@
 $(document).ready(function(){
 	// fades in when the page is loaded
-	$('.about').fadeIn(5000);
-	$('#skills').fadeIn(5000);
-	$('#projects').fadeIn(5000);
-	$('#contact').fadeIn(5000);
+	$('body').fadeIn(1500);
+
 
 	// This is the code for the fixed mobile nav bar. 
 	var $mobileNavTrigger = $(".mobile-nav-bar");
@@ -74,12 +72,19 @@ $(document).ready(function(){
 			$(".css").removeClass("skill-scroll");
 			$(".css .skill-pic").removeClass("pic-scroll");
 		}
-		if ($(document).scrollTop() > ($(".javascript").offset().top-185) && $(document).scrollTop() < ($(".responsive").offset().top)-185) {
+		if ($(document).scrollTop() > ($(".javascript").offset().top-185) && $(document).scrollTop() < ($(".sass").offset().top)-185) {
 			$(".javascript").addClass("skill-scroll");
 			$(".javascript .skill-pic").addClass("pic-scroll");
 		}else{
 			$(".javascript").removeClass("skill-scroll");
 			$(".javascript .skill-pic").removeClass("pic-scroll");
+		}
+		if ($(document).scrollTop() > ($(".sass").offset().top-185) && $(document).scrollTop() < $(".responsive").offset().top-185) {
+			$(".sass").addClass("skill-scroll");
+			$(".sass .skill-pic").addClass("pic-scroll");
+		}else{
+			$(".sass").removeClass("skill-scroll");
+			$(".sass .skill-pic").removeClass("pic-scroll");
 		}
 		if ($(document).scrollTop() > ($(".responsive").offset().top-185) && $(document).scrollTop() < ($("#projects").offset().top)-185) {
 			$(".responsive").addClass("skill-scroll");
