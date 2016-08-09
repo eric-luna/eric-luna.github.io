@@ -115,9 +115,6 @@ body {
 .about-div {
     border-bottom: 5px solid black;
     background-color: black;
-    transition-property: background-color, font-size;
-    transition-duration: 0.25s;
-    transition-timing-function: linear;
 }
 /*about div paragraph style*/
 
@@ -164,7 +161,7 @@ body {
 .skill,
 .skill-pic {
     transition-property: width, height;
-    transition-duration: 0.20s;
+    transition-duration: 0.3s;
     transition-timing-function: linear;
 }
 /*header for individual skills*/
@@ -229,7 +226,7 @@ body {
     border-radius: 10px;
     border: 3px solid white;
     transition-property: width;
-    transition-duration: 0.15s;
+    transition-duration: 0.3s;
     transition-timing-function: linear;
 }
 /*style for pic when scrolled over*/
@@ -244,9 +241,6 @@ body {
 }
 .project-info h2 {
     padding: 0;
-    transition-property: font-size;
-    transition-duration: 0.20s;
-    transition-timing-function: linear;
 }
 /*style fr h1 when scrolled*/
 
@@ -257,9 +251,6 @@ body {
     text-align: center;
     line-height: 1.65;
     padding: 25px 2%;
-    transition-property: font-size;
-    transition-duration: 0.20s;
-    transition-timing-function: linear;
     font-size: 0.9em;
 }
 /*tag styles*/
