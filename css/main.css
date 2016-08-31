@@ -427,7 +427,6 @@ footer {
         width: 75%;
     }
     /*adds the larger screen nav bar*/
-    
     .nav-bar {
         padding-top: 15%;
         float: left;
@@ -439,7 +438,6 @@ footer {
         margin: auto;
         background: url(../img/black.png);
         background-size: cover;
-        /*border-right: 3px solid black;*/
     }
     .overlay {
         background-color: white;
@@ -447,6 +445,7 @@ footer {
         width: 85%;
         margin: auto;
         padding: 2% 0;
+        border: 5px inset black;
     }
     .nav-bar h1 {
         font-size: 3em;
