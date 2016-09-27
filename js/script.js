@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	// Smooth Scrolling for nav links
 	$(".skill-button").click(function(e) {
         e.preventDefault();
         $('html, body').animate({
