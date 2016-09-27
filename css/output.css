@@ -118,22 +118,23 @@ hr {
       clear: both;
       list-style: none;
       padding-left: 0; }
+      .container footer .social-icons li {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: .7em; }
+        .container footer .social-icons li a {
+          color: #3a3a3a; }
+      .container footer .social-icons .icons {
+        margin: 0;
+        margin-left: 0;
+        height: 32px;
+        width: 32px; }
       .container footer .social-icons p {
         font-size: 12px;
         margin: 0; }
         .container footer .social-icons p span {
           color: #3498db;
           font-size: 24px; }
-    .container footer .social-icons li {
-      display: inline-block;
-      padding-right: 4%;
-      margin-top: 15px; }
-    .container footer .icons {
-      margin: 0;
-      margin-left: 0;
-      height: 32px;
-      width: 32px;
-      float: left; }
 
 /* Responsive Styles*/
 @media only screen and (min-width: 500px) {
@@ -150,6 +151,8 @@ hr {
     .container footer div {
       width: 50%; }
       .container footer div .pic {
-        width: 15%; } }
+        width: 15%; }
+    .container footer .social-icons li {
+      font-size: 1em; } }
 
 /*# sourceMappingURL=output.css.map */

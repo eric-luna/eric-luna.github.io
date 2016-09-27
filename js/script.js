@@ -1,0 +1,20 @@
+$(document).ready(function(){
+	$(".skill-button").click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#skills").offset().top
+        }, 2000);
+    });
+    $(".project-button").click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#projects").offset().top
+        }, 2000);
+    });
+    $(".contact-button").click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $("#footer").offset().top
+        }, 2000);
+    });
+});
