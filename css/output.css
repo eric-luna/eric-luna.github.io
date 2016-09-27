@@ -17,6 +17,9 @@ h2 {
 .clearfix {
   overflow: auto; }
 
+.highlight {
+  font-weight: 600; }
+
 .tags {
   margin: 0;
   padding-left: 0; }
@@ -40,7 +43,7 @@ hr {
 
 /*Main Content Styles*/
 .container {
-  margin: 100px 25px;
+  margin: 100px 20px;
   /*Footer Styles*/ }
   .container .pic {
     height: 100px;
@@ -54,88 +57,99 @@ hr {
   .container .nav {
     list-style: none;
     padding: 0;
-    margin: 10px 0;
+    margin: 20px 0;
     font-weight: 600; }
     .container .nav li {
       display: inline-block;
       margin-right: 3px;
       color: #3a3a3a; }
       .container .nav li:hover {
-        color: blue; }
+        color: #3498db; }
       .container .nav li:visited {
         color: #3a3a3a; }
-  .container .skills {
+  .container .intro {
+    line-height: 1.5;
+    margin: 50px 0; }
+  .container #skills {
     margin: 50px 0;
     padding: 0;
     list-style: none; }
-    .container .skills li {
+    .container #skills li {
       display: inline-block; }
-    .container .skills li img {
-      width: 112px;
-      height: 112px; }
-  .container .projects {
+    .container #skills li img {
+      width: 100px;
+      height: 100px; }
+  .container #projects {
     margin: 50px 0;
     padding: 0;
     color: #3a3a3a; }
-    .container .projects li {
+    .container #projects > li {
       list-style: none;
-      padding: 10px 0; }
-      .container .projects li a {
+      padding: 10px 5px;
+      height: 75px; }
+      .container #projects > li a {
         text-decoration: none;
         color: #3a3a3a; }
-        .container .projects li a:visited {
+        .container #projects > li a:visited {
           color: #3a3a3a; }
-      .container .projects li p {
+      .container #projects > li p {
         margin: 0; }
-      .container .projects li:hover {
+      .container #projects > li:hover {
         color: #fff;
         background: #3a3a3a; }
-        .container .projects li:hover a {
+        .container #projects > li:hover a {
           color: #fff; }
-  .container footer div .pic {
-    width: 25%;
-    height: auto;
-    border-radius: 5px;
-    border: 3px solid black;
-    float: left;
-    margin-right: 15px; }
-  .container footer div p {
-    margin: 0;
-    text-align: left; }
-  .container footer .social-icons {
-    clear: both;
-    list-style: none;
-    padding-left: 0; }
-    .container footer .social-icons p {
-      font-size: 12px;
-      margin: 0; }
-      .container footer .social-icons p span {
-        color: blue;
-        font-size: 24px; }
-  .container footer .social-icons li {
-    display: inline-block;
-    padding-right: 4%;
-    margin-top: 15px; }
-  .container footer .icons {
-    margin: 0;
-    margin-left: 0;
-    height: 32px;
-    width: 32px;
-    float: left; }
+  .container footer {
+    margin: 50px 0; }
+    .container footer div {
+      margin: 50px 0; }
+      .container footer div .pic {
+        width: 25%;
+        height: auto;
+        border-radius: 5px;
+        border: 3px solid black;
+        float: left;
+        margin-right: 15px; }
+      .container footer div p {
+        margin: 0;
+        text-align: left;
+        line-height: 1.2; }
+    .container footer .social-icons {
+      clear: both;
+      list-style: none;
+      padding-left: 0; }
+      .container footer .social-icons p {
+        font-size: 12px;
+        margin: 0; }
+        .container footer .social-icons p span {
+          color: #3498db;
+          font-size: 24px; }
+    .container footer .social-icons li {
+      display: inline-block;
+      padding-right: 4%;
+      margin-top: 15px; }
+    .container footer .icons {
+      margin: 0;
+      margin-left: 0;
+      height: 32px;
+      width: 32px;
+      float: left; }
 
 /* Responsive Styles*/
 @media only screen and (min-width: 500px) {
-  .container h1 {
-    font-size: 90px; }
-  .container .intro {
-    width: 75%; }
-  .container .projects > li {
-    width: 60%; }
-  .container .projects hr {
-    width: 60%; }
-  .container footer div {
-    width: 50%; }
-    .container footer div .pic {
-      width: 15%; } }
+  .container {
+    margin: 175px 75px; }
+    .container h1 {
+      font-size: 90px; }
+    .container .intro {
+      width: 75%; }
+    .container .projects > li {
+      width: 60%; }
+    .container .projects hr {
+      width: 60%; }
+    .container footer div {
+      width: 50%; }
+      .container footer div .pic {
+        width: 15%; } }
 
 /*# sourceMappingURL=output.css.map */

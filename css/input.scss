@@ -18,6 +18,9 @@ h2{
 .clearfix {
   overflow: auto;
 }
+.highlight{
+	font-weight:600;
+}
 .tags {
     margin:0;
     padding-left: 0;
@@ -44,7 +47,7 @@ hr{
 /*Main Content Styles*/
 
 .container{
-	margin:100px 25px;
+	margin:100px 20px;
 	.pic{
 		height:100px;
 		width:100px;
@@ -59,21 +62,25 @@ hr{
 	.nav{
 		list-style:none;
 		padding:0;
-		margin:10px 0;
+		margin:20px 0;
 		font-weight:600;
 		li{
 			display:inline-block;
 			margin-right:3px;
 			color:#3a3a3a;
 			&:hover{
-				color:blue;
+				color:#3498db;
 			}
 			&:visited{
 			color:#3a3a3a;
 			}
 		}
 	}
-	.skills{
+	.intro{
+		line-height:1.5;
+		margin:50px 0;
+	}
+	#skills{
 		margin:50px 0;
 		padding:0;
 		list-style:none;
@@ -81,18 +88,19 @@ hr{
 			display:inline-block;
 		}
 		li img{
-			width:112px;
-			height:112px;
+			width:100px;
+			height:100px;
 		}
 	}
 
-	.projects{
+	#projects{
 		margin:50px 0;
 		padding:0;
 		color:#3a3a3a;
-		li{
+		> li{
 			list-style:none;
-			padding:10px 0;
+			padding:10px 5px;
+			height:75px;
 			a{
 				text-decoration:none;
 				color:#3a3a3a;
@@ -116,7 +124,9 @@ hr{
 	}
 	/*Footer Styles*/
 	footer{
+		margin:50px 0;
 		div{
+			margin:50px 0;
 			.pic{
 				width:25%;
 				height:auto;
@@ -128,6 +138,7 @@ hr{
 			p{
 				margin:0;
 				text-align:left;
+				line-height:1.2;
 			}
 		}
 		.social-icons {
@@ -138,7 +149,7 @@ hr{
 				font-size:12px;
 				margin:0;
 				span{
-					color:blue;
+					color:#3498db;
 					font-size:24px;
 				}
 			}
@@ -162,6 +173,7 @@ hr{
 
 @media only screen and (min-width: 500px){
 	.container{
+		margin:175px 75px;
 		h1{
 			font-size:90px;
 		}
