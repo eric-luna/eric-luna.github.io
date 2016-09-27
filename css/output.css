@@ -81,7 +81,10 @@ hr {
       list-style: none;
       padding: 10px 0; }
       .container .projects li a {
-        text-decoration: none; }
+        text-decoration: none;
+        color: #3a3a3a; }
+        .container .projects li a:visited {
+          color: #3a3a3a; }
       .container .projects li p {
         margin: 0; }
       .container .projects li:hover {
