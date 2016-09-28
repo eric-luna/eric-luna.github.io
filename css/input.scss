@@ -4,12 +4,13 @@ body,html{
 	background:#fffee6;
 	background:#FEF9F0;
 	color:#3a3a3a;
-	font-family:'Raleway',sans-serif;
+	font-family:'Cardo',sans-serif;
 }
 
 /*Default Styles*/
 h2{
 	text-decoration:underline;
+	font-family:'Montserrat',sans-serif;
 }
 .divider{
 	height:3px;
@@ -54,9 +55,8 @@ hr{
 	}
 	h1{
 		font-size:60px;
-		font-family:'Oswald',sans-serif;
+		font-family:'Montserrat',sans-serif;
 		font-weight:700;
-		letter-spacing:5px;
 		margin-bottom:0;
 	}
 	.nav{
@@ -79,6 +79,7 @@ hr{
 	.intro{
 		line-height:1.5;
 		margin:50px 0;
+		font-size:16px;
 	}
 	#skills{
 		margin:50px 0;
@@ -104,12 +105,13 @@ hr{
 			a{
 				text-decoration:none;
 				color:#3a3a3a;
+				p{
+					margin:0;
+					font-size:16px;
+				}
 				&:visited{
 					color:#3a3a3a;
 				}
-			}
-			p{
-				margin:0;
 			}
 			&:hover{
 				color:#fff;
@@ -138,7 +140,7 @@ hr{
 			p{
 				margin:0;
 				text-align:left;
-				line-height:1.2;
+				font-size:14px;
 			}
 		}
 		.social-icons {
@@ -148,9 +150,8 @@ hr{
 			li {
 				margin-top:15px;
 				margin-bottom:15px;
-				font-size:.7em;
+				font-size:.8em;
 				a{
-					
 					color:#3a3a3a;
 				}
 			}

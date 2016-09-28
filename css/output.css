@@ -4,11 +4,12 @@ body, html {
   background: #fffee6;
   background: #FEF9F0;
   color: #3a3a3a;
-  font-family: 'Raleway',sans-serif; }
+  font-family: 'Cardo',sans-serif; }
 
 /*Default Styles*/
 h2 {
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-family: 'Montserrat',sans-serif; }
 
 .divider {
   height: 3px;
@@ -50,9 +51,8 @@ hr {
     width: 100px; }
   .container h1 {
     font-size: 60px;
-    font-family: 'Oswald',sans-serif;
+    font-family: 'Montserrat',sans-serif;
     font-weight: 700;
-    letter-spacing: 5px;
     margin-bottom: 0; }
   .container .nav {
     list-style: none;
@@ -69,7 +69,8 @@ hr {
         color: #3a3a3a; }
   .container .intro {
     line-height: 1.5;
-    margin: 50px 0; }
+    margin: 50px 0;
+    font-size: 16px; }
   .container #skills {
     margin: 50px 0;
     padding: 0;
@@ -90,10 +91,11 @@ hr {
       .container #projects > li a {
         text-decoration: none;
         color: #3a3a3a; }
+        .container #projects > li a p {
+          margin: 0;
+          font-size: 16px; }
         .container #projects > li a:visited {
           color: #3a3a3a; }
-      .container #projects > li p {
-        margin: 0; }
       .container #projects > li:hover {
         color: #fff;
         background: #3a3a3a; }
@@ -113,7 +115,7 @@ hr {
       .container footer div p {
         margin: 0;
         text-align: left;
-        line-height: 1.2; }
+        font-size: 14px; }
     .container footer .social-icons {
       clear: both;
       list-style: none;
@@ -121,7 +123,7 @@ hr {
       .container footer .social-icons li {
         margin-top: 15px;
         margin-bottom: 15px;
-        font-size: .7em; }
+        font-size: .8em; }
         .container footer .social-icons li a {
           color: #3a3a3a; }
       .container footer .social-icons .icons {
