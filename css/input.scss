@@ -20,7 +20,8 @@ h2{
   overflow: auto;
 }
 .highlight{
-	font-weight:600;
+	font-family:'Montserrat',sans-serif;
+	font-weight:700;
 }
 .tags {
     margin:0;
@@ -63,6 +64,7 @@ hr{
 		list-style:none;
 		padding:0;
 		margin:20px 0;
+		font-family:'Montserrat',sans-serif;
 		font-weight:600;
 		li{
 			display:inline-block;
@@ -102,12 +104,14 @@ hr{
 			list-style:none;
 			padding:10px 5px;
 			height:75px;
+			border-bottom:1px solid #3a3a3a;
 			a{
 				text-decoration:none;
 				color:#3a3a3a;
 				p{
 					margin:0;
 					font-size:16px;
+					font-weight:bold;
 				}
 				&:visited{
 					color:#3a3a3a;
@@ -150,7 +154,7 @@ hr{
 			li {
 				margin-top:15px;
 				margin-bottom:15px;
-				font-size:.8em;
+				font-size:.75em;
 				a{
 					color:#3a3a3a;
 				}
@@ -179,8 +183,14 @@ hr{
 @media only screen and (min-width: 500px){
 	.container{
 		margin:175px 75px;
+		.pic{
+			height:150px;
+			width:150px;
+			display:inline-block;
+		}
 		h1{
 			font-size:90px;
+			display:inline-block;
 		}
 		.intro{
 			width:75%;
