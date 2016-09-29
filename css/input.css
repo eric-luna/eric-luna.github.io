@@ -70,7 +70,6 @@ hr {
       transition-timing-function: linear; }
       .container .nav li:hover {
         color: #3498db;
-        color: #F22613;
         font-size: 1.15em; }
       .container .nav li:visited {
         color: #3a3a3a; }
@@ -136,15 +135,14 @@ hr {
       .container footer .social-icons li {
         margin-top: 15px;
         margin-bottom: 15px;
-        font-weight: 600; }
+        font-size: .75em;
+        transition-property: font-size, color;
+        transition-duration: .25s;
+        transition-timing-function: linear; }
+        .container footer .social-icons li:hover {
+          font-size: .85em; }
         .container footer .social-icons li a {
-          color: #3a3a3a;
-          font-size: .75em;
-          transition-property: font-size, color;
-          transition-duration: .25s;
-          transition-timing-function: linear; }
-          .container footer .social-icons li a:hover {
-            color: #F22613; }
+          color: #3a3a3a; }
       .container footer .social-icons .icons {
         margin: 0;
         margin-left: 0;
@@ -152,12 +150,10 @@ hr {
         width: 32px; }
       .container footer .social-icons p {
         font-size: 12px;
-        margin: 0;
-        margin-top: 50px; }
+        margin: 0; }
         .container footer .social-icons p span {
-          color: #F22613;
-          font-size: 24px;
-          font-weight: 600; }
+          color: #3498db;
+          font-size: 24px; }
 
 /* Responsive Styles*/
 @media only screen and (min-width: 500px) {
@@ -181,9 +177,7 @@ hr {
       width: 50%; }
       .container footer div .pic {
         width: 15%; }
-    .container footer .social-icons li a {
-      font-size: 1em; }
-      .container footer .social-icons li a:hover {
-        color: #F22613; } }
+    .container footer .social-icons li {
+      font-size: 1em; } }
 
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=input.css.map */
