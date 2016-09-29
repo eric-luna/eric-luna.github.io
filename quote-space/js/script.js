@@ -96,29 +96,54 @@ var success=[
 ["<p>If everyone is moving forward together, then success takes care of itself. </p>","<span>Henry Ford</span>"],
 ];
 
-
-
 $(document).ready(function(){
 	var currentArr=$('.selected').text();
 
 	// Main functionality for each individual quote page
-	if(currentArr==="Books"){
-		var length=books.length-1;
+	function quotePick(quotes){
+		quotes;
+		switch (currentArr) {
+			case "Books":
+			quotes=books;
+			break; 
+			case "Sports":
+			quotes=sports;
+			break;
+			case "Science":
+			quotes=science;
+			break; 
+			case "Life":
+			quotes=life;
+			break; 
+			case "Movies":
+			quotes=movies;
+			break; 
+			case "Music":
+			quotes=music;
+			break; 
+			case "Funny":
+			quotes=funny;
+			break;
+			case "Success":
+			quotes=success;
+			break;    
+		}
+		var length=quotes.length-1;
 		var num=Math.floor(Math.random() * (length - 0 + 1)) + 0;
 		var prev;
-		$('.quote').append(books[num][0]);
-		$('.quote').append(books[num][1]);
+		$('.quote').append(quotes[num][0]);
+		$('.quote').append(quotes[num][1]);
 		$('.left').click(function(){
 			if(num > 0){
 				num=num-1;
 				$('.quote').empty();
-				$('.quote').append(books[num][0]);
-				$('.quote').append(books[num][1]);
+				$('.quote').append(quotes[num][0]);
+				$('.quote').append(quotes[num][1]);
 			}else{
 				num=length;
 				$('.quote').empty();
-				$('.quote').append(books[num][0]);
-				$('.quote').append(books[num][1]);
+				$('.quote').append(quotes[num][0]);
+				$('.quote').append(quotes[num][1]);
 			}
 		})
 		$('.right').click(function(){
@@ -126,247 +151,15 @@ $(document).ready(function(){
 			$('.quote').empty();
 			if(num<length){
 				num=num+1;
-				$('.quote').append(books[num][0]);
-				$('.quote').append(books[num][1]);
+				$('.quote').append(quotes[num][0]);
+				$('.quote').append(quotes[num][1]);
 			}else{
 				num=0;
-				$('.quote').append(books[num][0]);
-				$('.quote').append(books[num][1]);
+				$('.quote').append(quotes[num][0]);
+				$('.quote').append(quotes[num][1]);
 			}		
-		})	
-	}
-	if(currentArr==="Sports"){
-		var length=sports.length-1;
-		var num=Math.floor(Math.random() * (length - 0 + 1)) + 0;
-		var prev;
-		$('.quote').append(sports[num][0]);
-		$('.quote').append(sports[num][1]);
-		$('.left').click(function(){
-			if(num > 0){
-				num=num-1;
-				$('.quote').empty();
-				$('.quote').append(sports[num][0]);
-				$('.quote').append(sports[num][1]);
-			}else{
-				num=length;
-				$('.quote').empty();
-				$('.quote').append(sports[num][0]);
-				$('.quote').append(sports[num][1]);
-			}	
 		})
-		$('.right').click(function(){
-			prev=num;
-			$('.quote').empty();
-			if(num<length){
-				num=num+1;
-				$('.quote').append(sports[num][0]);
-				$('.quote').append(sports[num][1]);
-			}else{
-				num=0;
-				$('.quote').append(sports[num][0]);
-				$('.quote').append(sports[num][1]);
-			}	
-		})	
 	}
-	if(currentArr==="Science"){
-		var length=science.length-1;
-		var num=Math.floor(Math.random() * (length - 0 + 1)) + 0;
-		var prev;
-		$('.quote').append(science[num][0]);
-		$('.quote').append(science[num][1]);
-		$('.left').click(function(){
-			if(num > 0){
-				num=num-1;
-				$('.quote').empty();
-				$('.quote').append(science[num][0]);
-				$('.quote').append(science[num][1]);
-			}else{
-				num=length;
-				$('.quote').empty();
-				$('.quote').append(science[num][0]);
-				$('.quote').append(science[num][1]);
-			}
-		})
-		$('.right').click(function(){
-			prev=num;
-			$('.quote').empty();
-			if(num<length){
-				num=num+1;
-				$('.quote').append(science[num][0]);
-				$('.quote').append(science[num][1]);
-			}else{
-				num=0;
-				$('.quote').append(science[num][0]);
-				$('.quote').append(science[num][1]);
-			}
-		})	
-	}
-	if(currentArr==="Life"){
-		var length=life.length-1;
-		var num=Math.floor(Math.random() * (length - 0 + 1)) + 0;
-		var prev;
-		$('.quote').append(life[num][0]);
-		$('.quote').append(life[num][1]);
-		$('.left').click(function(){
-			if(num > 0){
-				num=num-1;
-				$('.quote').empty();
-				$('.quote').append(life[num][0]);
-				$('.quote').append(life[num][1]);
-			}else{
-				num=length;
-				$('.quote').empty();
-				$('.quote').append(life[num][0]);
-				$('.quote').append(life[num][1]);
-			}
-		})
-		$('.right').click(function(){
-			prev=num;
-			$('.quote').empty();
-			if(num<length){
-				num=num+1;
-				$('.quote').append(life[num][0]);
-				$('.quote').append(life[num][1]);
-			}else{
-				num=0;
-				$('.quote').append(life[num][0]);
-				$('.quote').append(life[num][1]);
-			}
-		})	
-	}
-	if(currentArr==="Movies"){
-		var length=movies.length-1;
-		var num=Math.floor(Math.random() * (length - 0 + 1)) + 0;
-		var prev;
-		$('.quote').append(movies[num][0]);
-		$('.quote').append(movies[num][1]);
-		$('.left').click(function(){
-			if(num > 0){
-				num=num-1;
-				$('.quote').empty();
-				$('.quote').append(movies[num][0]);
-				$('.quote').append(movies[num][1]);
-			}else{
-				num=length;
-				$('.quote').empty();
-				$('.quote').append(movies[num][0]);
-				$('.quote').append(movies[num][1]);
-			}
-		})
-		$('.right').click(function(){
-			prev=num;
-			$('.quote').empty();
-			if(num<length){
-				num=num+1;
-				$('.quote').append(movies[num][0]);
-				$('.quote').append(movies[num][1]);
-			}else{
-				num=0;
-				$('.quote').append(movies[num][0]);
-				$('.quote').append(movies[num][1]);
-			}
-		})	
-	}
-	if(currentArr==="Music"){
-		var length=music.length-1;
-		var num=Math.floor(Math.random() * (length - 0 + 1)) + 0;
-		var prev;
-		$('.quote').append(music[num][0]);
-		$('.quote').append(music[num][1]);
-		$('.left').click(function(){
-			if(num > 0){
-				num=num-1;
-				$('.quote').empty();
-				$('.quote').append(music[num][0]);
-				$('.quote').append(music[num][1]);
-			}else{
-				num=length;
-				$('.quote').empty();
-				$('.quote').append(music[num][0]);
-				$('.quote').append(music[num][1]);
-			}
-		})
-		$('.right').click(function(){
-			prev=num;
-			$('.quote').empty();
-			if(num<length){
-				num=num+1;
-				$('.quote').append(music[num][0]);
-				$('.quote').append(music[num][1]);
-			}else{
-				num=0;
-				$('.quote').append(music[num][0]);
-				$('.quote').append(music[num][1]);
-			}
-		})	
-	}
-	if(currentArr==="Funny"){
-		var length=funny.length-1;
-		var num=Math.floor(Math.random() * (length - 0 + 1)) + 0;
-		var prev;
-		$('.quote').append(funny[num][0]);
-		$('.quote').append(funny[num][1]);
-		$('.left').click(function(){
-			if(num > 0){
-				num=num-1;
-				$('.quote').empty();
-				$('.quote').append(funny[num][0]);
-				$('.quote').append(funny[num][1]);
-			}else{
-				num=length;
-				$('.quote').empty();
-				$('.quote').append(funny[num][0]);
-				$('.quote').append(funny[num][1]);
-			}
-		})
-		$('.right').click(function(){
-			prev=num;
-			$('.quote').empty();
-			if(num<length){
-				num=num+1;
-				$('.quote').append(funny[num][0]);
-				$('.quote').append(funny[num][1]);
-			}else{
-				num=0;
-				$('.quote').append(funny[num][0]);
-				$('.quote').append(funny[num][1]);
-			}
-		})	
-	}
-	if(currentArr==="Success"){
-		var length=success.length-1;
-		var num=Math.floor(Math.random() * (length - 0 + 1)) + 0;
-		var prev;
-		$('.quote').append(success[num][0]);
-		$('.quote').append(success[num][1]);
-		$('.left').click(function(){
-			if(num > 0){
-				num=num-1;
-				$('.quote').empty();
-				$('.quote').append(success[num][0]);
-				$('.quote').append(success[num][1]);
-			}else{
-				num=length;
-				$('.quote').empty();
-				$('.quote').append(success[num][0]);
-				$('.quote').append(success[num][1]);
-			}
-		})
-		$('.right').click(function(){
-			prev=num;
-			$('.quote').empty();
-			if(num<length){
-				num=num+1;
-				$('.quote').append(success[num][0]);
-				$('.quote').append(success[num][1]);
-			}else{
-				num=0;
-				$('.quote').append(success[num][0]);
-				$('.quote').append(success[num][1]);
-			}
-		})	
-	}
-
 	// Allows users to press the left arrow to go to previous quote
 	$(document).keydown(function(e) {
 		if (e.keyCode == 37)
@@ -377,7 +170,7 @@ $(document).ready(function(){
 		if (e.keyCode == 39)
 			$('.right').click();
 	});
-	
+	quotePick();
 });
 
 
