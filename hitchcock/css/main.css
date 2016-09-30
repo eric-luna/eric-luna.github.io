@@ -31,12 +31,12 @@ h5{
   text-align: center;
 }
 .intro{
-	padding: 5%;
-  	font-family: 'Source Sans Pro', sans-serif;
-    font-size:16px;
-    padding:5%;
-    line-height:25px;
-    font-weight:500;
+ padding: 5%;
+ font-family: 'Source Sans Pro', sans-serif;
+ font-size:16px;
+ padding:5%;
+ line-height:25px;
+ font-weight:500;
 }
 
 hr{
@@ -58,29 +58,32 @@ h4{
 .buttons{
 	text-align: center;
 }
-.row div{
-
-}
 footer {
   clear: both;
   margin: auto;
   margin-top: 5%;
   text-align: center;
-}
-footer p{
-  margin: 0;
-  font-size: 1.5em;
+  color: black;
 }
 footer a:link{
   text-decoration: none;
   color: blue;
-  font-size: 2em;
+  font-size: 1.3em;
   font-weight: bolder;
 }
 footer a:visited{
   color: blue;
   text-decoration: none;
   font-weight: bolder;
+}
+footer ul{
+  padding: 0;
+  margin: auto;
+  list-style: none;
+}
+footer li{
+  display: inline-block;
+  padding: 0;
 }
 /*Responsive Design*/
 @media only screen and (min-width: 768px) and (max-width: 992px) {
