@@ -23,20 +23,26 @@ div {
 .link{
   float: right;
   text-decoration: none;
-  font-size: 1em;
+  font-size: .85em;
+  height: 20px;
   font-weight: bold;
   text-align: center;
   border:5px solid #e8ae6e;
-  color:rgb(113, 186, 169);
   color: #e2695e;
   background-color: rgba(255, 255, 255,1); 
   border-radius: 5px;
   width: 215px;
   padding: 5px 2px;
   margin: 3px 3px;
+  transition-property: font-size;
+  transition-duration: .25s;
+  transition-timing-function: linear;
 }
 .link:visited{
    color: #e2695e;
+}
+.link:hover{
+  font-size: 1em;
 }
 /*main header title*/
 .header{

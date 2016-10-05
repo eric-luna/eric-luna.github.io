@@ -23,7 +23,8 @@ div {
 .link{
   float: right;
   text-decoration: none;
-  font-size: 1em;
+  font-size: .85em;
+  height: 20px;
   font-weight: bold;
   text-align: center;
   border:5px solid #fff;
@@ -33,9 +34,15 @@ div {
   width: 215px;
   padding: 5px 2px;
   margin: 3px 3px;
+  transition-property: font-size;
+  transition-duration: .25s;
+  transition-timing-function: linear;
 }
 .link:visited{
    color: #fff;
+}
+.link:hover{
+  font-size: 1em;
 }
 /*main header title*/
 .header{
