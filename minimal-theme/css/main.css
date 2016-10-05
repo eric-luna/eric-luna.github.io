@@ -10,38 +10,26 @@ body,html{
   overflow: auto;
 }
 /*Main header section*/
-.main-header{
+.header{
 	position: relative;
-	background:url("../img/home.jpg");
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 	height: 600px;
 	margin: auto;
-	border-bottom: 3px solid black;
+	border-bottom: 10px solid black;
+}
+.main-header{
+	background:url("../img/home.jpg");
 }
 .services-header{
-	position: relative;
 	background:url("../img/services.jpg");
-	background-size: cover;
-	height: 600px;
-	margin: auto;
-	border-bottom: 3px solid black;
 }
 .about-header{
-	position: relative;
 	background:url("../img/about.jpg");
-	background-size: cover;
-	height: 600px;
-	margin: auto;
-	border-bottom: 3px solid black;
 }
 .contact-header{
-	position: relative;
 	background:url("../img/contact.jpg");
-	background-size: cover;
-	height: 600px;
-	margin: auto;
-	border-bottom: 3px solid black;
 }
 /*Navigation Bars*/
 .nav-bar{
@@ -103,8 +91,7 @@ body,html{
 .display{
 	position: absolute;
 	top: 20%;
-	left: 20%;
-	margin: auto;
+	left: 20%80	margin: auto;
 	display: block;
 	z-index: 5;
 }
@@ -113,7 +100,7 @@ body,html{
 	display: none;
 }
 .header-text{
-	background-color: rgba(0,0,0,.20);
+	background-color: rgba(0,0,0,.50);
 	text-align: center;
 	color: white;
 	margin: auto;
@@ -313,8 +300,8 @@ footer li{
 	}
 }
 @media only screen and (min-width: 480px) {
-	.main-header{
-		border:15px solid white;
+	.header{
+		border:10px solid white;
 	}
 	.navigation{
 		width: 80%;
@@ -375,8 +362,7 @@ footer li{
 		width: 75%;
 		font-size: 5em;
 	}
-	.main-header{
-		/*background:url("../img/header.jpg");*/
+	.header{
 		background-size: cover;
 	}
 	.box{
