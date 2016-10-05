@@ -47,30 +47,44 @@ div {
   background-color: rgba(49, 86, 104,0.85);
   border-radius: 10px;
 }
-/*search div style*/
-.top{
-  margin-top: 10px;
-  margin: 0;
+
+/*Search Bar Styles*/
+.search-bar{
+  margin: 0 auto;
+  /*height: 40px;*/
+  display: flex;
+  width: 75%;
+  flex-direction: row;
 }
-/*search input style*/
-.search{
-  font-size: 15px;
-  border-radius: 10px;
-  border:5px solid #e8ae6e;
+input{
+  height: 40px;
+  width: 95%;
+  padding: 5px;
+  font-size: 1.15em;
+  font-weight: bold;
+  background: #fff; 
+  border:solid 1px #d9d9d9; 
+  border-top:solid 2px #c0c0c0; 
+  border-bottom:solid 2px #c0c0c0; 
+  border-right:none;
 }
-/*removes focus when search bar or search button is clicked*/
-input, button:focus{
-  outline:none;
+input:focus{
+  outline: none;
 }
-.search-button{
-  position: relative;
-  padding: 5px 5px;
-  margin: 5px 5px;
-  border-radius: 10px;
-  font-size: 15px;
-  text-decoration: none;  
-  background-color: rgb(113, 186, 169);
-  color: white;
+.button {
+  background: #fff;
+  width: 45px;
+  height: 54px;
+  border-top:solid 2px #c0c0c0;
+  border-right:solid 1px #d9d9d9;
+  border-bottom:solid 2px #c0c0c0;
+  border-left: none;
+  padding: 5px;
+}
+.button img{
+  width: 35px;
+  height: 35px;
+  margin: 0 auto;
 }
 
 /*Main movie section styles*/
@@ -209,16 +223,16 @@ footer a:visited{
   }
   .poster{
     margin:auto;
-    width: 50%;
+    width: 40%;
   }
   .poster img{
     border-radius: 5px;
     margin: auto;
     text-align: center;
-    width: 60%;
+    width: 70%;
   }
   .movie-info{
-    width: 50%;
+    width: 60%;
     margin: 0;
     height: 500px;
   }
@@ -229,4 +243,3 @@ footer a:visited{
     width: 55%;
   }
 }
-
