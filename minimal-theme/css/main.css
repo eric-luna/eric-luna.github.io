@@ -12,24 +12,31 @@ body,html{
 /*Main header section*/
 .header{
 	position: relative;
+	background:url("../img/home.jpg");
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
 	height: 600px;
 	margin: auto;
-	border-bottom: 10px solid black;
-}
-.main-header{
-	background:url("../img/home.jpg");
+	border-bottom: 3px solid black;
 }
 .services-header{
 	background:url("../img/services.jpg");
 }
 .about-header{
+	position: relative;
 	background:url("../img/about.jpg");
+	background-size: cover;
+	height: 600px;
+	margin: auto;
+	border-bottom: 3px solid black;
 }
 .contact-header{
+	position: relative;
 	background:url("../img/contact.jpg");
+	background-size: cover;
+	height: 600px;
+	margin: auto;
+	border-bottom: 3px solid black;
 }
 /*Navigation Bars*/
 .nav-bar{
@@ -41,7 +48,7 @@ body,html{
 	display: inline-block;
 	float: right;
 	margin: 0;
-	font-size: 2em;
+	font-size: 1.4em;
 	color: white;
 	font-weight: 700;
 	padding-right: 10px;
@@ -91,7 +98,8 @@ body,html{
 .display{
 	position: absolute;
 	top: 20%;
-	left: 20%80	margin: auto;
+	left: 20%;
+	margin: auto;
 	display: block;
 	z-index: 5;
 }
@@ -301,7 +309,7 @@ footer li{
 }
 @media only screen and (min-width: 480px) {
 	.header{
-		border:10px solid white;
+		border:15px solid white;
 	}
 	.navigation{
 		width: 80%;
@@ -363,6 +371,7 @@ footer li{
 		font-size: 5em;
 	}
 	.header{
+		/*background:url("../img/header.jpg");*/
 		background-size: cover;
 	}
 	.box{
