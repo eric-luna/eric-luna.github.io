@@ -86,7 +86,9 @@ input:focus{
   height: 35px;
   margin: 0 auto;
 }
-
+.button:focus{
+  outline: none;
+}
 /*Main movie section styles*/
 .movie{
   margin: 50px auto;
