@@ -24,9 +24,11 @@ div {
   float: right;
   text-decoration: none;
   font-size: 1em;
+  font-weight: bold;
   text-align: center;
   border:5px solid #e8ae6e;
   color:rgb(113, 186, 169);
+  color: #e2695e;
   background-color: rgba(255, 255, 255,1); 
   border-radius: 5px;
   width: 215px;
@@ -34,7 +36,7 @@ div {
   margin: 3px 3px;
 }
 .link:visited{
-   color:rgba(2, 177, 234,1);
+   color: #e2695e;
 }
 /*main header title*/
 .header{
@@ -194,6 +196,7 @@ footer p{
   font-size: 1em;
   background-color: #e2695e;
   border-radius: 3px;
+  padding: 3px;
 }
 footer a:link{
   text-decoration: none;
