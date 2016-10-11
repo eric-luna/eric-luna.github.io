@@ -107,9 +107,11 @@ body{
 	width: 95%;
 	text-align: center;
 	margin: 70px auto;
-	/*border: 5px solid #e05038;*/
 	background-color: white;
 	border-radius: 3px;
+}
+.quote{
+	display: none;
 }
 .quote p{
 	width: 95%;

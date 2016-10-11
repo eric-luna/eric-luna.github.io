@@ -131,19 +131,21 @@ $(document).ready(function(){
 		var length=quotes.length-1;
 		var num=Math.floor(Math.random() * (length - 0 + 1)) + 0;
 		var prev;
-		$('.quote').append(quotes[num][0]);
-		$('.quote').append(quotes[num][1]);
+		$('.quote').append(quotes[num][0]).show(1200);
+		$('.quote').append(quotes[num][1]).show(1200);
 		$('.left').click(function(){
 			if(num > 0){
 				num=num-1;
 				$('.quote').empty();
-				$('.quote').append(quotes[num][0]);
-				$('.quote').append(quotes[num][1]);
+				$('.quote').css("display","none");
+				$('.quote').append(quotes[num][0]).show(1200);
+				$('.quote').append(quotes[num][1]).show(1200);
 			}else{
 				num=length;
 				$('.quote').empty();
-				$('.quote').append(quotes[num][0]);
-				$('.quote').append(quotes[num][1]);
+				$('.quote').css("display","none");
+				$('.quote').append(quotes[num][0]).show(1200);
+				$('.quote').append(quotes[num][1]).show(1200);
 			}
 		})
 		$('.right').click(function(){
@@ -151,12 +153,16 @@ $(document).ready(function(){
 			$('.quote').empty();
 			if(num<length){
 				num=num+1;
-				$('.quote').append(quotes[num][0]);
-				$('.quote').append(quotes[num][1]);
+				$('.quote').empty();
+				$('.quote').css("display","none");
+				$('.quote').append(quotes[num][0]).show(1200);
+				$('.quote').append(quotes[num][1]).show(1200);
 			}else{
 				num=0;
-				$('.quote').append(quotes[num][0]);
-				$('.quote').append(quotes[num][1]);
+				$('.quote').empty();
+				$('.quote').css("display","none");
+				$('.quote').append(quotes[num][0]).show(1200);
+				$('.quote').append(quotes[num][1]).show(1200);
 			}		
 		})
 	}
