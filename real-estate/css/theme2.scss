@@ -28,6 +28,11 @@ nav{
                 background-color:rgba(128, 128, 128,0.5);
             }
         }
+        a{
+            &:visited{
+                color:#fff;
+            }
+        }
     }
 }
 .banner{

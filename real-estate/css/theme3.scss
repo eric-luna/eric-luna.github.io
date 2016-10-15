@@ -27,6 +27,11 @@ nav{
                 color:white;
             }
         }
+        a{
+            &:visited{
+                color:#919292;
+            }
+        }
     }
 }
 .banner{

@@ -25,6 +25,8 @@ nav {
       padding: 10px; }
       nav ul li:hover {
         color: white; }
+    nav ul a:visited {
+      color: #919292; }
 
 .banner {
   text-align: left;

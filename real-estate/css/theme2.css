@@ -26,6 +26,8 @@ nav {
       padding: 10px; }
       nav ul li:hover {
         background-color: rgba(128, 128, 128, 0.5); }
+    nav ul a:visited {
+      color: #fff; }
 
 .banner {
   text-align: left;
