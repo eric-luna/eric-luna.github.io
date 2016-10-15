@@ -1,7 +1,6 @@
 body,html{
     margin:0;
     padding:0;
-    font-family:'Lobster',sans-serif;
 }
 .theme2,.theme3{
     display:none;
@@ -11,6 +10,7 @@ nav{
         padding:0;
         text-align:right;
         list-style:none;
+        font-family:'Neuton', sans-serif;
         li{
             display:inline-block;
             padding-right:10px;
@@ -77,7 +77,7 @@ main{
 .form .form-title-row{
     text-align: center;
     margin-bottom: 55px;
-    font-family:'Lobster', sans-serif;
+    font-family:'Montserrat', sans-serif;
 }
 
 /* The form title */
@@ -98,6 +98,7 @@ main{
     text-align: right;
     vertical-align: top;
     padding: 12px 25px;
+    font-family:'Neuton', sans-serif;
 }
 
 .form input{
@@ -120,7 +121,7 @@ main{
     padding: 14px 22px;
     border: 0;
     margin: 30px 100px 0;
-    font-family:'Lobster', sans-serif;
+    font-family:'Montserrat', sans-serif;
     letter-spacing:1.2px;
 }
 

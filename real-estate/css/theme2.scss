@@ -1,7 +1,6 @@
 body,html{
     margin:0;
     padding:0;
-    font-family:'Lobster', sans-serif;
 }
 body{
     background:url(../img/theme2.jpg);
@@ -13,6 +12,7 @@ body{
 }
 nav{
     background-color:#000;
+    font-family:'Neuton', sans-serif;
     ul{
         text-align:center;
         margin:0;
@@ -36,6 +36,7 @@ nav{
     }
 }
 .banner{
+    font-family:'Montserrat', sans-serif;
     text-align:left;
     background:none;
     padding:15px;
@@ -61,7 +62,11 @@ main{
     margin:25px auto;
     width:95%;
     padding:30px;
-    font-family:'Cabin', sans-serif;
+    font-family:'Neuton', sans-serif;
+
+    h3{
+        font-family:'Montserrat', sans-serif;
+    }
 }
 
 .form-container{
@@ -98,6 +103,7 @@ main{
 /* The form title */
 
 .form h1{
+    font-family:'Montserrat', sans-serif;
     display: inline-block;
     box-sizing: border-box;
     font-size: 24px;
@@ -113,6 +119,7 @@ main{
     text-align: right;
     vertical-align: top;
     padding: 12px 25px;
+    font-family:'Neuton', sans-serif;
 }
 
 .form input{
@@ -135,7 +142,7 @@ main{
     padding: 14px 22px;
     border: 0;
     margin: 30px 150px 0;
-    font-family:'Lobster', sans-serif;
+    font-family:'Montserrat', sans-serif;
     letter-spacing:1.2px;
 }
 

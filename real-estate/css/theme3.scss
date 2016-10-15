@@ -1,7 +1,6 @@
 body,html{
     margin:0;
     padding:0;
-    font-family:'Lobster', sans-serif;
     background-color:#e5e0e0;
 }
 .theme1{
@@ -12,6 +11,7 @@ body,html{
 }
 nav{
     background-color:#202629;
+    font-family:'Neuton', sans-serif;
     ul{
         text-align:center;
         margin:0;
@@ -64,7 +64,7 @@ main{
     margin:25px auto;
     width:95%;
     padding:30px;
-    font-family:'Cabin', sans-serif;
+    font-family:'Montserrat', sans-serif;
 }
 .info .theme2{
     display:none;
@@ -110,6 +110,7 @@ main{
 /* The form title */
 
 .form h1{
+    font-family:'Montserrat', sans-serif;
     display: inline-block;
     box-sizing: border-box;
     font-size: 20px;
@@ -128,6 +129,7 @@ main{
     text-align: right;
     vertical-align: top;
     padding: 12px 25px;
+    font-family:'Neuton', sans-serif;
 }
 
 .form input{
@@ -162,7 +164,7 @@ main{
     padding: 14px 22px;
     border: 0;
     margin: 30px 100px 0;
-    font-family:'Lobster', sans-serif;
+    font-family:'Montserrat', sans-serif;
     letter-spacing:1.2px;
     clear:both;
 }
