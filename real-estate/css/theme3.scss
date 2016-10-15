@@ -116,7 +116,7 @@ main{
     font-size: 20px;
     padding:12px;
     color:white;
-    border-bottom: 2px solid #6caee0;
+    border-bottom: 5px solid #E56068;
     margin: 0;
     background-color:#202629;
     width:100%;
@@ -155,18 +155,16 @@ main{
 }
 .form button{
     display: block;
-    width:150px;
-    border-radius: 2px;
     background-color:#E56068;
-    color: #ffffff;
+    width:100%;
+    border-radius: 2px;
+    color: #fff;
     font-weight: bold;
     box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
-    padding: 14px 22px;
+    padding: 15px 25px;
     border: 0;
-    margin: 30px 100px 0;
     font-family:'Montserrat', sans-serif;
     letter-spacing:1.2px;
-    clear:both;
 }
 
 @media (max-width: 900px) {
@@ -212,7 +210,7 @@ main{
         margin:auto;
     }
     .info{
-        width:55%;
+        width:50%;
         height:350px;
     }
     .form-container{
