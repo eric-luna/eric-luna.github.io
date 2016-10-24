@@ -1,8 +1,6 @@
 body, html {
   margin: 0;
   padding: 0;
-  background: #f8fad7;
-  background: #F8F8FF;
   background: #FEFEFA;
   color: #3a3a3a;
   font-family: 'Cardo',sans-serif; }
@@ -70,9 +68,8 @@ hr {
       transition-duration: .25s;
       transition-timing-function: linear; }
       .container .nav li:hover {
-        color: #3498db;
         color: #F22613;
-        font-size: 1.15em; }
+        font-size: 1.20em; }
       .container .nav li:visited {
         color: #3a3a3a; }
   .container .intro {
@@ -145,18 +142,18 @@ hr {
           transition-duration: .25s;
           transition-timing-function: linear; }
           .container footer .social-icons li a:hover {
-            color: #F22613; }
+            color: #F22613;
+            font-size: .85em; }
       .container footer .social-icons .icons {
         margin: 0;
         margin-left: 0;
         height: 32px;
         width: 32px; }
       .container footer .social-icons p {
-        font-size: 12px;
+        font-size: 14px;
         margin: 0;
         margin-top: 50px; }
         .container footer .social-icons p span {
-          color: #F22613;
           font-size: 24px;
           font-weight: 600; }
 
@@ -185,6 +182,7 @@ hr {
     .container footer .social-icons li a {
       font-size: 1em; }
       .container footer .social-icons li a:hover {
-        color: #F22613; } }
+        color: #F22613;
+        font-size: 1.05em; } }
 
 /*# sourceMappingURL=output.css.map */

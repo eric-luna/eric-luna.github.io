@@ -73,9 +73,8 @@ hr{
 			transition-duration: .25s;
 			transition-timing-function: linear;
 			&:hover{
-				color:#3498db;
 				color:#F22613;
-				font-size:1.15em;
+				font-size:1.20em;
 			}
 			&:visited{
 			color:#3a3a3a;
@@ -171,6 +170,7 @@ hr{
 					transition-timing-function: linear;
 					&:hover{
 						color:#F22613;
+						font-size:.85em;
 					}
 				}
 			}
@@ -182,11 +182,10 @@ hr{
 			
 			}
 			p{
-				font-size:12px;
+				font-size:14px;
 				margin:0;
 				margin-top:50px;
 				span{
-					color:#F22613;
 					font-size:24px;
 					font-weight:600;
 				}
@@ -234,6 +233,7 @@ hr{
 						font-size:1em;
 						&:hover{
 							color:#F22613;
+							font-size:1.05em;
 						}
 					}
 				}
