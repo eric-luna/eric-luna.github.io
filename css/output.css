@@ -2,7 +2,7 @@ body, html {
   margin: 0;
   padding: 0;
   background: #FEFEFA;
-  color: #3a3a3a;
+  color: #000;
   font-family: 'Cardo',sans-serif; }
 
 /*Default Styles*/
@@ -12,7 +12,7 @@ h2 {
 
 .divider {
   height: 3px;
-  background: #3a3a3a; }
+  background: #000; }
 
 .clearfix {
   overflow: auto; }
@@ -44,7 +44,7 @@ hr {
 
 /*Main Content Styles*/
 .container {
-  margin: 50px 5px;
+  margin: 25px 10px;
   /*Footer Styles*/ }
   .container .pic {
     height: 100px;
@@ -63,7 +63,7 @@ hr {
     .container .nav li {
       display: inline-block;
       margin-right: 5px;
-      color: #3a3a3a;
+      color: #000;
       transition-property: font-size, color;
       transition-duration: .25s;
       transition-timing-function: linear; }
@@ -71,7 +71,7 @@ hr {
         color: #F22613;
         font-size: 1.20em; }
       .container .nav li:visited {
-        color: #3a3a3a; }
+        color: #000; }
   .container .intro {
     line-height: 1.5;
     margin: 50px 0;
@@ -88,28 +88,28 @@ hr {
   .container #projects {
     margin: 50px 0;
     padding: 0;
-    color: #3a3a3a; }
+    color: #000; }
     .container #projects > li {
       list-style: none;
       padding: 10px 5px;
       height: 75px;
       width: 85%;
-      border-bottom: 1px solid #3a3a3a;
+      border-bottom: 1px solid #000;
       transition-property: background, color;
       transition-duration: .75s;
       transition-timing-function: linear; }
       .container #projects > li a {
         text-decoration: none;
-        color: #3a3a3a; }
+        color: #000; }
         .container #projects > li a p {
           margin: 0;
           font-size: 16px;
           font-weight: bold; }
         .container #projects > li a:visited {
-          color: #3a3a3a; }
+          color: #000; }
       .container #projects > li:hover {
         color: #fff;
-        background: #3a3a3a; }
+        background: #000; }
         .container #projects > li:hover a {
           color: #fff; }
   .container footer {
@@ -136,7 +136,7 @@ hr {
         margin-bottom: 15px;
         font-weight: 600; }
         .container footer .social-icons li a {
-          color: #3a3a3a;
+          color: #000;
           font-size: .75em;
           transition-property: font-size, color;
           transition-duration: .25s;
@@ -160,7 +160,7 @@ hr {
 /* Responsive Styles*/
 @media only screen and (min-width: 500px) {
   .container {
-    margin: 50px 50px; }
+    margin: 20px 30px; }
     .container .pic {
       height: 150px;
       width: 150px;
