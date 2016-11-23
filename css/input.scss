@@ -1,9 +1,13 @@
 body,html{
 	margin:0;
 	padding:0;
-	background:#25323A;
-	color:#fff;
+	background:white;
+	color:black;
 	font-family:'Cardo',sans-serif;
+}
+
+html{
+	border:10px solid black;
 }
 
 /*Default Styles*/
@@ -12,8 +16,8 @@ h2{
 	font-family:'Montserrat',sans-serif;
 }
 .divider{
-	height:3px;
-	background:#fff;
+	height:5px;
+	background:black;
 }
 .clearfix {
   overflow: auto;
@@ -68,15 +72,15 @@ hr{
 		li{
 			display:inline-block;
 			margin-right:5px;
-			color:#fff;
+			color:black;
 			transition-property: font-size, color;
 			transition-duration: .25s;
 			transition-timing-function: linear;
 			&:hover{
-				font-size:1.20em;
+				color:blue;
 			}
 			&:visited{
-			color:#fff;
+			color:black;
 			}
 		}
 	}
@@ -102,32 +106,32 @@ hr{
 	#projects{
 		margin:50px 0;
 		padding:0;
-		color:#fff;
+		color:black;
 		> li{
 			list-style:none;
 			padding:10px 5px;
 			height:75px;
 			width:85%;
-			border-bottom:1px solid #fff;
+			border-bottom:3px solid black;
 			transition-property: background, color;
 			transition-duration: .75s;
 			transition-timing-function: linear;
 			a{
 				text-decoration:none;
-				color:#fff;
+				color:black;
 				p{
 					margin:0;
 					font-size:16px;
 					font-weight:bold;
 				}
 				&:visited{
-					color:#fff;
+					color:black;
 				}
 			}
 			&:hover{
-				background:#fff;
+				background:black;
 				a{
-					color:#25323A;
+					color:white;
 				}
 			}
 		}
@@ -143,7 +147,7 @@ hr{
 				width:25%;
 				height:auto;
 				border-radius:5px;
-				border:1.5px solid #fff;
+				border:1.5px solid black;
 				float:left;
 				margin-right:15px;
 			}
@@ -162,13 +166,13 @@ hr{
 				margin-bottom:15px;
 				font-weight:600;
 				a{
-					color:#fff;
+					color:black;
 					font-size:.75em;
 					transition-property: font-size, color;
 					transition-duration: .25s;
 					transition-timing-function: linear;
 					&:hover{
-						font-size:.85em;
+						color:blue;
 					}
 				}
 			}
@@ -195,6 +199,9 @@ hr{
 /* Responsive Styles*/
 
 @media only screen and (min-width: 500px){
+	html{
+		border:12px solid black;
+	}
 	.container{
 		margin:20px 30px;
 		.pic{
@@ -229,9 +236,6 @@ hr{
 				li{
 					a{
 						font-size:1em;
-						&:hover{
-							font-size:1.05em;
-						}
 					}
 				}
 					

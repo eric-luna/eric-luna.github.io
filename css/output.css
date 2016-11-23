@@ -1,9 +1,12 @@
 body, html {
   margin: 0;
   padding: 0;
-  background: #25323A;
-  color: #fff;
+  background: white;
+  color: black;
   font-family: 'Cardo',sans-serif; }
+
+html {
+  border: 10px solid black; }
 
 /*Default Styles*/
 h2 {
@@ -11,8 +14,8 @@ h2 {
   font-family: 'Montserrat',sans-serif; }
 
 .divider {
-  height: 3px;
-  background: #fff; }
+  height: 5px;
+  background: black; }
 
 .clearfix {
   overflow: auto; }
@@ -63,14 +66,14 @@ hr {
     .container .nav li {
       display: inline-block;
       margin-right: 5px;
-      color: #fff;
+      color: black;
       transition-property: font-size, color;
       transition-duration: .25s;
       transition-timing-function: linear; }
       .container .nav li:hover {
-        font-size: 1.20em; }
+        color: blue; }
       .container .nav li:visited {
-        color: #fff; }
+        color: black; }
   .container .intro {
     line-height: 1.5;
     margin: 50px 0;
@@ -88,29 +91,29 @@ hr {
   .container #projects {
     margin: 50px 0;
     padding: 0;
-    color: #fff; }
+    color: black; }
     .container #projects > li {
       list-style: none;
       padding: 10px 5px;
       height: 75px;
       width: 85%;
-      border-bottom: 1px solid #fff;
+      border-bottom: 3px solid black;
       transition-property: background, color;
       transition-duration: .75s;
       transition-timing-function: linear; }
       .container #projects > li a {
         text-decoration: none;
-        color: #fff; }
+        color: black; }
         .container #projects > li a p {
           margin: 0;
           font-size: 16px;
           font-weight: bold; }
         .container #projects > li a:visited {
-          color: #fff; }
+          color: black; }
       .container #projects > li:hover {
-        background: #fff; }
+        background: black; }
         .container #projects > li:hover a {
-          color: #25323A; }
+          color: white; }
   .container footer {
     margin: 50px 0; }
     .container footer div {
@@ -119,7 +122,7 @@ hr {
         width: 25%;
         height: auto;
         border-radius: 5px;
-        border: 1.5px solid #fff;
+        border: 1.5px solid black;
         float: left;
         margin-right: 15px; }
       .container footer div p {
@@ -135,13 +138,13 @@ hr {
         margin-bottom: 15px;
         font-weight: 600; }
         .container footer .social-icons li a {
-          color: #fff;
+          color: black;
           font-size: .75em;
           transition-property: font-size, color;
           transition-duration: .25s;
           transition-timing-function: linear; }
           .container footer .social-icons li a:hover {
-            font-size: .85em; }
+            color: blue; }
       .container footer .social-icons .icons {
         margin: 0;
         margin-left: 0;
@@ -157,6 +160,9 @@ hr {
 
 /* Responsive Styles*/
 @media only screen and (min-width: 500px) {
+  html {
+    border: 12px solid black; }
+
   .container {
     margin: 20px 30px; }
     .container .pic {
@@ -178,8 +184,6 @@ hr {
       .container footer div .pic {
         width: 15%; }
     .container footer .social-icons li a {
-      font-size: 1em; }
-      .container footer .social-icons li a:hover {
-        font-size: 1.05em; } }
+      font-size: 1em; } }
 
 /*# sourceMappingURL=output.css.map */
