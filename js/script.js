@@ -15,7 +15,7 @@ $(document).ready(function() {
     $(".contact-button").click(function(e) {
         e.preventDefault();
         $('html, body').animate({
-            scrollTop: $("#footer").offset().top
+            scrollTop: $("#contact").offset().top
         }, 2000);
     });
 });
