@@ -27,7 +27,7 @@ h2 {
 // Header Section
 header {
     padding: $padding;
-    .nav {
+    .header-content {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -52,26 +52,26 @@ header {
             display: flex;
             flex-direction: column;
             flex: 1;
-            ul{
-            	padding:0;
-            }
-            a {
-                text-decoration: none;
-                li {
-                    display: block;
-                    padding-right:20px;
-                    font-size: 1.5em;
-                    font-weight: 600;
-                    transition-property: font-size, color;
-                    transition-duration: .25s;
-                    transition-timing-function: linear;
-                    color: #141823;
-                    &:hover {
-                        color: blue;
-                        text-decoration: underline;
-                    }
-                    &:visited {
-                        color: #333;
+            ul {
+                padding: 0;
+                a {
+                    text-decoration: none;
+                    li {
+                        display: block;
+                        padding-right: 20px;
+                        font-size: 1.5em;
+                        font-weight: 600;
+                        transition-property: font-size, color;
+                        transition-duration: .25s;
+                        transition-timing-function: linear;
+                        color: #141823;
+                        &:hover {
+                            color: blue;
+                            text-decoration: underline;
+                        }
+                        &:visited {
+                            color: #333;
+                        }
                     }
                 }
             }
@@ -114,6 +114,7 @@ header {
 // Project Section
 #projects {
     padding: $padding;
+    color: #141823;
     .project-list {
         margin: 50px auto;
         width: 85%;
@@ -124,7 +125,7 @@ header {
             list-style: none;
             padding: 10px 5px;
             height: 75px;
-            border-bottom: 3px solid #333;
+            border-bottom: 1px solid #333;
             transition-property: background, color;
             transition-duration: .75s;
             transition-timing-function: linear;
@@ -233,7 +234,7 @@ footer {
     }
     .copyright {
         margin: 0 auto;
-        padding:0;
+        padding: 0;
         text-align: center;
         span {
             color: blue;
@@ -246,7 +247,7 @@ footer {
 
 @media only screen and (min-width: 750px) {
     header {
-        .nav {
+        .header-content {
             .name {
                 margin-left: 50px;
                 h1 {
@@ -359,7 +360,7 @@ footer {
             }
         }
         .copyright {
-        	height:70px;
+            height: 70px;
             span {
                 font-size: 2.5em;
             }
