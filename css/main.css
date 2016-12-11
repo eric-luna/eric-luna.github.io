@@ -10,7 +10,7 @@ hr {
 
 h2 {
   font-family: 'Megrim', cursive;
-  padding-left: 10px;
+  padding-left: 15px;
   text-decoration: underline; }
 
 .highlight {
@@ -48,18 +48,21 @@ header {
           text-decoration: none; }
           header .header-content nav ul a li {
             display: block;
-            padding-right: 20px;
+            text-align: center;
+            margin-right: 20px;
             font-size: 1.5em;
             font-weight: 600;
             transition-property: font-size, color;
             transition-duration: .25s;
             transition-timing-function: linear;
-            color: #141823; }
+            color: #000;
+            padding: 5px; }
             header .header-content nav ul a li:hover {
-              color: blue;
-              text-decoration: underline; }
+              color: #fff;
+              background: #000;
+              border-radius: 3px; }
             header .header-content nav ul a li:visited {
-              color: #333; }
+              color: #000; }
       header .header-content nav .intro-lg {
         display: none; }
   header .intro-sm {
@@ -200,6 +203,9 @@ footer {
       font-family: 'Megrim', cursive; }
 
 @media only screen and (min-width: 750px) {
+  h2 {
+    padding-left: 25px; }
+
   header .header-content .name {
     margin-left: 50px; }
     header .header-content .name h1 {
