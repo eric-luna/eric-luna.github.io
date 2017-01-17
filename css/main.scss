@@ -62,7 +62,7 @@ header {
                         font-size: 1.5em;
                         font-weight: 600;
                         transition-property: font-size, color;
-                        transition-duration: .25s;
+                        transition-duration: .15s;
                         transition-timing-function: linear;
                         color: #000;
                         padding:10px;
@@ -132,7 +132,7 @@ header {
             height: 75px;
             border-bottom: 1px solid #333;
             transition-property: background, color;
-            transition-duration: .75s;
+            transition-duration: .15s;
             transition-timing-function: linear;
             .tags {
                 margin: 0;
@@ -216,7 +216,7 @@ footer {
                 a {
                     font-size: .75em;
                     transition-property: font-size, color;
-                    transition-duration: .25s;
+                    transition-duration: .15s;
                     transition-timing-function: linear;
                     &:hover {
                         color: blue;
@@ -334,9 +334,6 @@ footer {
                 flex-direction: row;
                 margin: 50px 0;
                 width: 60%;
-                .pic {
-                    margin-right: 15px;
-                }
                 p {
                     font-size: 14px;
                     width: 80%;
@@ -357,7 +354,7 @@ footer {
                         color: #fff;
                         font-size: .75em;
                         transition-property: font-size, color;
-                        transition-duration: .25s;
+                        transition-duration: .15s;
                         transition-timing-function: linear;
                         &:hover {
                             color: blue;
