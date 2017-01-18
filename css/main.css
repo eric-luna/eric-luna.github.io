@@ -92,11 +92,7 @@ header {
         color: #FEFEFA;
         width: 100%;
         display: flex;
-        flex-direction: column;
-        height: 75px; }
-        #projects .project-list > li a .image img {
-          display: block;
-          border-radius: 3px; }
+        flex-direction: column; }
         #projects .project-list > li a .description h3 {
           margin: 0;
           font-size: 1em;
@@ -260,7 +256,8 @@ footer {
     width: 75%; }
 
   .project-list > li {
-    width: 100%; }
+    width: 100%;
+    height: 75px; }
   .project-list hr {
     width: 60%; }
 
