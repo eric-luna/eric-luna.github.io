@@ -92,7 +92,8 @@ header {
         color: #FEFEFA;
         width: 100%;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        height: 75px; }
         #projects .project-list > li a .image img {
           display: block;
           border-radius: 3px; }
