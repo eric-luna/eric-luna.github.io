@@ -96,12 +96,10 @@ header {
         #projects .project-list > li a .description h3 {
           margin: 0;
           font-size: 1em;
-          font-weight: bold;
-          display: inline-block; }
+          font-weight: bold; }
         #projects .project-list > li a .description .tags {
           margin: 0;
-          padding-left: 0;
-          display: inline-block; }
+          padding-left: 0; }
         #projects .project-list > li a .description .tags li {
           font-size: 0.55em;
           -webkit-background-clip: padding-box;
