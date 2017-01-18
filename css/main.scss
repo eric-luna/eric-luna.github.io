@@ -157,11 +157,11 @@ header {
     padding: $padding;
     margin: auto;
     .icons {
-        margin: 0 auto;
+        margin: 0;
         padding: 35px 0;
         list-style: none;
         width: 90%;
-        text-align: center;
+        text-align: left;
         li {
             margin: 0 auto;
             display: inline-block;
@@ -169,6 +169,7 @@ header {
             a{
                 color: #141823;
                 text-decoration: none;
+                text-align: center;
                 &:visited{
                     color:  #141823;
                 }
@@ -193,14 +194,14 @@ header {
 footer {
     background-color: #141823;
     color: #FEFEFA;
-    padding: 50px 0;
+    padding: 5px 0;
     .footer-content {
         display: flex;
         flex-direction: column;
         width: 90%;
         margin: 0 auto;
         div {
-            margin: 30px 0;
+            margin: 15px 0;
             .pic {
                 height: 100px;
                 width: 80px;
@@ -315,7 +316,7 @@ footer {
     }
     #skills {
         .icons {
-            width: 70%;
+            width: 75%;
         }
     }
     .project-list {
