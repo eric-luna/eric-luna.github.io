@@ -205,7 +205,11 @@ footer {
       font-weight: bold;
       font-family: 'Megrim', cursive; }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 800px) {
+  .column {
+    width: 80%;
+    margin: auto; }
+
   h2 {
     padding-left: 25px; }
 
@@ -222,7 +226,7 @@ footer {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      width: 80%; }
+      width: 90%; }
       header .header-content nav .nav-container a li {
         display: inline-block;
         font-size: 1.5em; }
