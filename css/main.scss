@@ -230,11 +230,8 @@ footer {
                 margin: 0 auto;
                 a {
                     font-size: .75em;
-                    transition-property: font-size, color;
-                    transition-duration: .15s;
-                    transition-timing-function: linear;
                     &:hover {
-                        color: blue;
+                        border-bottom: 2px solid #FEFEFA;
                     }
                     span {
                         display: none;

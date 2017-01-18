@@ -183,12 +183,9 @@ footer {
         display: inline-block;
         margin: 0 auto; }
         footer .footer-content .social-icons li a {
-          font-size: .75em;
-          transition-property: font-size, color;
-          transition-duration: .15s;
-          transition-timing-function: linear; }
+          font-size: .75em; }
           footer .footer-content .social-icons li a:hover {
-            color: blue; }
+            border-bottom: 2px solid #FEFEFA; }
           footer .footer-content .social-icons li a span {
             display: none; }
       footer .footer-content .social-icons .icons {
