@@ -14,7 +14,6 @@ hr {
 
 h2 {
     font-family: 'Megrim', cursive;
-    padding-left: 15px;
     text-decoration: underline;
 }
 
@@ -22,9 +21,9 @@ h2 {
     font-weight: bold;
 }
 
-.column{
+.column {
     width: 90%;
-    margin:auto;
+    margin: auto;
 }
 
 // Header Section
@@ -55,24 +54,24 @@ header {
             flex-direction: column;
             flex: 1;
             ul {
-                padding: 0;             
+                padding: 0;
                 a {
                     text-decoration: none;
                     margin: 0;
                     li {
-                        display: block;                 
+                        display: block;
                         font-size: 1.5em;
                         font-weight: 600;
                         transition-property: font-size, color;
                         transition-duration: .15s;
                         transition-timing-function: linear;
                         color: #141823;
-                        padding:10px;
-                        margin-left:15px;
+                        padding: 10px;
+                        margin-left: 15px;
                         &:hover {
                             color: #FEFEFA;
-                            background:#141823;
-                            border-radius:3px;
+                            background: #141823;
+                            border-radius: 3px;
                         }
                         &:visited {
                             color: #141823;
@@ -97,10 +96,10 @@ header {
 #projects {
     padding: $padding;
     color: #FEFEFA;
-    background-color:#141823;
+    background-color: #141823;
     .project-list {
         margin: 50px auto;
-        width: 85%;
+        width: 100%;
         padding: 0;
         > li {
             margin: auto;
@@ -144,7 +143,7 @@ header {
             &:hover {
                 background: #FEFEFA;
                 a {
-                    color:#141823;
+                    color: #141823;
                 }
             }
         }
@@ -156,7 +155,7 @@ header {
     background-color: #FEFEFA;
     color: #141823;
     padding: $padding;
-    margin:auto;
+    margin: auto;
     .icons {
         margin: 0 auto;
         padding: 35px 0;
@@ -167,18 +166,30 @@ header {
             margin: 0 auto;
             display: inline-block;
             padding: 3px;
+            a{
+                color: #141823;
+                text-decoration: none;
+                &:visited{
+                    color:  #141823;
+                }
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
             img {
                 width: 100px;
                 height: 100px;
                 border-radius: 5px;
                 margin: 0 auto;
             }
+
         }
     }
 }
 
 
 /*Footer Styles*/
+
 footer {
     background-color: #141823;
     color: #FEFEFA;
@@ -244,11 +255,11 @@ footer {
         margin: 0 auto;
         padding: 0;
         text-align: center;
-        font-size:0.9em;
+        font-size: 0.9em;
         span {
-            background:#FEFEFA;
-            border-radius:5px;
-            padding:5px;
+            background: #FEFEFA;
+            border-radius: 5px;
+            padding: 5px;
             color: #141823;
             font-size: 1.5em;
             font-weight: bold;
@@ -258,12 +269,9 @@ footer {
 }
 
 @media only screen and (min-width: 800px) {
-    .column{
-    width: 80%;
-    margin:auto;
-}
-    h2 {
-        padding-left: 25px;
+    .column {
+        width: 80%;
+        margin: auto;
     }
     header {
         .header-content {
@@ -312,7 +320,7 @@ footer {
     }
     .project-list {
         > li {
-            width: 80%;
+            width: 100%;
         }
         hr {
             width: 60%;
