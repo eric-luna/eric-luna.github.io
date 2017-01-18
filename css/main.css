@@ -122,6 +122,7 @@ header {
           display: block;
           font-size: 0.875em;
           color: #cb2027;
+          color: #E94F64;
           width: 80%; }
         #projects .project-list > li a:visited {
           color: #FEFEFA; }
