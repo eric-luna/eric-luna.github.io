@@ -112,7 +112,7 @@ header {
           font-size: 1em;
           font-weight: bold; }
         #projects .project-list > li a:visited {
-          color: #333; }
+          color: #FEFEFA; }
       #projects .project-list > li:hover {
         background: #FEFEFA; }
         #projects .project-list > li:hover a {
