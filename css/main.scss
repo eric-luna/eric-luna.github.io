@@ -5,7 +5,7 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Roboto Slab', serif;
-    color: #333;
+    color: #141823;
 }
 
 hr {
@@ -20,8 +20,11 @@ h2 {
 
 .highlight {
     font-weight: bold;
-    color: #141823;
-    font-size: 1.35em;
+}
+
+.column{
+    width: 90%;
+    margin:auto;
 }
 
 // Header Section
@@ -30,7 +33,6 @@ header {
     .header-content {
         display: flex;
         flex-direction: row;
-        width: 100%;
         .name {
             text-align: right;
             font-family: 'Megrim', cursive;
@@ -64,16 +66,16 @@ header {
                         transition-property: font-size, color;
                         transition-duration: .15s;
                         transition-timing-function: linear;
-                        color: #000;
+                        color: #141823;
                         padding:10px;
                         margin-left:15px;
                         &:hover {
-                            color: #fff;
-                            background:#000;
+                            color: #FEFEFA;
+                            background:#141823;
                             border-radius:3px;
                         }
                         &:visited {
-                            color: #000;
+                            color: #141823;
                         }
                     }
                 }
@@ -91,40 +93,15 @@ header {
     }
 }
 
-// Skills Section
-#skills {
-    background-color: black;
-    color: #fff;
-    padding: $padding;
-    .icons {
-        margin: 0 auto;
-        padding: 35px 0;
-        list-style: none;
-        width: 80%;
-        text-align: center;
-        li {
-            margin: 0 auto;
-            display: inline-block;
-            padding: 3px;
-            img {
-                width: 100px;
-                height: 100px;
-                border-radius: 5px;
-                margin: 0 auto;
-            }
-        }
-    }
-}
-
 // Project Section
 #projects {
     padding: $padding;
-    color: #141823;
+    color: #FEFEFA;
+    background-color:#141823;
     .project-list {
         margin: 50px auto;
         width: 85%;
         padding: 0;
-        color: #333;
         > li {
             margin: auto;
             list-style: none;
@@ -154,10 +131,10 @@ header {
             }
             a {
                 text-decoration: none;
-                color: #333;
+                color: #FEFEFA;
                 p {
                     margin: 0;
-                    font-size: 16px;
+                    font-size: 1em;
                     font-weight: bold;
                 }
                 &:visited {
@@ -165,10 +142,36 @@ header {
                 }
             }
             &:hover {
-                background: #333;
+                background: #FEFEFA;
                 a {
-                    color: #fff;
+                    color:#141823;
                 }
+            }
+        }
+    }
+}
+
+// Skills Section
+#skills {
+    background-color: #FEFEFA;
+    color: #141823;
+    padding: $padding;
+    margin:auto;
+    .icons {
+        margin: 0 auto;
+        padding: 35px 0;
+        list-style: none;
+        width: 90%;
+        text-align: center;
+        li {
+            margin: 0 auto;
+            display: inline-block;
+            padding: 3px;
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 5px;
+                margin: 0 auto;
             }
         }
     }
@@ -177,8 +180,8 @@ header {
 
 /*Footer Styles*/
 footer {
-    background-color: black;
-    color: #fff;
+    background-color: #141823;
+    color: #FEFEFA;
     padding: 50px 0;
     .footer-content {
         display: flex;
@@ -188,17 +191,17 @@ footer {
         div {
             margin: 30px 0;
             .pic {
-                height: 80px;
+                height: 100px;
                 width: 80px;
                 border-radius: 5px;
-                border: 1.5px solid #fff;
+                border: 1.5px solid #FEFEFA;
                 margin-right: 15px;
                 float: left;
             }
             p {
                 margin: 0;
                 text-align: left;
-                font-size: 14px;
+                font-size: 0.875em;
                 padding: 0;
                 line-height: 1.3;
             }
@@ -243,10 +246,10 @@ footer {
         text-align: center;
         font-size:0.9em;
         span {
-            background:#fff;
+            background:#FEFEFA;
             border-radius:5px;
             padding:5px;
-            color: #000;
+            color: #141823;
             font-size: 1.5em;
             font-weight: bold;
             font-family: 'Megrim', cursive;
@@ -301,20 +304,9 @@ footer {
     #skills {
         .icons {
             width: 50%;
-            li {
-                margin: 0 auto;
-                display: inline-block;
-                padding: 5px;
-                img {
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 5px;
-                    margin: 0 auto;
-                }
-            }
         }
     }
-    #project-list {
+    .project-list {
         > li {
             width: 80%;
         }
@@ -324,10 +316,8 @@ footer {
     }
     footer {
         .footer-content {
-            display: flex;
             flex-direction: row;
             width: 95%;
-            margin: 0 auto;
             flex-grow: 1;
             div {
                 display: flex;
@@ -335,14 +325,11 @@ footer {
                 margin: 50px 0;
                 width: 60%;
                 p {
-                    font-size: 14px;
                     width: 80%;
                 }
             }
             .social-icons {
                 width: 40%;
-                list-style: none;
-                padding-left: 0;
                 margin: 50px 0;
                 li {
                     font-weight: 600;
@@ -351,18 +338,10 @@ footer {
                     text-align: left;
                     padding-left: 15px;
                     a {
-                        color: #fff;
-                        font-size: .75em;
-                        transition-property: font-size, color;
-                        transition-duration: .15s;
-                        transition-timing-function: linear;
-                        &:hover {
-                            color: blue;
-                        }
+                        color: #FEFEFA;
                         span {
                             display: inline-block;
                             font-size: 1.1em;
-
                         }
                     }
                 }
