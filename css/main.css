@@ -83,38 +83,51 @@ header {
       margin: auto;
       list-style: none;
       padding: 10px 5px;
-      height: 75px;
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid #FEFEFA;
       transition-property: background, color;
       transition-duration: .15s;
       transition-timing-function: linear; }
-      #projects .project-list > li .tags {
-        margin: 0;
-        padding-left: 0; }
-      #projects .project-list > li .tags li {
-        font-size: 0.55em;
-        -webkit-background-clip: padding-box;
-        -moz-background-clip: padding;
-        background-clip: padding-box;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        -ms-border-radius: 5px;
-        -o-border-radius: 5px;
-        display: inline-block;
-        text-transform: uppercase;
-        letter-spacing: 0.2em;
-        margin: 0; }
       #projects .project-list > li a {
         text-decoration: none;
-        color: #FEFEFA; }
-        #projects .project-list > li a p {
+        color: #FEFEFA;
+        width: 100%;
+        display: flex;
+        flex-direction: column; }
+        #projects .project-list > li a .image img {
+          display: block;
+          border-radius: 3px; }
+        #projects .project-list > li a .description h3 {
           margin: 0;
           font-size: 1em;
-          font-weight: bold; }
+          font-weight: bold;
+          display: inline-block; }
+        #projects .project-list > li a .description .tags {
+          margin: 0;
+          padding-left: 0;
+          display: inline-block; }
+        #projects .project-list > li a .description .tags li {
+          font-size: 0.55em;
+          -webkit-background-clip: padding-box;
+          -moz-background-clip: padding;
+          background-clip: padding-box;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          display: inline-block;
+          text-transform: uppercase;
+          letter-spacing: 0.2em;
+          margin: 0; }
+        #projects .project-list > li a .description span {
+          display: block;
+          font-size: 0.875em;
+          color: #cb2027;
+          width: 80%; }
         #projects .project-list > li a:visited {
           color: #FEFEFA; }
       #projects .project-list > li:hover {
-        background: #FEFEFA; }
+        background: #FEFEFA;
+        border-radius: 5px; }
         #projects .project-list > li:hover a {
           color: #141823; }
 

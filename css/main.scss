@@ -105,36 +105,54 @@ header {
             margin: auto;
             list-style: none;
             padding: 10px 5px;
-            height: 75px;
-            border-bottom: 1px solid #333;
+            border-bottom: 1px solid #FEFEFA;
             transition-property: background, color;
             transition-duration: .15s;
             transition-timing-function: linear;
-            .tags {
-                margin: 0;
-                padding-left: 0;
-            }
-            .tags li {
-                font-size: 0.55em;
-                -webkit-background-clip: padding-box;
-                -moz-background-clip: padding;
-                background-clip: padding-box;
-                -webkit-border-radius: 5px;
-                -moz-border-radius: 5px;
-                -ms-border-radius: 5px;
-                -o-border-radius: 5px;
-                display: inline-block;
-                text-transform: uppercase;
-                letter-spacing: 0.2em;
-                margin: 0;
-            }
             a {
                 text-decoration: none;
                 color: #FEFEFA;
-                p {
-                    margin: 0;
-                    font-size: 1em;
-                    font-weight: bold;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                .image {
+                    img {
+                        display: block;
+                        border-radius: 3px;
+                    }
+                }
+                .description {
+                    h3 {
+                        margin: 0;
+                        font-size: 1em;
+                        font-weight: bold;
+                        display: inline-block;
+                    }
+                    .tags {
+                        margin: 0;
+                        padding-left: 0;
+                        display: inline-block;
+                    }
+                    .tags li {
+                        font-size: 0.55em;
+                        -webkit-background-clip: padding-box;
+                        -moz-background-clip: padding;
+                        background-clip: padding-box;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        -ms-border-radius: 5px;
+                        -o-border-radius: 5px;
+                        display: inline-block;
+                        text-transform: uppercase;
+                        letter-spacing: 0.2em;
+                        margin: 0;
+                    }
+                    span {
+                        display: block;
+                        font-size: 0.875em;
+                        color: #cb2027;
+                        width: 80%;
+                    }
                 }
                 &:visited {
                     color: #FEFEFA;
@@ -142,6 +160,7 @@ header {
             }
             &:hover {
                 background: #FEFEFA;
+                border-radius: 5px;
                 a {
                     color: #141823;
                 }
@@ -166,14 +185,14 @@ header {
             margin: 0 auto;
             display: inline-block;
             padding: 3px;
-            a{
+            a {
                 color: #141823;
                 text-decoration: none;
                 text-align: center;
-                &:visited{
-                    color:  #141823;
+                &:visited {
+                    color: #141823;
                 }
-                &:hover{
+                &:hover {
                     text-decoration: underline;
                 }
             }
@@ -183,7 +202,6 @@ header {
                 border-radius: 5px;
                 margin: 0 auto;
             }
-
         }
     }
 }
