@@ -1,4 +1,4 @@
-$padding:70px 0;
+$padding:30px 0;
 // General Styles
 body,
 html {
@@ -87,7 +87,7 @@ header {
     .intro-sm {
         margin: 75px auto;
         width: 90%;
-        text-align: center;
+        text-align: left;
         line-height: 1.3;
     }
 }
@@ -104,7 +104,7 @@ header {
         > li {
             margin: auto;
             list-style: none;
-            padding: 10px 5px;
+            padding: 25px 5px;
             border-bottom: 1px solid #FEFEFA;
             transition-property: background, color;
             transition-duration: .15s;
@@ -144,7 +144,6 @@ header {
                     span {
                         display: block;
                         font-size: 0.875em;
-                        color: #cb2027;
                         color: #E94F64;
                         width: 80%;
                     }
@@ -207,7 +206,7 @@ header {
 footer {
     background-color: #141823;
     color: #FEFEFA;
-    padding: 5px 0;
+    padding:$padding;
     .footer-content {
         display: flex;
         flex-direction: column;
@@ -229,6 +228,7 @@ footer {
                 font-size: 0.875em;
                 padding: 0;
                 line-height: 1.3;
+                color: #E94F64;
             }
         }
         .social-icons {
