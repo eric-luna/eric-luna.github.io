@@ -82,7 +82,6 @@ header {
     #projects .project-list > li {
       margin: auto;
       list-style: none;
-      padding: 25px 5px;
       border-bottom: 1px solid #FEFEFA;
       transition-property: background, color;
       transition-duration: .15s;
@@ -91,8 +90,10 @@ header {
         text-decoration: none;
         color: #FEFEFA;
         width: 100%;
+        height: 100%;
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        padding: 25px 0; }
         #projects .project-list > li a .description h3 {
           margin: 0;
           font-size: 1em;
@@ -254,8 +255,7 @@ footer {
     width: 75%; }
 
   .project-list > li {
-    width: 100%;
-    height: 75px; }
+    width: 100%; }
   .project-list hr {
     width: 60%; }
 
