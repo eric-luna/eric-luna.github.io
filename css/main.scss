@@ -104,7 +104,6 @@ header {
         > li {
             margin: auto;
             list-style: none;
-            // padding: 25px 5px;
             border-bottom: 1px solid #FEFEFA;
             transition-property: background, color;
             transition-duration: .15s;
@@ -116,7 +115,7 @@ header {
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                padding:25px 0;
+                padding:25px 5px;
                 .description {
                     h3 {
                         margin: 0;
