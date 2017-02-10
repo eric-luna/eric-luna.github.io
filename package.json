@@ -1,0 +1,27 @@
+{
+  "name": "ericluna92.github.io",
+  "version": "1.0.0",
+  "description": "This is where I showcase all of my projects.",
+  "main": "index.js",
+  "scripts": {
+    "postcss": "postcss --config postcss.config.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericluna92/ericluna92.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericluna92/ericluna92.github.io/issues"
+  },
+  "homepage": "https://github.com/ericluna92/ericluna92.github.io#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.7.2",
+    "css-loader": "^0.26.1",
+    "postcss-cli": "^2.6.0",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.3.0"
+  },
+  "dependencies": {}
+}
