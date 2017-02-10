@@ -115,7 +115,7 @@ header {
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                padding:25px 5px;
+                padding: 25px 5px;
                 .description {
                     h3 {
                         margin: 0;
@@ -128,13 +128,7 @@ header {
                     }
                     .tags li {
                         font-size: 0.55em;
-                        -webkit-background-clip: padding-box;
-                        -moz-background-clip: padding;
                         background-clip: padding-box;
-                        -webkit-border-radius: 5px;
-                        -moz-border-radius: 5px;
-                        -ms-border-radius: 5px;
-                        -o-border-radius: 5px;
                         display: inline-block;
                         text-transform: uppercase;
                         letter-spacing: 0.2em;
@@ -205,7 +199,7 @@ header {
 footer {
     background-color: #141823;
     color: #FEFEFA;
-    padding:$padding;
+    padding: $padding;
     .footer-content {
         display: flex;
         flex-direction: column;
