@@ -1,8 +1,9 @@
 {
   "use": [
-    "autoprefixer"
+    "autoprefixer",
+    "cssnano"
   ],
-  "input": "css/initial.css",
+  "input": "css/src.css",
   "output": "css/main.css",
   "local-plugins": true,
   "watch": true,

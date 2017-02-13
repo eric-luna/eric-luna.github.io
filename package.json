@@ -18,7 +18,8 @@
   "homepage": "https://github.com/ericluna92/ericluna92.github.io#readme",
   "devDependencies": {
     "autoprefixer": "^6.7.2",
-    "css-loader": "^0.26.1",
+    "cssnano": "^3.10.0",
+    "postcss": "^5.2.12",
     "postcss-cli": "^2.6.0",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"
