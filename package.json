@@ -4,7 +4,9 @@
   "description": "This is where I showcase all of my projects.",
   "main": "index.js",
   "scripts": {
-    "postcss": "postcss --config postcss.config.json"
+    "postcss": "postcss --config postcss.config.json",
+    "sass" : "node-sass scss/main.scss --output css --source-map-embed --source-map-contents --output-style compressed",
+    "watch:sass": "npm run sass -- --watch"
   },
   "repository": {
     "type": "git",
@@ -24,5 +26,7 @@
     "webpack": "^2.7.0",
     "webpack-dev-server": "^2.11.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "node-sass": "^4.9.0"
+  }
 }
